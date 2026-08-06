@@ -103,6 +103,29 @@
     ⚠ Les 125 € des animations sont DÉJÀ le prix remisé (au lieu de 150 €), et
     ce sont eux qui entrent dans le total. Les 120 € viennent en plus.
 
+  ▸ LES QUATRE BOUTONS, ET L'ORDRE DANS LEQUEL ILS TRAVAILLENT
+    Un lecteur n'est pas prêt à s'inscrire au bout de trois secondes. Chaque
+    bouton correspond donc à un moment de la lecture, pas à une envie de
+    répéter la même demande :
+      1. HERO — « Découvrir la formule mercredi » → malac.fr/mercredis-malac
+         Il vient d'ouvrir. Il veut voir, pas remplir un formulaire.
+      2. APRÈS LA VIDÉO — « S'inscrire au mercredi MALAC » → formulaire
+         Il a vu le programme, les tarifs et le reel. C'est le moment.
+      3. APRÈS LA VIDÉO, en second — « Tout savoir sur la formule » → page web
+         Pour celui que le point 2 n'a pas décidé, et qui partirait sinon.
+      4. BAS DE PAGE — « Se renseigner » → WhatsApp
+         Il a tout lu et il a une question. Un humain répond.
+    Le bouton du mot de la présidente est le même WhatsApp, dans son bloc.
+
+  ▸ LES LIENS VERS LA PAGE WEB PORTENT DES PARAMÈTRES UTM
+    …?utm_source=newsletter&utm_medium=email&utm_campaign=mercredis
+    &utm_content=hero   (ou =apres-video)
+    Sans eux, les deux boutons mènent à la même adresse et les statistiques
+    les additionnent : impossible de savoir lequel convertit. Le paramètre ne
+    change ni la page affichée ni son adresse réelle.
+    ⚠ Les esperluettes sont écrites &amp; dans le HTML, y compris dans le VML.
+    Un & nu casse le lien dans certains clients.
+
   ▸ CE QUI N'EST PAS DANS CETTE NEWSLETTER, ET POURQUOI
       · aucun ruban de drapeaux — le ruban existant montre six langues à parts
         égales, alors que le mercredi n'en propose que trois, et il ne saurait
@@ -206,17 +229,23 @@
         Accueil de <strong style="font-weight:700;color:#FFFFFF;">8h30 à 18h00</strong>, <strong style="font-weight:700;color:#FFFFFF;">dès 4 ans et jusqu'aux ados</strong> — à Massy ou en ligne.
       </div>
 
+      <!-- ⚠ CE BOUTON POINTAIT VERS LE FORMULAIRE D'INSCRIPTION.
+           Il disait « Découvrir le programme » et ouvrait un formulaire : le
+           lecteur cliquait pour voir, et tombait sur des champs à remplir.
+           C'est le genre d'écart qui fait fermer l'onglet — et il gonflait les
+           statistiques du formulaire de visiteurs qui n'avaient rien demandé.
+           Depuis qu'une page existe, il va là où sa promesse l'envoyait. -->
       <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-top:24px;">
         <tr>
           <td>
             <!--[if mso]>
-            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://ent.malac.fr/newformulairesmart" style="height:50px;v-text-anchor:middle;width:290px;" arcsize="50%" stroke="f" fillcolor="#FFE052">
+            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://malac.fr/mercredis-malac?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=mercredis&amp;utm_content=hero" style="height:50px;v-text-anchor:middle;width:326px;" arcsize="50%" stroke="f" fillcolor="#FFE052">
               <w:anchorlock/>
-              <center style="color:#0A2870;font-family:Arial,sans-serif;font-size:16px;font-weight:bold;">Découvrir le programme</center>
+              <center style="color:#0A2870;font-family:Arial,sans-serif;font-size:16px;font-weight:bold;">Découvrir la formule mercredi</center>
             </v:roundrect>
             <![endif]-->
             <!--[if !mso]><!-->
-            <a href="https://ent.malac.fr/newformulairesmart" class="mlc-btn" style="display:inline-block;background-color:#FFE052;color:#0A2870;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;font-size:16px;font-weight:700;line-height:22px;text-decoration:none;padding:14px 28px;border-radius:999px;">🎨&nbsp; Découvrir le programme</a>
+            <a href="https://malac.fr/mercredis-malac?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=mercredis&amp;utm_content=hero" class="mlc-btn" style="display:inline-block;background-color:#FFE052;color:#0A2870;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;font-size:16px;font-weight:700;line-height:22px;text-decoration:none;padding:14px 28px;border-radius:999px;">🎨&nbsp; Découvrir la formule mercredi</a>
             <!--<![endif]-->
           </td>
         </tr>
@@ -508,6 +537,29 @@
             <![endif]-->
             <!--[if !mso]><!-->
             <a href="https://ent.malac.fr/newformulairesmart" class="mlc-btn" style="display:inline-block;background-color:#FFE052;color:#0A2870;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;font-size:16px;font-weight:700;line-height:22px;text-decoration:none;padding:15px 30px;border-radius:999px;">S'inscrire au mercredi MALAC</a>
+            <!--<![endif]-->
+          </td>
+        </tr>
+        <!-- Deuxième bouton, volontairement SECONDAIRE : contour blanc sur le
+             bleu nuit, pas de fond plein. Il y a un ordre à respecter — le
+             jaune plein appelle l'inscription, celui-ci offre une sortie à qui
+             n'est pas encore décidé. Deux boutons pleins côte à côte et plus
+             personne ne sait lequel est le bon.
+             ⚠ VML : strokecolor="#FFFFFF", surtout PAS stroke="f". C'est le
+             contour qui fait le bouton ici : avec stroke="f", Outlook
+             afficherait du texte blanc sur bleu nuit, sans forme, donc rien
+             qui ressemble à un bouton. Le fill reprend exactement le bleu de
+             la bande pour simuler un bouton creux, que VML ne sait pas faire. -->
+        <tr>
+          <td align="center" style="padding-top:12px;">
+            <!--[if mso]>
+            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://malac.fr/mercredis-malac?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=mercredis&amp;utm_content=apres-video" style="height:48px;v-text-anchor:middle;width:288px;" arcsize="50%" strokecolor="#FFFFFF" fillcolor="#0A2870">
+              <w:anchorlock/>
+              <center style="color:#FFFFFF;font-family:Arial,sans-serif;font-size:15px;font-weight:bold;">Tout savoir sur la formule</center>
+            </v:roundrect>
+            <![endif]-->
+            <!--[if !mso]><!-->
+            <a href="https://malac.fr/mercredis-malac?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=mercredis&amp;utm_content=apres-video" class="mlc-btn" style="display:inline-block;background-color:#0A2870;color:#FFFFFF;border:2px solid #FFFFFF;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;font-size:15px;font-weight:700;line-height:22px;text-decoration:none;padding:11px 28px;border-radius:999px;">Tout savoir sur la formule</a>
             <!--<![endif]-->
           </td>
         </tr>
