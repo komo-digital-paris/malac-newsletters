@@ -1182,9 +1182,28 @@
       }
 
       rangee.dataset.index = i;
-      rangee.scrollTo({ left: i * pas, behavior: 'smooth' });
+      viser(rangee, i * pas);
     });
   });
+
+  /* Amène la rangée à gauche pixels, en douceur si le moteur le veut bien.
+     ⚠ LE REPLI N'EST PAS DE LA PRUDENCE DÉCORATIVE. [data-defile] porte
+     scroll-behavior: smooth, donc même « rangee.scrollLeft = x » est
+     animé — et certains contextes (navigateur qui refuse l'animation,
+     prefers-reduced-motion, aperçu figé) ne la jouent jamais : la rangée
+     reste alors sur place et le bouton paraît mort. On revient donc
+     vérifier, et on impose la position en désactivant l'animation le temps
+     de l'affectation. */
+  function viser(rangee, gauche) {
+    rangee.scrollTo({ left: gauche, behavior: 'smooth' });
+    setTimeout(function () {
+      if (Math.abs(rangee.scrollLeft - gauche) < 4) return;
+      var avant = rangee.style.scrollBehavior;
+      rangee.style.scrollBehavior = 'auto';
+      rangee.scrollLeft = gauche;
+      rangee.style.scrollBehavior = avant;
+    }, 450);
+  }
 
   // Le doigt et la barre de défilement bougent la rangée sans passer par les
   // flèches : on resynchronise l'index, sinon le clic suivant repartirait de
