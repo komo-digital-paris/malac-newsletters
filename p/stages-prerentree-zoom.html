@@ -177,7 +177,7 @@
 
 
 <!-- ═══════════════════════════════════════════════════════════════════
-     3 · L'INDEX PAR ÂGE — carte bleu nuit, âges en jaune
+     3 · L'INDEX PAR ÂGE — encadré en gros pointillé, sans fond
      ═══════════════════════════════════════════════════════════════════ -->
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">
   <tr>
@@ -194,10 +194,13 @@
     <td style="padding:0 4px 10px 4px;">
       <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
         <tr>
-          <td bgcolor="#1D2057" style="background-color:#1D2057;border-radius:10px;padding:14px 17px;font-size:13px;line-height:1.85;color:#C9D0F2;">
-            🎈 <strong style="font-weight:700;color:#FFDD73;">6-8 ans</strong> — Arabe débutant, Kitabi N1<br>
-            🚀 <strong style="font-weight:700;color:#FFDD73;">7-11 ans</strong> — Arabe enfants, Cambridge enfants, Kitabi N1<br>
-            🎒🎧 <strong style="font-weight:700;color:#FFDD73;">11-17 ans</strong> — Arabe ado, Kitabi ado, Cambridge collégiens, Espagnol
+          <!-- Gros pointillé, aucun fond, texte noir (demandé). Le trait
+               dashed de 2 px est rendu partout, y compris Outlook — c'est une
+               bordure de cellule, pas une image de fond. -->
+          <td style="border:2px dashed #1D2057;border-radius:10px;padding:14px 17px;font-size:13px;line-height:1.85;color:#1A1A1A;">
+            🎈 <strong style="font-weight:700;color:#1A1A1A;">6-8 ans</strong> — Arabe débutant, Kitabi N1<br>
+            🚀 <strong style="font-weight:700;color:#1A1A1A;">7-11 ans</strong> — Arabe enfants, Cambridge enfants, Kitabi N1<br>
+            🎒🎧 <strong style="font-weight:700;color:#1A1A1A;">11-17 ans</strong> — Arabe ado, Kitabi ado, Cambridge collégiens, Espagnol
           </td>
         </tr>
       </table>
@@ -255,12 +258,18 @@
                 </td>
               </tr>
               <tr>
-                <td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border-radius:0 0 12px 12px;border:2px solid #DCE4FF;border-top:0;border-bottom:4px solid #16793D;padding:11px 12px 13px 12px;">
-                  <div style="font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#16793D;">🎈&nbsp; 6-8 ans · 2 semaines</div>
-                  <div style="padding-top:6px;font-size:16px;line-height:1.25;font-weight:700;color:#1D2057;letter-spacing:-.01em;">Stage Arabe débutant<br>Le Voyage des Houroufs</div>
-                  <div style="padding-top:6px;font-size:12px;line-height:1.5;color:#48536B;">Et si les lettres arabes devenaient <strong style="font-weight:700;">des personnages</strong> ?</div>
-                  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:8px;"><tr><td width="14" valign="top" style="padding:0 5px 4px 0;font-size:12px;line-height:1.45;color:#16793D;">✓</td><td valign="top" style="padding:0 0 4px 0;font-size:12px;line-height:1.45;color:#48536B;">Les 28 lettres, chacune avec sa forme et son son</td></tr><tr><td width="14" valign="top" style="padding:0 5px 4px 0;font-size:12px;line-height:1.45;color:#16793D;">✓</td><td valign="top" style="padding:0 0 4px 0;font-size:12px;line-height:1.45;color:#48536B;">Premières syllabes, puis premiers mots à voix haute</td></tr><tr><td width="14" valign="top" style="padding:0 5px 4px 0;font-size:12px;line-height:1.45;color:#16793D;">✓</td><td valign="top" style="padding:0 0 4px 0;font-size:12px;line-height:1.45;color:#48536B;">Prêt pour le niveau CP1 à la rentrée</td></tr></table>
-                  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;">
+                <td bgcolor="#FFFFFF" valign="top" style="background-color:#FFFFFF;border-radius:0 0 12px 12px;border:2px solid #DCE4FF;border-top:0;border-bottom:4px solid #16793D;padding:11px 12px 13px 12px;">
+                  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td valign="top" height="232" style="height:232px;">
+                        <div style="font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#16793D;">🎈&nbsp; 6-8 ans · 2 semaines</div>
+                        <div style="padding-top:6px;font-size:16px;line-height:1.25;font-weight:700;color:#1D2057;letter-spacing:-.01em;">Stage Arabe débutant<br>Le Voyage des Houroufs</div>
+                        <div style="padding-top:6px;font-size:12px;line-height:1.5;color:#48536B;">Et si les lettres arabes devenaient <strong style="font-weight:700;">des personnages</strong> ?</div>
+                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:8px;"><tr><td width="14" valign="top" style="padding:0 5px 4px 0;font-size:12px;line-height:1.45;color:#16793D;">✓</td><td valign="top" style="padding:0 0 4px 0;font-size:12px;line-height:1.45;color:#48536B;">Les 28 lettres, chacune avec sa forme et son son</td></tr><tr><td width="14" valign="top" style="padding:0 5px 4px 0;font-size:12px;line-height:1.45;color:#16793D;">✓</td><td valign="top" style="padding:0 0 4px 0;font-size:12px;line-height:1.45;color:#48536B;">Premières syllabes, puis premiers mots à voix haute</td></tr><tr><td width="14" valign="top" style="padding:0 5px 4px 0;font-size:12px;line-height:1.45;color:#16793D;">✓</td><td valign="top" style="padding:0 0 4px 0;font-size:12px;line-height:1.45;color:#48536B;">Prêt pour le niveau CP1 à la rentrée</td></tr></table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;">
                   <tr>
                     <td valign="middle">
                       <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
@@ -271,7 +280,9 @@
                       <a href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter%20et%20je%20souhaite%20inscrire%20mon%20enfant%20au%20stage%20de%20pr%C3%A9-rentr%C3%A9e%20%C2%AB%20Stage%20Arabe%20d%C3%A9butant%20%E2%80%94%20Le%20Voyage%20des%20Houroufs%20%C2%BB%20du%2017%20au%2028%20ao%C3%BBt.%20Pouvez-vous%20me%20donner%20les%20jours%20et%20les%20horaires%20%3F" class="mlc-btn" style="display:inline-block;background-color:#3B4FE4;color:#FFFFFF;font-size:13px;font-weight:700;line-height:1.2;text-decoration:none;padding:9px 15px;border-radius:999px;white-space:nowrap;">Réserver&nbsp;→</a>
                     </td>
                   </tr>
-                </table>
+                </table></td>
+                    </tr>
+                  </table>
                 </td>
               </tr>
             </table></td><td valign="top" style="padding:0 10px 4px 0;"><table role="presentation" width="264" cellpadding="0" cellspacing="0" border="0" id="stage-arabe-2" style="width:264px;border-collapse:collapse;">
@@ -289,12 +300,18 @@
                 </td>
               </tr>
               <tr>
-                <td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border-radius:0 0 12px 12px;border:2px solid #DCE4FF;border-top:0;border-bottom:4px solid #16793D;padding:11px 12px 13px 12px;">
-                  <div style="font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#16793D;">🚀&nbsp; 7-10 ans · 2 semaines</div>
-                  <div style="padding-top:6px;font-size:16px;line-height:1.25;font-weight:700;color:#1D2057;letter-spacing:-.01em;">Stage Arabe intermédiaire<br>Enfants</div>
-                  <div style="padding-top:6px;font-size:12px;line-height:1.5;color:#48536B;">Il sait lire, mais il bute encore. Deux semaines pour <strong style="font-weight:700;">passer à la fluidité</strong>.</div>
-                  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:8px;"><tr><td width="14" valign="top" style="padding:0 5px 4px 0;font-size:12px;line-height:1.45;color:#16793D;">✓</td><td valign="top" style="padding:0 0 4px 0;font-size:12px;line-height:1.45;color:#48536B;">Lecture de vrais textes, jusqu'à l'aisance</td></tr><tr><td width="14" valign="top" style="padding:0 5px 4px 0;font-size:12px;line-height:1.45;color:#16793D;">✓</td><td valign="top" style="padding:0 0 4px 0;font-size:12px;line-height:1.45;color:#48536B;">Écriture de phrases et de courts textes</td></tr><tr><td width="14" valign="top" style="padding:0 5px 4px 0;font-size:12px;line-height:1.45;color:#16793D;">✓</td><td valign="top" style="padding:0 0 4px 0;font-size:12px;line-height:1.45;color:#48536B;">Vocabulaire du quotidien et expression orale</td></tr></table>
-                  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;">
+                <td bgcolor="#FFFFFF" valign="top" style="background-color:#FFFFFF;border-radius:0 0 12px 12px;border:2px solid #DCE4FF;border-top:0;border-bottom:4px solid #16793D;padding:11px 12px 13px 12px;">
+                  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td valign="top" height="232" style="height:232px;">
+                        <div style="font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#16793D;">🚀&nbsp; 7-10 ans · 2 semaines</div>
+                        <div style="padding-top:6px;font-size:16px;line-height:1.25;font-weight:700;color:#1D2057;letter-spacing:-.01em;">Stage Arabe intermédiaire<br>Enfants</div>
+                        <div style="padding-top:6px;font-size:12px;line-height:1.5;color:#48536B;">Il sait lire, mais il bute encore. Deux semaines pour <strong style="font-weight:700;">passer à la fluidité</strong>.</div>
+                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:8px;"><tr><td width="14" valign="top" style="padding:0 5px 4px 0;font-size:12px;line-height:1.45;color:#16793D;">✓</td><td valign="top" style="padding:0 0 4px 0;font-size:12px;line-height:1.45;color:#48536B;">Lecture de vrais textes, jusqu'à l'aisance</td></tr><tr><td width="14" valign="top" style="padding:0 5px 4px 0;font-size:12px;line-height:1.45;color:#16793D;">✓</td><td valign="top" style="padding:0 0 4px 0;font-size:12px;line-height:1.45;color:#48536B;">Écriture de phrases et de courts textes</td></tr><tr><td width="14" valign="top" style="padding:0 5px 4px 0;font-size:12px;line-height:1.45;color:#16793D;">✓</td><td valign="top" style="padding:0 0 4px 0;font-size:12px;line-height:1.45;color:#48536B;">Vocabulaire du quotidien et expression orale</td></tr></table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;">
                   <tr>
                     <td valign="middle">
                       <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
@@ -305,7 +322,9 @@
                       <a href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter%20et%20je%20souhaite%20inscrire%20mon%20enfant%20au%20stage%20de%20pr%C3%A9-rentr%C3%A9e%20%C2%AB%20Stage%20Arabe%20interm%C3%A9diaire%20%E2%80%94%20Enfants%20%C2%BB%20du%2017%20au%2028%20ao%C3%BBt.%20Pouvez-vous%20me%20donner%20les%20jours%20et%20les%20horaires%20%3F" class="mlc-btn" style="display:inline-block;background-color:#3B4FE4;color:#FFFFFF;font-size:13px;font-weight:700;line-height:1.2;text-decoration:none;padding:9px 15px;border-radius:999px;white-space:nowrap;">Réserver&nbsp;→</a>
                     </td>
                   </tr>
-                </table>
+                </table></td>
+                    </tr>
+                  </table>
                 </td>
               </tr>
             </table></td><td valign="top" style="padding:0 10px 4px 0;"><table role="presentation" width="264" cellpadding="0" cellspacing="0" border="0" id="stage-arabe-3" style="width:264px;border-collapse:collapse;">
@@ -323,12 +342,18 @@
                 </td>
               </tr>
               <tr>
-                <td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border-radius:0 0 12px 12px;border:2px solid #DCE4FF;border-top:0;border-bottom:4px solid #16793D;padding:11px 12px 13px 12px;">
-                  <div style="font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#16793D;">🎧&nbsp; 12-17 ans · 2 semaines</div>
-                  <div style="padding-top:6px;font-size:16px;line-height:1.25;font-weight:700;color:#1D2057;letter-spacing:-.01em;">Stage Arabe intermédiaire<br>Ado</div>
-                  <div style="padding-top:6px;font-size:12px;line-height:1.5;color:#48536B;">Le stage qui débloque <strong style="font-weight:700;">l'oral</strong>, celui que les ados évitent le plus.</div>
-                  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:8px;"><tr><td width="14" valign="top" style="padding:0 5px 4px 0;font-size:12px;line-height:1.45;color:#16793D;">✓</td><td valign="top" style="padding:0 0 4px 0;font-size:12px;line-height:1.45;color:#48536B;">Lecture fluide et compréhension de textes</td></tr><tr><td width="14" valign="top" style="padding:0 5px 4px 0;font-size:12px;line-height:1.45;color:#16793D;">✓</td><td valign="top" style="padding:0 0 4px 0;font-size:12px;line-height:1.45;color:#48536B;">Expression orale et mises en situation</td></tr><tr><td width="14" valign="top" style="padding:0 5px 4px 0;font-size:12px;line-height:1.45;color:#16793D;">✓</td><td valign="top" style="padding:0 0 4px 0;font-size:12px;line-height:1.45;color:#48536B;">Jeux linguistiques, quiz et défis lecture</td></tr></table>
-                  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;">
+                <td bgcolor="#FFFFFF" valign="top" style="background-color:#FFFFFF;border-radius:0 0 12px 12px;border:2px solid #DCE4FF;border-top:0;border-bottom:4px solid #16793D;padding:11px 12px 13px 12px;">
+                  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td valign="top" height="232" style="height:232px;">
+                        <div style="font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#16793D;">🎧&nbsp; 12-17 ans · 2 semaines</div>
+                        <div style="padding-top:6px;font-size:16px;line-height:1.25;font-weight:700;color:#1D2057;letter-spacing:-.01em;">Stage Arabe intermédiaire<br>Ado</div>
+                        <div style="padding-top:6px;font-size:12px;line-height:1.5;color:#48536B;">Le stage qui débloque <strong style="font-weight:700;">l'oral</strong>, celui que les ados évitent le plus.</div>
+                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:8px;"><tr><td width="14" valign="top" style="padding:0 5px 4px 0;font-size:12px;line-height:1.45;color:#16793D;">✓</td><td valign="top" style="padding:0 0 4px 0;font-size:12px;line-height:1.45;color:#48536B;">Lecture fluide et compréhension de textes</td></tr><tr><td width="14" valign="top" style="padding:0 5px 4px 0;font-size:12px;line-height:1.45;color:#16793D;">✓</td><td valign="top" style="padding:0 0 4px 0;font-size:12px;line-height:1.45;color:#48536B;">Expression orale et mises en situation</td></tr><tr><td width="14" valign="top" style="padding:0 5px 4px 0;font-size:12px;line-height:1.45;color:#16793D;">✓</td><td valign="top" style="padding:0 0 4px 0;font-size:12px;line-height:1.45;color:#48536B;">Jeux linguistiques, quiz et défis lecture</td></tr></table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;">
                   <tr>
                     <td valign="middle">
                       <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
@@ -339,7 +364,9 @@
                       <a href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter%20et%20je%20souhaite%20inscrire%20mon%20enfant%20au%20stage%20de%20pr%C3%A9-rentr%C3%A9e%20%C2%AB%20Stage%20Arabe%20interm%C3%A9diaire%20%E2%80%94%20Ado%20%C2%BB%20du%2017%20au%2028%20ao%C3%BBt.%20Pouvez-vous%20me%20donner%20les%20jours%20et%20les%20horaires%20%3F" class="mlc-btn" style="display:inline-block;background-color:#3B4FE4;color:#FFFFFF;font-size:13px;font-weight:700;line-height:1.2;text-decoration:none;padding:9px 15px;border-radius:999px;white-space:nowrap;">Réserver&nbsp;→</a>
                     </td>
                   </tr>
-                </table>
+                </table></td>
+                    </tr>
+                  </table>
                 </td>
               </tr>
             </table></td></tr>
@@ -502,12 +529,18 @@
                 </td>
               </tr>
               <tr>
-                <td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border-radius:0 0 12px 12px;border:2px solid #DCE4FF;border-top:0;border-bottom:4px solid #A87400;padding:11px 12px 13px 12px;">
-                  <div style="font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#A87400;">⭐&nbsp; 6-11 ans · 2 semaines</div>
-                  <div style="padding-top:6px;font-size:16px;line-height:1.25;font-weight:700;color:#1D2057;letter-spacing:-.01em;">Stage Kitabi<br>Niveau 1</div>
-                  <div style="padding-top:6px;font-size:12px;line-height:1.5;color:#48536B;">Le Juz Amma à son rythme : <strong style="font-weight:700;">on comprend avant de mémoriser</strong>.</div>
-                  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:8px;"><tr><td width="14" valign="top" style="padding:0 5px 4px 0;font-size:12px;line-height:1.45;color:#A87400;">✓</td><td valign="top" style="padding:0 0 4px 0;font-size:12px;line-height:1.45;color:#48536B;">15 sourates à mémoriser et réciter progressivement</td></tr><tr><td width="14" valign="top" style="padding:0 5px 4px 0;font-size:12px;line-height:1.45;color:#A87400;">✓</td><td valign="top" style="padding:0 0 4px 0;font-size:12px;line-height:1.45;color:#48536B;">Adab : respect, politesse, honnêteté, entraide</td></tr><tr><td width="14" valign="top" style="padding:0 5px 4px 0;font-size:12px;line-height:1.45;color:#A87400;">✓</td><td valign="top" style="padding:0 0 4px 0;font-size:12px;line-height:1.45;color:#48536B;">Jeux et participation active à chaque séance</td></tr></table>
-                  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;">
+                <td bgcolor="#FFFFFF" valign="top" style="background-color:#FFFFFF;border-radius:0 0 12px 12px;border:2px solid #DCE4FF;border-top:0;border-bottom:4px solid #A87400;padding:11px 12px 13px 12px;">
+                  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td valign="top" height="232" style="height:232px;">
+                        <div style="font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#A87400;">⭐&nbsp; 6-11 ans · 2 semaines</div>
+                        <div style="padding-top:6px;font-size:16px;line-height:1.25;font-weight:700;color:#1D2057;letter-spacing:-.01em;">Stage Kitabi<br>Niveau 1</div>
+                        <div style="padding-top:6px;font-size:12px;line-height:1.5;color:#48536B;">Le Juz Amma à son rythme : <strong style="font-weight:700;">on comprend avant de mémoriser</strong>.</div>
+                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:8px;"><tr><td width="14" valign="top" style="padding:0 5px 4px 0;font-size:12px;line-height:1.45;color:#A87400;">✓</td><td valign="top" style="padding:0 0 4px 0;font-size:12px;line-height:1.45;color:#48536B;">15 sourates à mémoriser et réciter progressivement</td></tr><tr><td width="14" valign="top" style="padding:0 5px 4px 0;font-size:12px;line-height:1.45;color:#A87400;">✓</td><td valign="top" style="padding:0 0 4px 0;font-size:12px;line-height:1.45;color:#48536B;">Adab : respect, politesse, honnêteté, entraide</td></tr><tr><td width="14" valign="top" style="padding:0 5px 4px 0;font-size:12px;line-height:1.45;color:#A87400;">✓</td><td valign="top" style="padding:0 0 4px 0;font-size:12px;line-height:1.45;color:#48536B;">Jeux et participation active à chaque séance</td></tr></table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;">
                   <tr>
                     <td valign="middle">
                       <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
@@ -518,7 +551,9 @@
                       <a href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter%20et%20je%20souhaite%20inscrire%20mon%20enfant%20au%20stage%20de%20pr%C3%A9-rentr%C3%A9e%20%C2%AB%20Stage%20Kitabi%20%E2%80%94%20Niveau%201%20%C2%BB%20du%2017%20au%2028%20ao%C3%BBt.%20Pouvez-vous%20me%20donner%20les%20jours%20et%20les%20horaires%20%3F" class="mlc-btn" style="display:inline-block;background-color:#3B4FE4;color:#FFFFFF;font-size:13px;font-weight:700;line-height:1.2;text-decoration:none;padding:9px 15px;border-radius:999px;white-space:nowrap;">Réserver&nbsp;→</a>
                     </td>
                   </tr>
-                </table>
+                </table></td>
+                    </tr>
+                  </table>
                 </td>
               </tr>
             </table></td><td valign="top" style="padding:0 10px 4px 0;"><table role="presentation" width="264" cellpadding="0" cellspacing="0" border="0" id="stage-kitabi-2" style="width:264px;border-collapse:collapse;">
@@ -536,12 +571,18 @@
                 </td>
               </tr>
               <tr>
-                <td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border-radius:0 0 12px 12px;border:2px solid #DCE4FF;border-top:0;border-bottom:4px solid #A87400;padding:11px 12px 13px 12px;">
-                  <div style="font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#A87400;">🎧&nbsp; 12-17 ans · 2 semaines</div>
-                  <div style="padding-top:6px;font-size:16px;line-height:1.25;font-weight:700;color:#1D2057;letter-spacing:-.01em;">Stage Kitabi<br>Ado</div>
-                  <div style="padding-top:6px;font-size:12px;line-height:1.5;color:#48536B;">Le même programme, mais <strong style="font-weight:700;">sur le ton qu'un ado accepte d'écouter</strong>.</div>
-                  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:8px;"><tr><td width="14" valign="top" style="padding:0 5px 4px 0;font-size:12px;line-height:1.45;color:#A87400;">✓</td><td valign="top" style="padding:0 0 4px 0;font-size:12px;line-height:1.45;color:#48536B;">Les sourates du Juz Amma et le sens des versets</td></tr><tr><td width="14" valign="top" style="padding:0 5px 4px 0;font-size:12px;line-height:1.45;color:#A87400;">✓</td><td valign="top" style="padding:0 0 4px 0;font-size:12px;line-height:1.45;color:#48536B;">Adab et valeurs du quotidien, discutées</td></tr><tr><td width="14" valign="top" style="padding:0 5px 4px 0;font-size:12px;line-height:1.45;color:#A87400;">✓</td><td valign="top" style="padding:0 0 4px 0;font-size:12px;line-height:1.45;color:#48536B;">Quiz, challenges et projets créatifs</td></tr></table>
-                  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;">
+                <td bgcolor="#FFFFFF" valign="top" style="background-color:#FFFFFF;border-radius:0 0 12px 12px;border:2px solid #DCE4FF;border-top:0;border-bottom:4px solid #A87400;padding:11px 12px 13px 12px;">
+                  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td valign="top" height="232" style="height:232px;">
+                        <div style="font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#A87400;">🎧&nbsp; 12-17 ans · 2 semaines</div>
+                        <div style="padding-top:6px;font-size:16px;line-height:1.25;font-weight:700;color:#1D2057;letter-spacing:-.01em;">Stage Kitabi<br>Ado</div>
+                        <div style="padding-top:6px;font-size:12px;line-height:1.5;color:#48536B;">Le même programme, mais <strong style="font-weight:700;">sur le ton qu'un ado accepte d'écouter</strong>.</div>
+                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:8px;"><tr><td width="14" valign="top" style="padding:0 5px 4px 0;font-size:12px;line-height:1.45;color:#A87400;">✓</td><td valign="top" style="padding:0 0 4px 0;font-size:12px;line-height:1.45;color:#48536B;">Les sourates du Juz Amma et le sens des versets</td></tr><tr><td width="14" valign="top" style="padding:0 5px 4px 0;font-size:12px;line-height:1.45;color:#A87400;">✓</td><td valign="top" style="padding:0 0 4px 0;font-size:12px;line-height:1.45;color:#48536B;">Adab et valeurs du quotidien, discutées</td></tr><tr><td width="14" valign="top" style="padding:0 5px 4px 0;font-size:12px;line-height:1.45;color:#A87400;">✓</td><td valign="top" style="padding:0 0 4px 0;font-size:12px;line-height:1.45;color:#48536B;">Quiz, challenges et projets créatifs</td></tr></table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;">
                   <tr>
                     <td valign="middle">
                       <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
@@ -552,7 +593,9 @@
                       <a href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter%20et%20je%20souhaite%20inscrire%20mon%20enfant%20au%20stage%20de%20pr%C3%A9-rentr%C3%A9e%20%C2%AB%20Stage%20Kitabi%20%E2%80%94%20Ado%20%C2%BB%20du%2017%20au%2028%20ao%C3%BBt.%20Pouvez-vous%20me%20donner%20les%20jours%20et%20les%20horaires%20%3F" class="mlc-btn" style="display:inline-block;background-color:#3B4FE4;color:#FFFFFF;font-size:13px;font-weight:700;line-height:1.2;text-decoration:none;padding:9px 15px;border-radius:999px;white-space:nowrap;">Réserver&nbsp;→</a>
                     </td>
                   </tr>
-                </table>
+                </table></td>
+                    </tr>
+                  </table>
                 </td>
               </tr>
             </table></td></tr>
@@ -681,12 +724,18 @@
                 </td>
               </tr>
               <tr>
-                <td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border-radius:0 0 12px 12px;border:2px solid #DCE4FF;border-top:0;border-bottom:4px solid #3B4FE4;padding:11px 12px 13px 12px;">
-                  <div style="font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#3B4FE4;">🚀&nbsp; 7-10 ans · 2 semaines</div>
-                  <div style="padding-top:6px;font-size:16px;line-height:1.25;font-weight:700;color:#1D2057;letter-spacing:-.01em;">Stage Cambridge English<br>Enfants</div>
-                  <div style="padding-top:6px;font-size:12px;line-height:1.5;color:#48536B;">Deux semaines à parler pour de vrai, avant de replonger dans le manuel.</div>
-                  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:8px;"><tr><td width="14" valign="top" style="padding:0 5px 4px 0;font-size:12px;line-height:1.45;color:#3B4FE4;">✓</td><td valign="top" style="padding:0 0 4px 0;font-size:12px;line-height:1.45;color:#48536B;">Compréhension, expression, vocabulaire et grammaire</td></tr><tr><td width="14" valign="top" style="padding:0 5px 4px 0;font-size:12px;line-height:1.45;color:#3B4FE4;">✓</td><td valign="top" style="padding:0 0 4px 0;font-size:12px;line-height:1.45;color:#48536B;">Préparation aux examens YLE Starters et Movers</td></tr><tr><td width="14" valign="top" style="padding:0 5px 4px 0;font-size:12px;line-height:1.45;color:#3B4FE4;">✓</td><td valign="top" style="padding:0 0 4px 0;font-size:12px;line-height:1.45;color:#48536B;">Jeux, chansons, quiz et jeux de rôle</td></tr></table>
-                  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;">
+                <td bgcolor="#FFFFFF" valign="top" style="background-color:#FFFFFF;border-radius:0 0 12px 12px;border:2px solid #DCE4FF;border-top:0;border-bottom:4px solid #3B4FE4;padding:11px 12px 13px 12px;">
+                  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td valign="top" height="232" style="height:232px;">
+                        <div style="font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#3B4FE4;">🚀&nbsp; 7-10 ans · 2 semaines</div>
+                        <div style="padding-top:6px;font-size:16px;line-height:1.25;font-weight:700;color:#1D2057;letter-spacing:-.01em;">Stage Cambridge English<br>Enfants</div>
+                        <div style="padding-top:6px;font-size:12px;line-height:1.5;color:#48536B;">Deux semaines à parler pour de vrai, avant de replonger dans le manuel.</div>
+                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:8px;"><tr><td width="14" valign="top" style="padding:0 5px 4px 0;font-size:12px;line-height:1.45;color:#3B4FE4;">✓</td><td valign="top" style="padding:0 0 4px 0;font-size:12px;line-height:1.45;color:#48536B;">Compréhension, expression, vocabulaire et grammaire</td></tr><tr><td width="14" valign="top" style="padding:0 5px 4px 0;font-size:12px;line-height:1.45;color:#3B4FE4;">✓</td><td valign="top" style="padding:0 0 4px 0;font-size:12px;line-height:1.45;color:#48536B;">Préparation aux examens YLE Starters et Movers</td></tr><tr><td width="14" valign="top" style="padding:0 5px 4px 0;font-size:12px;line-height:1.45;color:#3B4FE4;">✓</td><td valign="top" style="padding:0 0 4px 0;font-size:12px;line-height:1.45;color:#48536B;">Jeux, chansons, quiz et jeux de rôle</td></tr></table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;">
                   <tr>
                     <td valign="middle">
                       <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
@@ -697,7 +746,9 @@
                       <a href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter%20et%20je%20souhaite%20inscrire%20mon%20enfant%20au%20stage%20de%20pr%C3%A9-rentr%C3%A9e%20%C2%AB%20Stage%20Cambridge%20English%20%E2%80%94%20Enfants%20%C2%BB%20du%2017%20au%2028%20ao%C3%BBt.%20Pouvez-vous%20me%20donner%20les%20jours%20et%20les%20horaires%20%3F" class="mlc-btn" style="display:inline-block;background-color:#3B4FE4;color:#FFFFFF;font-size:13px;font-weight:700;line-height:1.2;text-decoration:none;padding:9px 15px;border-radius:999px;white-space:nowrap;">Réserver&nbsp;→</a>
                     </td>
                   </tr>
-                </table>
+                </table></td>
+                    </tr>
+                  </table>
                 </td>
               </tr>
             </table></td><td valign="top" style="padding:0 10px 4px 0;"><table role="presentation" width="264" cellpadding="0" cellspacing="0" border="0" id="stage-anglais-2" style="width:264px;border-collapse:collapse;">
@@ -715,12 +766,18 @@
                 </td>
               </tr>
               <tr>
-                <td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border-radius:0 0 12px 12px;border:2px solid #DCE4FF;border-top:0;border-bottom:4px solid #3B4FE4;padding:11px 12px 13px 12px;">
-                  <div style="font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#3B4FE4;">🎒&nbsp; 11-15 ans · 2 semaines</div>
-                  <div style="padding-top:6px;font-size:16px;line-height:1.25;font-weight:700;color:#1D2057;letter-spacing:-.01em;">Stage Cambridge English<br>Collégiens</div>
-                  <div style="padding-top:6px;font-size:12px;line-height:1.5;color:#48536B;">Arriver en septembre <strong style="font-weight:700;">déjà remis dedans</strong>, pas en train de rattraper.</div>
-                  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:8px;"><tr><td width="14" valign="top" style="padding:0 5px 4px 0;font-size:12px;line-height:1.45;color:#3B4FE4;">✓</td><td valign="top" style="padding:0 0 4px 0;font-size:12px;line-height:1.45;color:#48536B;">Les quatre compétences remises à niveau</td></tr><tr><td width="14" valign="top" style="padding:0 5px 4px 0;font-size:12px;line-height:1.45;color:#3B4FE4;">✓</td><td valign="top" style="padding:0 0 4px 0;font-size:12px;line-height:1.45;color:#48536B;">Préparation aux examens Key et Preliminary</td></tr><tr><td width="14" valign="top" style="padding:0 5px 4px 0;font-size:12px;line-height:1.45;color:#3B4FE4;">✓</td><td valign="top" style="padding:0 0 4px 0;font-size:12px;line-height:1.45;color:#48536B;">Dialogues, débats et prise de parole</td></tr></table>
-                  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;">
+                <td bgcolor="#FFFFFF" valign="top" style="background-color:#FFFFFF;border-radius:0 0 12px 12px;border:2px solid #DCE4FF;border-top:0;border-bottom:4px solid #3B4FE4;padding:11px 12px 13px 12px;">
+                  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td valign="top" height="232" style="height:232px;">
+                        <div style="font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#3B4FE4;">🎒&nbsp; 11-15 ans · 2 semaines</div>
+                        <div style="padding-top:6px;font-size:16px;line-height:1.25;font-weight:700;color:#1D2057;letter-spacing:-.01em;">Stage Cambridge English<br>Collégiens</div>
+                        <div style="padding-top:6px;font-size:12px;line-height:1.5;color:#48536B;">Arriver en septembre <strong style="font-weight:700;">déjà remis dedans</strong>, pas en train de rattraper.</div>
+                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:8px;"><tr><td width="14" valign="top" style="padding:0 5px 4px 0;font-size:12px;line-height:1.45;color:#3B4FE4;">✓</td><td valign="top" style="padding:0 0 4px 0;font-size:12px;line-height:1.45;color:#48536B;">Les quatre compétences remises à niveau</td></tr><tr><td width="14" valign="top" style="padding:0 5px 4px 0;font-size:12px;line-height:1.45;color:#3B4FE4;">✓</td><td valign="top" style="padding:0 0 4px 0;font-size:12px;line-height:1.45;color:#48536B;">Préparation aux examens Key et Preliminary</td></tr><tr><td width="14" valign="top" style="padding:0 5px 4px 0;font-size:12px;line-height:1.45;color:#3B4FE4;">✓</td><td valign="top" style="padding:0 0 4px 0;font-size:12px;line-height:1.45;color:#48536B;">Dialogues, débats et prise de parole</td></tr></table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;">
                   <tr>
                     <td valign="middle">
                       <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
@@ -731,7 +788,9 @@
                       <a href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter%20et%20je%20souhaite%20inscrire%20mon%20enfant%20au%20stage%20de%20pr%C3%A9-rentr%C3%A9e%20%C2%AB%20Stage%20Cambridge%20English%20%E2%80%94%20Coll%C3%A9giens%20%C2%BB%20du%2017%20au%2028%20ao%C3%BBt.%20Pouvez-vous%20me%20donner%20les%20jours%20et%20les%20horaires%20%3F" class="mlc-btn" style="display:inline-block;background-color:#3B4FE4;color:#FFFFFF;font-size:13px;font-weight:700;line-height:1.2;text-decoration:none;padding:9px 15px;border-radius:999px;white-space:nowrap;">Réserver&nbsp;→</a>
                     </td>
                   </tr>
-                </table>
+                </table></td>
+                    </tr>
+                  </table>
                 </td>
               </tr>
             </table></td></tr>
@@ -934,17 +993,48 @@
 
 
 <!-- ═══════════════════════════════════════════════════════════════════
-     5 · L'APPEL FINAL
+     5 · LE MOT DE LA PRÉSIDENTE + L'APPEL FINAL — FUSIONNÉS (demandé)
+     Avant : deux blocs bleu nuit à la suite, chacun son bouton WhatsApp
+     vers le MÊME lien. Doublon visuel et doublon d'appel. Maintenant un
+     seul bloc : la citation donne la chaleur, l'urgence des 6 places donne
+     la raison d'agir maintenant, UN bouton conclut.
+     Le mot de la présidente reste le bloc de marque de toutes les
+     newsletters — même citation, même portrait. Seul l'appel qui suit est
+     propre au sujet.
+     La pastille du portrait est ronde DANS le PNG — pas de border-radius,
+     Outlook la carrerait.
      ═══════════════════════════════════════════════════════════════════ -->
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin-top:40px;">
   <tr>
-    <td bgcolor="#1D2057" style="background-color:#1D2057;padding:26px 20px 28px 20px;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;text-align:center;">
-      <div style="font-size:22px;line-height:1.3;font-weight:700;color:#FFFFFF;">
+    <td bgcolor="#1D2057" style="background-color:#1D2057;background-image:repeating-linear-gradient(135deg,rgba(255,255,255,.04) 0 2px,rgba(255,255,255,0) 2px 11px);padding:28px 22px 30px 22px;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">
+
+      <div style="font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#8A91C4;padding-bottom:16px;"><span style="color:#FFDD73;">◆</span>&nbsp; Le mot de la présidente</div>
+
+      <div style="font-size:21px;line-height:1.4;font-weight:700;color:#FFFFFF;">
+        <span style="color:#FFDD73;font-size:34px;line-height:1;">«</span> Un projet linguistique solide commence par une vraie rencontre. <span style="color:#FFDD73;font-size:34px;line-height:1;">»</span>
+      </div>
+
+      <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-top:18px;">
+        <tr>
+          <td width="84" valign="middle" style="padding:0 16px 0 0;">
+            <img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/avatar-fondatrice.png" alt="Shirin ZEIN ASSI" width="84" height="84" border="0" style="display:block;width:84px;height:84px;border:0;outline:none;">
+          </td>
+          <td valign="middle">
+            <div style="font-size:16px;line-height:1.4;font-weight:700;color:#FFFFFF;">Shirin ZEIN ASSI</div>
+            <div style="font-size:13px;line-height:1.45;color:#8A91C4;padding-top:4px;">Présidente-fondatrice<br>de MALAC</div>
+          </td>
+        </tr>
+      </table>
+
+      <div style="border-top:2px dotted #3A4699;font-size:1px;line-height:1px;margin:24px 0;">&nbsp;</div>
+
+      <div style="font-size:22px;line-height:1.3;font-weight:700;color:#FFFFFF;text-align:center;">
         6 places par groupe.<br><span style="color:#FFDD73;">Ça part vite</span> 💙
       </div>
-      <div style="padding-top:11px;font-size:14px;line-height:1.6;color:#B9C3EE;">
+      <div style="padding-top:11px;font-size:14px;line-height:1.6;color:#B9C3EE;text-align:center;">
         Dites-nous l'âge de votre enfant et le stage qui vous intéresse&nbsp;: on vous donne les jours, les horaires et les places restantes.
       </div>
+
       <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="margin:20px auto 0 auto;">
         <tr>
           <td align="center">
@@ -960,62 +1050,6 @@
           </td>
         </tr>
       </table>
-    </td>
-  </tr>
-</table>
-
-
-<!-- ═══════════════════════════════════════════════════════════════════
-     6 · LE MOT DE LA PRÉSIDENTE — le bloc de marque, présent dans TOUTES
-     les newsletters (consigne) : même citation, même portrait, même bouton
-     WhatsApp. Seuls changent le lien (message pré-rempli du sujet) et la
-     palette, alignée sur celle-ci (#1D2057 au lieu du bleu nuit habituel).
-     La pastille du portrait est ronde DANS le PNG — pas de border-radius,
-     Outlook la carrerait.
-     ═══════════════════════════════════════════════════════════════════ -->
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin-top:40px;">
-  <tr>
-    <td bgcolor="#1D2057" style="background-color:#1D2057;background-image:repeating-linear-gradient(135deg,rgba(255,255,255,.04) 0 2px,rgba(255,255,255,0) 2px 11px);padding:28px 22px 30px 22px;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">
-
-      <div style="font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#8A91C4;padding-bottom:16px;"><span style="color:#FFDD73;">◆</span>&nbsp; Le mot de la présidente</div>
-
-      <div style="font-size:21px;line-height:1.4;font-weight:700;color:#FFFFFF;">
-        <span style="color:#FFDD73;font-size:34px;line-height:1;">«</span> Un projet linguistique solide commence par une vraie rencontre. <span style="color:#FFDD73;font-size:34px;line-height:1;">»</span>
-      </div>
-
-      <div style="font-size:15px;line-height:1.6;color:#C9D0F2;padding-top:16px;">
-        On vous attend à l'Institut MALAC. Au plaisir d'échanger avec vous 💛
-      </div>
-
-      <div style="border-top:2px dotted #3A4699;font-size:1px;line-height:1px;margin:22px 0;">&nbsp;</div>
-
-      <table role="presentation" cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td width="84" valign="middle" style="padding:0 16px 24px 0;">
-            <img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/avatar-fondatrice.png" alt="Shirin ZEIN ASSI" width="84" height="84" border="0" style="display:block;width:84px;height:84px;border:0;outline:none;">
-          </td>
-          <td valign="middle" style="padding:0 0 24px 0;">
-            <div style="font-size:16px;line-height:1.4;font-weight:700;color:#FFFFFF;">Shirin ZEIN ASSI</div>
-            <div style="font-size:13px;line-height:1.45;color:#8A91C4;padding-top:4px;">Présidente-fondatrice<br>de MALAC</div>
-          </td>
-        </tr>
-      </table>
-
-      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td align="center">
-            <!--[if mso]>
-            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter%20et%20je%20souhaite%20des%20informations%20sur%20vos%20stages%20de%20pr%C3%A9-rentr%C3%A9e%20100%20%25%20Zoom%20du%2017%20au%2028%20ao%C3%BBt." style="height:50px;v-text-anchor:middle;width:260px;" arcsize="50%" stroke="f" fillcolor="#25D366">
-              <w:anchorlock/>
-              <center style="color:#ffffff;font-family:Arial,sans-serif;font-size:16px;font-weight:bold;">Discutez avec nous</center>
-            </v:roundrect>
-            <![endif]-->
-            <!--[if !mso]><!-->
-            <a href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter%20et%20je%20souhaite%20des%20informations%20sur%20vos%20stages%20de%20pr%C3%A9-rentr%C3%A9e%20100%20%25%20Zoom%20du%2017%20au%2028%20ao%C3%BBt." class="mlc-btn" style="display:inline-block;background-color:#25D366;color:#FFFFFF;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;font-size:16px;font-weight:700;line-height:24px;text-decoration:none;padding:13px 30px;border-radius:999px;"><img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/reseaux/whatsapp.png" alt="" width="24" height="24" border="0" style="width:24px;height:24px;border:0;outline:none;vertical-align:middle;margin-right:9px;">Discutez avec nous</a>
-            <!--<![endif]-->
-          </td>
-        </tr>
-      </table>
 
     </td>
   </tr>
@@ -1023,7 +1057,7 @@
 
 
 <!-- ═══════════════════════════════════════════════════════════════════
-     7 · SIGNATURE ET PIED DE PAGE
+     6 · SIGNATURE ET PIED DE PAGE
      ═══════════════════════════════════════════════════════════════════ -->
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">
   <tr>
