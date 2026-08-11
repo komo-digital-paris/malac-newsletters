@@ -148,24 +148,26 @@
      2 · LES DEUX PUBLICS — jaune pour juillet, bleu roi pour les nouveaux.
      Deux aplats pleins : c'est aussi le premier geste « couleurs vivantes ».
      ═══════════════════════════════════════════════════════════════════ -->
+<!-- Côte à côte (demandé), et non empilés. Deux <td> à 50 % : à 320 px
+     chaque colonne fait ~140 px — étroit mais lisible à 13 px, vérifié par
+     apercu.js. L'ombre est franche : même couleur que le bloc, 40 %
+     d'opacité, décalage 6/6, aucun flou. -->
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">
   <tr>
-    <td style="padding:24px 4px 0 4px;">
+    <td width="50%" valign="top" style="padding:36px 7px 0 4px;">
       <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
         <tr>
-          <td bgcolor="#FFDD73" style="background-color:#FFDD73;border-radius:10px;padding:15px 17px;font-size:14px;line-height:1.55;color:#1D2057;">
-            💙 <strong style="font-weight:700;">Vous étiez là en juillet ?</strong> On continue l'aventure deux semaines de plus — et vous gardez <strong style="font-weight:700;">20 € de remise</strong> sur la formule complète.
+          <td bgcolor="#FFDD73" style="background-color:#FFDD73;border-radius:10px;box-shadow:6px 6px 0 rgba(255,221,115,.4);padding:14px 15px;font-size:13px;line-height:1.55;color:#1D2057;">
+            💙 <strong style="font-weight:700;">Vous étiez là en juillet ?</strong><br>On continue l'aventure deux semaines de plus — et vous gardez <strong style="font-weight:700;">20 € de remise</strong> sur la formule complète.
           </td>
         </tr>
       </table>
     </td>
-  </tr>
-  <tr>
-    <td style="padding:10px 4px 0 4px;">
+    <td width="50%" valign="top" style="padding:36px 4px 0 7px;">
       <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
         <tr>
-          <td bgcolor="#3B4FE4" style="background-color:#3B4FE4;border-radius:10px;padding:15px 17px;font-size:14px;line-height:1.55;color:#FFFFFF;">
-            🎒 <strong style="font-weight:700;">Vous nous découvrez ?</strong> Deux semaines suffisent pour arriver en septembre déjà lancé, au lieu de passer le premier mois à rattraper.
+          <td bgcolor="#3B4FE4" style="background-color:#3B4FE4;border-radius:10px;box-shadow:6px 6px 0 rgba(59,79,228,.4);padding:14px 15px;font-size:13px;line-height:1.55;color:#FFFFFF;">
+            🎒 <strong style="font-weight:700;">Vous nous découvrez ?</strong><br>Deux semaines suffisent pour arriver en septembre déjà lancé, au lieu de passer le premier mois à rattraper.
           </td>
         </tr>
       </table>
@@ -179,7 +181,7 @@
      ═══════════════════════════════════════════════════════════════════ -->
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">
   <tr>
-    <td style="padding:26px 4px 10px 4px;font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#6B72A0;">
+    <td style="padding:40px 4px 10px 4px;font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#6B72A0;">
       <span style="color:#FFDD73;">◆</span>&nbsp; Les 8 stages
     </td>
   </tr>
@@ -189,7 +191,7 @@
     </td>
   </tr>
   <tr>
-    <td style="padding:0 4px 6px 4px;">
+    <td style="padding:0 4px 10px 4px;">
       <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
         <tr>
           <td bgcolor="#1D2057" style="background-color:#1D2057;border-radius:10px;padding:14px 17px;font-size:13px;line-height:1.85;color:#C9D0F2;">
@@ -204,51 +206,41 @@
 </table>
 
 <!-- ═══════════════════════════════════════════════════════════════════
-     LES FICHES — sur bande bleu pâle pleine largeur, comme le fond du
-     carrousel Instagram : les cartes blanches ressortent au lieu de se
-     fondre dans la page. (« C'est un peu fade » venait surtout de là :
-     cartes blanches sur fond blanc.)
+     LES FICHES — une BANDE de couleur par langue (demandé) :
+     vert = arabe · doré = Kitabi · bleu = anglais · jaune = espagnol.
+     Chaque bande est autonome (bandeau + consigne + fiches), avec 18 px
+     d'air entre deux bandes : la séparation se lit à la couleur ET à
+     l'espace. Chaque bande porte son table-layout:fixed — sans lui, le <td>
+     s'élargirait pour contenir la rangée défilante (824 px) au lieu de la
+     laisser défiler, et toute la newsletter sortirait de la colonne.
      ═══════════════════════════════════════════════════════════════════ -->
-<!-- table-layout:fixed est OBLIGATOIRE ici : sans lui, le <td> s'élargit
-     pour contenir la rangée défilante (824 px) au lieu de la laisser défiler,
-     et toute la newsletter sort de la colonne. Avec lui, la cellule garde la
-     largeur de la colonne et le surplus part dans le défilement. -->
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;table-layout:fixed;margin-top:8px;">
-  <tr>
-    <td bgcolor="#EBF1FF" style="background-color:#EBF1FF;border-radius:14px;padding:4px 12px 20px 12px;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">
 
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">
-  <tr><td style="padding:18px 0 0 0;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;table-layout:fixed;margin-top:20px;">
+  <tr>
+    <td bgcolor="#E6F3EA" style="background-color:#E6F3EA;border-radius:14px;padding:12px 12px 16px 12px;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
         <tr>
-          <td bgcolor="#3B4FE4" style="background-color:#3B4FE4;border-radius:10px;padding:12px 15px;">
-            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-              <tr>
-                <td valign="middle" style="font-size:16px;font-weight:700;letter-spacing:.02em;color:#FFFFFF;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">🇸🇦 Arabe</td>
-                <td valign="middle" align="right">
-                  <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
-                    <tr><td bgcolor="#FFDD73" style="background-color:#FFDD73;border-radius:999px;padding:5px 12px;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#1D2057;white-space:nowrap;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">3 stages</td></tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
+          <td align="center" style="padding:8px 0 0 0;">
+            <img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/drapeau-arabe.png" alt="" width="56" height="56" border="0" style="width:56px;height:56px;border:0;outline:none;">
+            <div style="padding-top:8px;font-size:26px;line-height:1.2;font-weight:700;letter-spacing:-.01em;color:#16793D;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">Arabe</div>
+            <div style="padding-top:3px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#6B72A0;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">3 stages</div>
           </td>
         </tr>
-      </table></td></tr>
-  <tr><td><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin-top:10px;">
+      </table>
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin-top:12px;">
         <tr>
           <td align="center">
             <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
-              <tr><td bgcolor="#FFDD73" style="background-color:#FFDD73;border-radius:999px;padding:7px 16px;font-size:12px;font-weight:700;color:#1D2057;white-space:nowrap;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">👉&nbsp; Glissez pour voir les 3 stages&nbsp;→</td></tr>
+              <tr><td bgcolor="#1D2057" style="background-color:#1D2057;border-radius:999px;padding:7px 16px;font-size:12px;font-weight:700;color:#FFFFFF;white-space:nowrap;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">👆&nbsp; Glissez, ou touchez les flèches&nbsp;<span style="color:#FFDD73;">◀&nbsp;▶</span></td></tr>
             </table>
           </td>
         </tr>
-      </table></td></tr>
-  <tr><td style="padding:10px 0 0 0;"></td></tr>
-</table>
+      </table>
+      <div style="height:12px;line-height:12px;font-size:1px;">&nbsp;</div>
 <!--[if !mso]><!-->
-<div data-defile style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
-  <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">
-    <tr><td valign="top" style="padding:0 10px 4px 0;"><table role="presentation" width="264" cellpadding="0" cellspacing="0" border="0" style="width:264px;border-collapse:collapse;">
+      <div data-defile style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">
+          <tr><td valign="top" style="padding:0 10px 4px 0;"><table role="presentation" width="264" cellpadding="0" cellspacing="0" border="0" id="stage-arabe-1" style="width:264px;border-collapse:collapse;">
               <tr>
                 <td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border-radius:12px 12px 0 0;border:2px solid #DCE4FF;border-bottom:0;padding:8px 12px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
                   <tr>
@@ -282,7 +274,7 @@
                 </table>
                 </td>
               </tr>
-            </table></td><td valign="top" style="padding:0 10px 4px 0;"><table role="presentation" width="264" cellpadding="0" cellspacing="0" border="0" style="width:264px;border-collapse:collapse;">
+            </table></td><td valign="top" style="padding:0 10px 4px 0;"><table role="presentation" width="264" cellpadding="0" cellspacing="0" border="0" id="stage-arabe-2" style="width:264px;border-collapse:collapse;">
               <tr>
                 <td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border-radius:12px 12px 0 0;border:2px solid #DCE4FF;border-bottom:0;padding:8px 12px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
                   <tr>
@@ -316,7 +308,7 @@
                 </table>
                 </td>
               </tr>
-            </table></td><td valign="top" style="padding:0 10px 4px 0;"><table role="presentation" width="264" cellpadding="0" cellspacing="0" border="0" style="width:264px;border-collapse:collapse;">
+            </table></td><td valign="top" style="padding:0 10px 4px 0;"><table role="presentation" width="264" cellpadding="0" cellspacing="0" border="0" id="stage-arabe-3" style="width:264px;border-collapse:collapse;">
               <tr>
                 <td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border-radius:12px 12px 0 0;border:2px solid #DCE4FF;border-bottom:0;padding:8px 12px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
                   <tr>
@@ -351,11 +343,18 @@
                 </td>
               </tr>
             </table></td></tr>
-  </table>
-</div>
+        </table>
+      </div>
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:12px;">
+        <tr>
+          <td align="center">
+            <a href="#stage-arabe-1" data-sens="-1" class="mlc-fleche" style="display:inline-block;width:34px;height:34px;line-height:34px;border-radius:999px;background-color:#FFDD73;color:#1D2057;font-size:14px;font-weight:700;text-align:center;text-decoration:none;vertical-align:middle;">◀</a><span style="display:inline-block;width:7px;">&nbsp;</span><a href="#stage-arabe-1" class="mlc-fleche" style="display:inline-block;width:28px;height:28px;line-height:28px;border-radius:999px;background-color:#FFFFFF;color:#16793D;font-size:12px;font-weight:700;text-align:center;text-decoration:none;vertical-align:middle;margin:0 3px;">1</a><a href="#stage-arabe-2" class="mlc-fleche" style="display:inline-block;width:28px;height:28px;line-height:28px;border-radius:999px;background-color:#FFFFFF;color:#16793D;font-size:12px;font-weight:700;text-align:center;text-decoration:none;vertical-align:middle;margin:0 3px;">2</a><a href="#stage-arabe-3" class="mlc-fleche" style="display:inline-block;width:28px;height:28px;line-height:28px;border-radius:999px;background-color:#FFFFFF;color:#16793D;font-size:12px;font-weight:700;text-align:center;text-decoration:none;vertical-align:middle;margin:0 3px;">3</a><span style="display:inline-block;width:7px;">&nbsp;</span><a href="#stage-arabe-3" data-sens="1" class="mlc-fleche" style="display:inline-block;width:34px;height:34px;line-height:34px;border-radius:999px;background-color:#FFDD73;color:#1D2057;font-size:14px;font-weight:700;text-align:center;text-decoration:none;vertical-align:middle;">▶</a>
+          </td>
+        </tr>
+      </table>
 <!--<![endif]-->
 <!--[if mso]>
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;"><tr><td style="padding:0 0 12px 0;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;"><tr><td style="padding:0 0 12px 0;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
               <tr>
                 <td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border-radius:12px 12px 0 0;border:2px solid #DCE4FF;border-bottom:0;padding:9px 14px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
                   <tr>
@@ -459,39 +458,36 @@
               </tr>
             </table></td></tr></table>
 <![endif]-->
+    </td>
+  </tr>
+</table>
 
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">
-  <tr><td style="padding:18px 0 0 0;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;table-layout:fixed;margin-top:20px;">
+  <tr>
+    <td bgcolor="#F5E9CB" style="background-color:#F5E9CB;border-radius:14px;padding:12px 12px 16px 12px;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
         <tr>
-          <td bgcolor="#3B4FE4" style="background-color:#3B4FE4;border-radius:10px;padding:12px 15px;">
-            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-              <tr>
-                <td valign="middle" style="font-size:16px;font-weight:700;letter-spacing:.02em;color:#FFFFFF;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">📖 Kitabi</td>
-                <td valign="middle" align="right">
-                  <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
-                    <tr><td bgcolor="#FFDD73" style="background-color:#FFDD73;border-radius:999px;padding:5px 12px;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#1D2057;white-space:nowrap;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">2 stages</td></tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
+          <td align="center" style="padding:8px 0 0 0;">
+            <img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/drapeau-eveil.png" alt="" width="56" height="56" border="0" style="width:56px;height:56px;border:0;outline:none;">
+            <div style="padding-top:8px;font-size:26px;line-height:1.2;font-weight:700;letter-spacing:-.01em;color:#A87400;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">Kitabi</div>
+            <div style="padding-top:3px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#6B72A0;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">2 stages</div>
           </td>
         </tr>
-      </table></td></tr>
-  <tr><td><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin-top:10px;">
+      </table>
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin-top:12px;">
         <tr>
           <td align="center">
             <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
-              <tr><td bgcolor="#FFDD73" style="background-color:#FFDD73;border-radius:999px;padding:7px 16px;font-size:12px;font-weight:700;color:#1D2057;white-space:nowrap;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">👉&nbsp; Glissez pour voir les 2 stages&nbsp;→</td></tr>
+              <tr><td bgcolor="#1D2057" style="background-color:#1D2057;border-radius:999px;padding:7px 16px;font-size:12px;font-weight:700;color:#FFFFFF;white-space:nowrap;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">👆&nbsp; Glissez, ou touchez les flèches&nbsp;<span style="color:#FFDD73;">◀&nbsp;▶</span></td></tr>
             </table>
           </td>
         </tr>
-      </table></td></tr>
-  <tr><td style="padding:10px 0 0 0;"></td></tr>
-</table>
+      </table>
+      <div style="height:12px;line-height:12px;font-size:1px;">&nbsp;</div>
 <!--[if !mso]><!-->
-<div data-defile style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
-  <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">
-    <tr><td valign="top" style="padding:0 10px 4px 0;"><table role="presentation" width="264" cellpadding="0" cellspacing="0" border="0" style="width:264px;border-collapse:collapse;">
+      <div data-defile style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">
+          <tr><td valign="top" style="padding:0 10px 4px 0;"><table role="presentation" width="264" cellpadding="0" cellspacing="0" border="0" id="stage-kitabi-1" style="width:264px;border-collapse:collapse;">
               <tr>
                 <td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border-radius:12px 12px 0 0;border:2px solid #DCE4FF;border-bottom:0;padding:8px 12px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
                   <tr>
@@ -506,11 +502,11 @@
                 </td>
               </tr>
               <tr>
-                <td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border-radius:0 0 12px 12px;border:2px solid #DCE4FF;border-top:0;border-bottom:4px solid #7B3FA0;padding:11px 12px 13px 12px;">
-                  <div style="font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#7B3FA0;">⭐&nbsp; 6-11 ans · 2 semaines</div>
+                <td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border-radius:0 0 12px 12px;border:2px solid #DCE4FF;border-top:0;border-bottom:4px solid #A87400;padding:11px 12px 13px 12px;">
+                  <div style="font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#A87400;">⭐&nbsp; 6-11 ans · 2 semaines</div>
                   <div style="padding-top:6px;font-size:16px;line-height:1.25;font-weight:700;color:#1D2057;letter-spacing:-.01em;">Stage Kitabi<br>Niveau 1</div>
                   <div style="padding-top:6px;font-size:12px;line-height:1.5;color:#48536B;">Le Juz Amma à son rythme : <strong style="font-weight:700;">on comprend avant de mémoriser</strong>.</div>
-                  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:8px;"><tr><td width="14" valign="top" style="padding:0 5px 4px 0;font-size:12px;line-height:1.45;color:#7B3FA0;">✓</td><td valign="top" style="padding:0 0 4px 0;font-size:12px;line-height:1.45;color:#48536B;">15 sourates à mémoriser et réciter progressivement</td></tr><tr><td width="14" valign="top" style="padding:0 5px 4px 0;font-size:12px;line-height:1.45;color:#7B3FA0;">✓</td><td valign="top" style="padding:0 0 4px 0;font-size:12px;line-height:1.45;color:#48536B;">Adab : respect, politesse, honnêteté, entraide</td></tr><tr><td width="14" valign="top" style="padding:0 5px 4px 0;font-size:12px;line-height:1.45;color:#7B3FA0;">✓</td><td valign="top" style="padding:0 0 4px 0;font-size:12px;line-height:1.45;color:#48536B;">Jeux et participation active à chaque séance</td></tr></table>
+                  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:8px;"><tr><td width="14" valign="top" style="padding:0 5px 4px 0;font-size:12px;line-height:1.45;color:#A87400;">✓</td><td valign="top" style="padding:0 0 4px 0;font-size:12px;line-height:1.45;color:#48536B;">15 sourates à mémoriser et réciter progressivement</td></tr><tr><td width="14" valign="top" style="padding:0 5px 4px 0;font-size:12px;line-height:1.45;color:#A87400;">✓</td><td valign="top" style="padding:0 0 4px 0;font-size:12px;line-height:1.45;color:#48536B;">Adab : respect, politesse, honnêteté, entraide</td></tr><tr><td width="14" valign="top" style="padding:0 5px 4px 0;font-size:12px;line-height:1.45;color:#A87400;">✓</td><td valign="top" style="padding:0 0 4px 0;font-size:12px;line-height:1.45;color:#48536B;">Jeux et participation active à chaque séance</td></tr></table>
                   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;">
                   <tr>
                     <td valign="middle">
@@ -525,7 +521,7 @@
                 </table>
                 </td>
               </tr>
-            </table></td><td valign="top" style="padding:0 10px 4px 0;"><table role="presentation" width="264" cellpadding="0" cellspacing="0" border="0" style="width:264px;border-collapse:collapse;">
+            </table></td><td valign="top" style="padding:0 10px 4px 0;"><table role="presentation" width="264" cellpadding="0" cellspacing="0" border="0" id="stage-kitabi-2" style="width:264px;border-collapse:collapse;">
               <tr>
                 <td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border-radius:12px 12px 0 0;border:2px solid #DCE4FF;border-bottom:0;padding:8px 12px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
                   <tr>
@@ -540,11 +536,11 @@
                 </td>
               </tr>
               <tr>
-                <td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border-radius:0 0 12px 12px;border:2px solid #DCE4FF;border-top:0;border-bottom:4px solid #7B3FA0;padding:11px 12px 13px 12px;">
-                  <div style="font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#7B3FA0;">🎧&nbsp; 12-17 ans · 2 semaines</div>
+                <td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border-radius:0 0 12px 12px;border:2px solid #DCE4FF;border-top:0;border-bottom:4px solid #A87400;padding:11px 12px 13px 12px;">
+                  <div style="font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#A87400;">🎧&nbsp; 12-17 ans · 2 semaines</div>
                   <div style="padding-top:6px;font-size:16px;line-height:1.25;font-weight:700;color:#1D2057;letter-spacing:-.01em;">Stage Kitabi<br>Ado</div>
                   <div style="padding-top:6px;font-size:12px;line-height:1.5;color:#48536B;">Le même programme, mais <strong style="font-weight:700;">sur le ton qu'un ado accepte d'écouter</strong>.</div>
-                  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:8px;"><tr><td width="14" valign="top" style="padding:0 5px 4px 0;font-size:12px;line-height:1.45;color:#7B3FA0;">✓</td><td valign="top" style="padding:0 0 4px 0;font-size:12px;line-height:1.45;color:#48536B;">Les sourates du Juz Amma et le sens des versets</td></tr><tr><td width="14" valign="top" style="padding:0 5px 4px 0;font-size:12px;line-height:1.45;color:#7B3FA0;">✓</td><td valign="top" style="padding:0 0 4px 0;font-size:12px;line-height:1.45;color:#48536B;">Adab et valeurs du quotidien, discutées</td></tr><tr><td width="14" valign="top" style="padding:0 5px 4px 0;font-size:12px;line-height:1.45;color:#7B3FA0;">✓</td><td valign="top" style="padding:0 0 4px 0;font-size:12px;line-height:1.45;color:#48536B;">Quiz, challenges et projets créatifs</td></tr></table>
+                  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:8px;"><tr><td width="14" valign="top" style="padding:0 5px 4px 0;font-size:12px;line-height:1.45;color:#A87400;">✓</td><td valign="top" style="padding:0 0 4px 0;font-size:12px;line-height:1.45;color:#48536B;">Les sourates du Juz Amma et le sens des versets</td></tr><tr><td width="14" valign="top" style="padding:0 5px 4px 0;font-size:12px;line-height:1.45;color:#A87400;">✓</td><td valign="top" style="padding:0 0 4px 0;font-size:12px;line-height:1.45;color:#48536B;">Adab et valeurs du quotidien, discutées</td></tr><tr><td width="14" valign="top" style="padding:0 5px 4px 0;font-size:12px;line-height:1.45;color:#A87400;">✓</td><td valign="top" style="padding:0 0 4px 0;font-size:12px;line-height:1.45;color:#48536B;">Quiz, challenges et projets créatifs</td></tr></table>
                   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;">
                   <tr>
                     <td valign="middle">
@@ -560,11 +556,18 @@
                 </td>
               </tr>
             </table></td></tr>
-  </table>
-</div>
+        </table>
+      </div>
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:12px;">
+        <tr>
+          <td align="center">
+            <a href="#stage-kitabi-1" data-sens="-1" class="mlc-fleche" style="display:inline-block;width:34px;height:34px;line-height:34px;border-radius:999px;background-color:#FFDD73;color:#1D2057;font-size:14px;font-weight:700;text-align:center;text-decoration:none;vertical-align:middle;">◀</a><span style="display:inline-block;width:7px;">&nbsp;</span><a href="#stage-kitabi-1" class="mlc-fleche" style="display:inline-block;width:28px;height:28px;line-height:28px;border-radius:999px;background-color:#FFFFFF;color:#A87400;font-size:12px;font-weight:700;text-align:center;text-decoration:none;vertical-align:middle;margin:0 3px;">1</a><a href="#stage-kitabi-2" class="mlc-fleche" style="display:inline-block;width:28px;height:28px;line-height:28px;border-radius:999px;background-color:#FFFFFF;color:#A87400;font-size:12px;font-weight:700;text-align:center;text-decoration:none;vertical-align:middle;margin:0 3px;">2</a><span style="display:inline-block;width:7px;">&nbsp;</span><a href="#stage-kitabi-2" data-sens="1" class="mlc-fleche" style="display:inline-block;width:34px;height:34px;line-height:34px;border-radius:999px;background-color:#FFDD73;color:#1D2057;font-size:14px;font-weight:700;text-align:center;text-decoration:none;vertical-align:middle;">▶</a>
+          </td>
+        </tr>
+      </table>
 <!--<![endif]-->
 <!--[if mso]>
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;"><tr><td style="padding:0 0 12px 0;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;"><tr><td style="padding:0 0 12px 0;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
               <tr>
                 <td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border-radius:12px 12px 0 0;border:2px solid #DCE4FF;border-bottom:0;padding:9px 14px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
                   <tr>
@@ -579,11 +582,11 @@
                 </td>
               </tr>
               <tr>
-                <td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border-radius:0 0 12px 12px;border:2px solid #DCE4FF;border-top:0;border-bottom:4px solid #7B3FA0;padding:13px 15px 15px 15px;">
-                  <div style="font-size:11px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;color:#7B3FA0;">⭐&nbsp; 6-11 ans · 2 semaines</div>
+                <td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border-radius:0 0 12px 12px;border:2px solid #DCE4FF;border-top:0;border-bottom:4px solid #A87400;padding:13px 15px 15px 15px;">
+                  <div style="font-size:11px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;color:#A87400;">⭐&nbsp; 6-11 ans · 2 semaines</div>
                   <div style="padding-top:7px;font-size:19px;line-height:1.24;font-weight:700;color:#1D2057;letter-spacing:-.01em;">Stage Kitabi — Niveau 1</div>
                   <div style="padding-top:7px;font-size:14px;line-height:1.55;color:#48536B;">Le Juz Amma à son rythme : <strong style="font-weight:700;">on comprend avant de mémoriser</strong>.</div>
-                  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;"><tr><td width="16" valign="top" style="padding:0 6px 5px 0;font-size:13px;line-height:1.5;color:#7B3FA0;">✓</td><td valign="top" style="padding:0 0 5px 0;font-size:13px;line-height:1.5;color:#48536B;">15 sourates à mémoriser et réciter progressivement</td></tr><tr><td width="16" valign="top" style="padding:0 6px 5px 0;font-size:13px;line-height:1.5;color:#7B3FA0;">✓</td><td valign="top" style="padding:0 0 5px 0;font-size:13px;line-height:1.5;color:#48536B;">Adab : respect, politesse, honnêteté, entraide</td></tr><tr><td width="16" valign="top" style="padding:0 6px 5px 0;font-size:13px;line-height:1.5;color:#7B3FA0;">✓</td><td valign="top" style="padding:0 0 5px 0;font-size:13px;line-height:1.5;color:#48536B;">Jeux et participation active à chaque séance</td></tr></table>
+                  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;"><tr><td width="16" valign="top" style="padding:0 6px 5px 0;font-size:13px;line-height:1.5;color:#A87400;">✓</td><td valign="top" style="padding:0 0 5px 0;font-size:13px;line-height:1.5;color:#48536B;">15 sourates à mémoriser et réciter progressivement</td></tr><tr><td width="16" valign="top" style="padding:0 6px 5px 0;font-size:13px;line-height:1.5;color:#A87400;">✓</td><td valign="top" style="padding:0 0 5px 0;font-size:13px;line-height:1.5;color:#48536B;">Adab : respect, politesse, honnêteté, entraide</td></tr><tr><td width="16" valign="top" style="padding:0 6px 5px 0;font-size:13px;line-height:1.5;color:#A87400;">✓</td><td valign="top" style="padding:0 0 5px 0;font-size:13px;line-height:1.5;color:#48536B;">Jeux et participation active à chaque séance</td></tr></table>
                   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:12px;">
                   <tr>
                     <td valign="middle">
@@ -613,11 +616,11 @@
                 </td>
               </tr>
               <tr>
-                <td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border-radius:0 0 12px 12px;border:2px solid #DCE4FF;border-top:0;border-bottom:4px solid #7B3FA0;padding:13px 15px 15px 15px;">
-                  <div style="font-size:11px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;color:#7B3FA0;">🎧&nbsp; 12-17 ans · 2 semaines</div>
+                <td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border-radius:0 0 12px 12px;border:2px solid #DCE4FF;border-top:0;border-bottom:4px solid #A87400;padding:13px 15px 15px 15px;">
+                  <div style="font-size:11px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;color:#A87400;">🎧&nbsp; 12-17 ans · 2 semaines</div>
                   <div style="padding-top:7px;font-size:19px;line-height:1.24;font-weight:700;color:#1D2057;letter-spacing:-.01em;">Stage Kitabi — Ado</div>
                   <div style="padding-top:7px;font-size:14px;line-height:1.55;color:#48536B;">Le même programme, mais <strong style="font-weight:700;">sur le ton qu'un ado accepte d'écouter</strong>.</div>
-                  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;"><tr><td width="16" valign="top" style="padding:0 6px 5px 0;font-size:13px;line-height:1.5;color:#7B3FA0;">✓</td><td valign="top" style="padding:0 0 5px 0;font-size:13px;line-height:1.5;color:#48536B;">Les sourates du Juz Amma et le sens des versets</td></tr><tr><td width="16" valign="top" style="padding:0 6px 5px 0;font-size:13px;line-height:1.5;color:#7B3FA0;">✓</td><td valign="top" style="padding:0 0 5px 0;font-size:13px;line-height:1.5;color:#48536B;">Adab et valeurs du quotidien, discutées</td></tr><tr><td width="16" valign="top" style="padding:0 6px 5px 0;font-size:13px;line-height:1.5;color:#7B3FA0;">✓</td><td valign="top" style="padding:0 0 5px 0;font-size:13px;line-height:1.5;color:#48536B;">Quiz, challenges et projets créatifs</td></tr></table>
+                  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;"><tr><td width="16" valign="top" style="padding:0 6px 5px 0;font-size:13px;line-height:1.5;color:#A87400;">✓</td><td valign="top" style="padding:0 0 5px 0;font-size:13px;line-height:1.5;color:#48536B;">Les sourates du Juz Amma et le sens des versets</td></tr><tr><td width="16" valign="top" style="padding:0 6px 5px 0;font-size:13px;line-height:1.5;color:#A87400;">✓</td><td valign="top" style="padding:0 0 5px 0;font-size:13px;line-height:1.5;color:#48536B;">Adab et valeurs du quotidien, discutées</td></tr><tr><td width="16" valign="top" style="padding:0 6px 5px 0;font-size:13px;line-height:1.5;color:#A87400;">✓</td><td valign="top" style="padding:0 0 5px 0;font-size:13px;line-height:1.5;color:#48536B;">Quiz, challenges et projets créatifs</td></tr></table>
                   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:12px;">
                   <tr>
                     <td valign="middle">
@@ -634,39 +637,36 @@
               </tr>
             </table></td></tr></table>
 <![endif]-->
+    </td>
+  </tr>
+</table>
 
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">
-  <tr><td style="padding:18px 0 0 0;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;table-layout:fixed;margin-top:20px;">
+  <tr>
+    <td bgcolor="#E4EBFF" style="background-color:#E4EBFF;border-radius:14px;padding:12px 12px 16px 12px;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
         <tr>
-          <td bgcolor="#3B4FE4" style="background-color:#3B4FE4;border-radius:10px;padding:12px 15px;">
-            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-              <tr>
-                <td valign="middle" style="font-size:16px;font-weight:700;letter-spacing:.02em;color:#FFFFFF;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">🇬🇧 Cambridge English</td>
-                <td valign="middle" align="right">
-                  <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
-                    <tr><td bgcolor="#FFDD73" style="background-color:#FFDD73;border-radius:999px;padding:5px 12px;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#1D2057;white-space:nowrap;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">2 stages</td></tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
+          <td align="center" style="padding:8px 0 0 0;">
+            <img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/drapeau-anglais.png" alt="" width="56" height="56" border="0" style="width:56px;height:56px;border:0;outline:none;">
+            <div style="padding-top:8px;font-size:26px;line-height:1.2;font-weight:700;letter-spacing:-.01em;color:#3B4FE4;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">Cambridge English</div>
+            <div style="padding-top:3px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#6B72A0;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">2 stages</div>
           </td>
         </tr>
-      </table></td></tr>
-  <tr><td><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin-top:10px;">
+      </table>
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin-top:12px;">
         <tr>
           <td align="center">
             <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
-              <tr><td bgcolor="#FFDD73" style="background-color:#FFDD73;border-radius:999px;padding:7px 16px;font-size:12px;font-weight:700;color:#1D2057;white-space:nowrap;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">👉&nbsp; Glissez pour voir les 2 stages&nbsp;→</td></tr>
+              <tr><td bgcolor="#1D2057" style="background-color:#1D2057;border-radius:999px;padding:7px 16px;font-size:12px;font-weight:700;color:#FFFFFF;white-space:nowrap;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">👆&nbsp; Glissez, ou touchez les flèches&nbsp;<span style="color:#FFDD73;">◀&nbsp;▶</span></td></tr>
             </table>
           </td>
         </tr>
-      </table></td></tr>
-  <tr><td style="padding:10px 0 0 0;"></td></tr>
-</table>
+      </table>
+      <div style="height:12px;line-height:12px;font-size:1px;">&nbsp;</div>
 <!--[if !mso]><!-->
-<div data-defile style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
-  <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">
-    <tr><td valign="top" style="padding:0 10px 4px 0;"><table role="presentation" width="264" cellpadding="0" cellspacing="0" border="0" style="width:264px;border-collapse:collapse;">
+      <div data-defile style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">
+          <tr><td valign="top" style="padding:0 10px 4px 0;"><table role="presentation" width="264" cellpadding="0" cellspacing="0" border="0" id="stage-anglais-1" style="width:264px;border-collapse:collapse;">
               <tr>
                 <td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border-radius:12px 12px 0 0;border:2px solid #DCE4FF;border-bottom:0;padding:8px 12px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
                   <tr>
@@ -700,7 +700,7 @@
                 </table>
                 </td>
               </tr>
-            </table></td><td valign="top" style="padding:0 10px 4px 0;"><table role="presentation" width="264" cellpadding="0" cellspacing="0" border="0" style="width:264px;border-collapse:collapse;">
+            </table></td><td valign="top" style="padding:0 10px 4px 0;"><table role="presentation" width="264" cellpadding="0" cellspacing="0" border="0" id="stage-anglais-2" style="width:264px;border-collapse:collapse;">
               <tr>
                 <td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border-radius:12px 12px 0 0;border:2px solid #DCE4FF;border-bottom:0;padding:8px 12px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
                   <tr>
@@ -735,11 +735,18 @@
                 </td>
               </tr>
             </table></td></tr>
-  </table>
-</div>
+        </table>
+      </div>
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:12px;">
+        <tr>
+          <td align="center">
+            <a href="#stage-anglais-1" data-sens="-1" class="mlc-fleche" style="display:inline-block;width:34px;height:34px;line-height:34px;border-radius:999px;background-color:#FFDD73;color:#1D2057;font-size:14px;font-weight:700;text-align:center;text-decoration:none;vertical-align:middle;">◀</a><span style="display:inline-block;width:7px;">&nbsp;</span><a href="#stage-anglais-1" class="mlc-fleche" style="display:inline-block;width:28px;height:28px;line-height:28px;border-radius:999px;background-color:#FFFFFF;color:#3B4FE4;font-size:12px;font-weight:700;text-align:center;text-decoration:none;vertical-align:middle;margin:0 3px;">1</a><a href="#stage-anglais-2" class="mlc-fleche" style="display:inline-block;width:28px;height:28px;line-height:28px;border-radius:999px;background-color:#FFFFFF;color:#3B4FE4;font-size:12px;font-weight:700;text-align:center;text-decoration:none;vertical-align:middle;margin:0 3px;">2</a><span style="display:inline-block;width:7px;">&nbsp;</span><a href="#stage-anglais-2" data-sens="1" class="mlc-fleche" style="display:inline-block;width:34px;height:34px;line-height:34px;border-radius:999px;background-color:#FFDD73;color:#1D2057;font-size:14px;font-weight:700;text-align:center;text-decoration:none;vertical-align:middle;">▶</a>
+          </td>
+        </tr>
+      </table>
 <!--<![endif]-->
 <!--[if mso]>
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;"><tr><td style="padding:0 0 12px 0;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;"><tr><td style="padding:0 0 12px 0;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
               <tr>
                 <td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border-radius:12px 12px 0 0;border:2px solid #DCE4FF;border-bottom:0;padding:9px 14px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
                   <tr>
@@ -809,25 +816,24 @@
               </tr>
             </table></td></tr></table>
 <![endif]-->
+    </td>
+  </tr>
+</table>
 
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">
-  <tr><td style="padding:18px 0 10px 0;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;table-layout:fixed;margin-top:20px;">
+  <tr>
+    <td bgcolor="#FFF6CF" style="background-color:#FFF6CF;border-radius:14px;padding:12px 12px 16px 12px;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
         <tr>
-          <td bgcolor="#3B4FE4" style="background-color:#3B4FE4;border-radius:10px;padding:12px 15px;">
-            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-              <tr>
-                <td valign="middle" style="font-size:16px;font-weight:700;letter-spacing:.02em;color:#FFFFFF;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">🇪🇸 Espagnol</td>
-                <td valign="middle" align="right">
-                  <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
-                    <tr><td bgcolor="#FFDD73" style="background-color:#FFDD73;border-radius:999px;padding:5px 12px;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#1D2057;white-space:nowrap;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">1 stage</td></tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
+          <td align="center" style="padding:8px 0 0 0;">
+            <img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/drapeau-espagnol.png" alt="" width="56" height="56" border="0" style="width:56px;height:56px;border:0;outline:none;">
+            <div style="padding-top:8px;font-size:26px;line-height:1.2;font-weight:700;letter-spacing:-.01em;color:#E00E12;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">Espagnol</div>
+            <div style="padding-top:3px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#6B72A0;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">1 stage</div>
           </td>
         </tr>
-      </table></td></tr>
-  <tr><td><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+      </table>
+      <div style="height:14px;line-height:14px;font-size:1px;">&nbsp;</div>
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
               <tr>
                 <td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border-radius:12px 12px 0 0;border:2px solid #DCE4FF;border-bottom:0;padding:9px 14px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
                   <tr>
@@ -861,19 +867,18 @@
                 </table>
                 </td>
               </tr>
-            </table></td></tr>
-</table>
-
+            </table>
     </td>
   </tr>
 </table>
+
 
 <!-- ═══════════════════════════════════════════════════════════════════
      4 · LES TARIFS — repris de la slide 10 du carrousel
      ═══════════════════════════════════════════════════════════════════ -->
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">
   <tr>
-    <td style="padding:26px 4px 12px 4px;font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#6B72A0;">
+    <td style="padding:40px 4px 12px 4px;font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#6B72A0;">
       <span style="color:#FFDD73;">◆</span>&nbsp; Tarifs
     </td>
   </tr>
@@ -922,7 +927,7 @@
        un <td> ne passe pas à la ligne à 320 px, un inline-table si. -->
   <tr>
     <td style="padding:14px 4px 0 4px;font-size:0;line-height:0;">
-      <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="display:inline-table;border-collapse:collapse;margin:0 8px 8px 0;"><tr><td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border:2px solid #3B4FE4;border-radius:999px;padding:8px 15px;font-size:12px;line-height:1.2;font-weight:600;color:#1D2057;white-space:nowrap;">6 élèves maximum</td></tr></table><table role="presentation" cellpadding="0" cellspacing="0" border="0" style="display:inline-table;border-collapse:collapse;margin:0 8px 8px 0;"><tr><td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border:2px solid #3B4FE4;border-radius:999px;padding:8px 15px;font-size:12px;line-height:1.2;font-weight:600;color:#1D2057;white-space:nowrap;">3 × 45 min / semaine</td></tr></table><table role="presentation" cellpadding="0" cellspacing="0" border="0" style="display:inline-table;border-collapse:collapse;margin:0 8px 8px 0;"><tr><td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border:2px solid #3B4FE4;border-radius:999px;padding:8px 15px;font-size:12px;line-height:1.2;font-weight:600;color:#1D2057;white-space:nowrap;">Paiement en 4×</td></tr></table>
+      <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="display:inline-table;border-collapse:collapse;margin:0 8px 8px 0;"><tr><td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border:2px solid #3B4FE4;border-radius:999px;padding:8px 15px;font-size:12px;line-height:1.2;font-weight:600;color:#1D2057;white-space:nowrap;">6 élèves maximum</td></tr></table><table role="presentation" cellpadding="0" cellspacing="0" border="0" style="display:inline-table;border-collapse:collapse;margin:0 8px 8px 0;"><tr><td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border:2px solid #3B4FE4;border-radius:999px;padding:8px 15px;font-size:12px;line-height:1.2;font-weight:600;color:#1D2057;white-space:nowrap;">3 × 45 min / semaine</td></tr></table>
     </td>
   </tr>
 </table>
@@ -931,7 +936,7 @@
 <!-- ═══════════════════════════════════════════════════════════════════
      5 · L'APPEL FINAL
      ═══════════════════════════════════════════════════════════════════ -->
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin-top:30px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin-top:40px;">
   <tr>
     <td bgcolor="#1D2057" style="background-color:#1D2057;padding:26px 20px 28px 20px;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;text-align:center;">
       <div style="font-size:22px;line-height:1.3;font-weight:700;color:#FFFFFF;">
@@ -961,11 +966,68 @@
 
 
 <!-- ═══════════════════════════════════════════════════════════════════
-     6 · SIGNATURE ET PIED DE PAGE
+     6 · LE MOT DE LA PRÉSIDENTE — le bloc de marque, présent dans TOUTES
+     les newsletters (consigne) : même citation, même portrait, même bouton
+     WhatsApp. Seuls changent le lien (message pré-rempli du sujet) et la
+     palette, alignée sur celle-ci (#1D2057 au lieu du bleu nuit habituel).
+     La pastille du portrait est ronde DANS le PNG — pas de border-radius,
+     Outlook la carrerait.
+     ═══════════════════════════════════════════════════════════════════ -->
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin-top:40px;">
+  <tr>
+    <td bgcolor="#1D2057" style="background-color:#1D2057;background-image:repeating-linear-gradient(135deg,rgba(255,255,255,.04) 0 2px,rgba(255,255,255,0) 2px 11px);padding:28px 22px 30px 22px;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">
+
+      <div style="font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#8A91C4;padding-bottom:16px;"><span style="color:#FFDD73;">◆</span>&nbsp; Le mot de la présidente</div>
+
+      <div style="font-size:21px;line-height:1.4;font-weight:700;color:#FFFFFF;">
+        <span style="color:#FFDD73;font-size:34px;line-height:1;">«</span> Un projet linguistique solide commence par une vraie rencontre. <span style="color:#FFDD73;font-size:34px;line-height:1;">»</span>
+      </div>
+
+      <div style="font-size:15px;line-height:1.6;color:#C9D0F2;padding-top:16px;">
+        On vous attend à l'Institut MALAC. Au plaisir d'échanger avec vous 💛
+      </div>
+
+      <div style="border-top:2px dotted #3A4699;font-size:1px;line-height:1px;margin:22px 0;">&nbsp;</div>
+
+      <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td width="84" valign="middle" style="padding:0 16px 24px 0;">
+            <img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/avatar-fondatrice.png" alt="Shirin ZEIN ASSI" width="84" height="84" border="0" style="display:block;width:84px;height:84px;border:0;outline:none;">
+          </td>
+          <td valign="middle" style="padding:0 0 24px 0;">
+            <div style="font-size:16px;line-height:1.4;font-weight:700;color:#FFFFFF;">Shirin ZEIN ASSI</div>
+            <div style="font-size:13px;line-height:1.45;color:#8A91C4;padding-top:4px;">Présidente-fondatrice<br>de MALAC</div>
+          </td>
+        </tr>
+      </table>
+
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td align="center">
+            <!--[if mso]>
+            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter%20et%20je%20souhaite%20des%20informations%20sur%20vos%20stages%20de%20pr%C3%A9-rentr%C3%A9e%20100%20%25%20Zoom%20du%2017%20au%2028%20ao%C3%BBt." style="height:50px;v-text-anchor:middle;width:260px;" arcsize="50%" stroke="f" fillcolor="#25D366">
+              <w:anchorlock/>
+              <center style="color:#ffffff;font-family:Arial,sans-serif;font-size:16px;font-weight:bold;">Discutez avec nous</center>
+            </v:roundrect>
+            <![endif]-->
+            <!--[if !mso]><!-->
+            <a href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter%20et%20je%20souhaite%20des%20informations%20sur%20vos%20stages%20de%20pr%C3%A9-rentr%C3%A9e%20100%20%25%20Zoom%20du%2017%20au%2028%20ao%C3%BBt." class="mlc-btn" style="display:inline-block;background-color:#25D366;color:#FFFFFF;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;font-size:16px;font-weight:700;line-height:24px;text-decoration:none;padding:13px 30px;border-radius:999px;"><img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/reseaux/whatsapp.png" alt="" width="24" height="24" border="0" style="width:24px;height:24px;border:0;outline:none;vertical-align:middle;margin-right:9px;">Discutez avec nous</a>
+            <!--<![endif]-->
+          </td>
+        </tr>
+      </table>
+
+    </td>
+  </tr>
+</table>
+
+
+<!-- ═══════════════════════════════════════════════════════════════════
+     7 · SIGNATURE ET PIED DE PAGE
      ═══════════════════════════════════════════════════════════════════ -->
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">
   <tr>
-    <td style="padding:26px 4px 0 4px;font-size:15px;line-height:1.7;color:#48536B;">
+    <td style="padding:32px 4px 0 4px;font-size:15px;line-height:1.7;color:#48536B;">
       À bientôt,<br><strong style="font-weight:700;color:#1D2057;">L'équipe MALAC</strong> 🌟
     </td>
   </tr>
@@ -1006,11 +1068,36 @@
   .mlc-btn:hover { transform: translateY(-2px); opacity: .92; }
   .mlc-lien { transition: opacity .18s ease; }
   .mlc-lien:hover { opacity: .75; }
-  [data-defile] { scrollbar-width: none; }
+  .mlc-fleche { transition: transform .18s ease; }
+  .mlc-fleche:hover { transform: translateY(-2px); }
+  [data-defile] { scrollbar-width: none; scroll-behavior: smooth; }
   [data-defile]::-webkit-scrollbar { display: none; }
 </style>
 
 </div>
 <p class="pied">Version web de notre newsletter · <a href="https://malac.fr">malac.fr</a></p>
+
+<script>
+/* Les flèches des carrousels (newsletters à rangées data-defile).
+   En email, les ancres seules suffisent à peine — le défilement horizontal
+   par fragment est inconstant d'un moteur à l'autre. Ici on a le droit au
+   JavaScript : les flèches deviennent un vrai précédent/suivant
+   (data-sens="±1"), les ronds numérotés un accès direct. Sans rangée
+   défilante dans la page, ce script ne fait rien. */
+document.querySelectorAll('a.mlc-fleche').forEach(function (a) {
+  a.addEventListener('click', function (e) {
+    var cible = document.getElementById((a.getAttribute('href') || '').slice(1));
+    var rangee = cible && cible.closest('[data-defile]');
+    if (!rangee) return;
+    e.preventDefault();
+    var pas = cible.closest('td').offsetWidth;
+    var sens = a.getAttribute('data-sens');
+    var gauche = sens
+      ? (Math.round(rangee.scrollLeft / pas) + parseInt(sens, 10)) * pas
+      : cible.getBoundingClientRect().left - rangee.getBoundingClientRect().left + rangee.scrollLeft;
+    rangee.scrollTo({ left: Math.max(0, gauche), behavior: 'smooth' });
+  });
+});
+</script>
 </body>
 </html>
