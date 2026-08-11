@@ -1135,26 +1135,73 @@
 <p class="pied">Version web de notre newsletter · <a href="https://malac.fr">malac.fr</a></p>
 
 <script>
-/* Les flèches des carrousels (newsletters à rangées data-defile).
-   En email, les ancres seules suffisent à peine — le défilement horizontal
-   par fragment est inconstant d'un moteur à l'autre. Ici on a le droit au
-   JavaScript : les flèches deviennent un vrai précédent/suivant
-   (data-sens="±1"), les ronds numérotés un accès direct. Sans rangée
-   défilante dans la page, ce script ne fait rien. */
-document.querySelectorAll('a.mlc-fleche').forEach(function (a) {
-  a.addEventListener('click', function (e) {
-    var cible = document.getElementById((a.getAttribute('href') || '').slice(1));
-    var rangee = cible && cible.closest('[data-defile]');
-    if (!rangee) return;
-    e.preventDefault();
-    var pas = cible.closest('td').offsetWidth;
-    var sens = a.getAttribute('data-sens');
-    var gauche = sens
-      ? (Math.round(rangee.scrollLeft / pas) + parseInt(sens, 10)) * pas
-      : cible.getBoundingClientRect().left - rangee.getBoundingClientRect().left + rangee.scrollLeft;
-    rangee.scrollTo({ left: Math.max(0, gauche), behavior: 'smooth' });
+/* ══════════════════════════════════════════════════════════════════════
+   Les flèches des carrousels — source UNIQUE.
+   Lue à la construction par systeme/page-web.py (version web) et par
+   _construire.py (cadre d'aperçu local). Aucun client mail n'exécute de
+   JavaScript : dans l'email, les flèches restent de simples ancres et la
+   barre de défilement est le vrai moyen de navigation.
+
+   ⚠ POURQUOI ON COMPTE LES FICHES AU LIEU DE LIRE scrollLeft
+   La première version calculait la fiche suivante à partir de la position
+   courante : Math.round(rangee.scrollLeft / largeurFiche) + 1.
+   Ça paraît juste, et c'est faux — [data-defile] porte
+   scroll-behavior: smooth, donc scrollLeft est EN COURS D'ANIMATION quand
+   on clique. Mesuré en direct : au deuxième clic, scrollTo recevait 548
+   (deux fiches) au lieu de 274, et la rangée sautait une fiche ou ne
+   bougeait pas. On garde donc l'index sur la rangée elle-même : il ne
+   dépend d'aucune mesure et reste juste quel que soit le rythme des clics.
+   ══════════════════════════════════════════════════════════════════════ */
+(function () {
+  function ligneDe(rangee) {
+    var table = rangee.querySelector('table');
+    return table && table.tBodies[0] && table.tBodies[0].rows[0];
+  }
+
+  document.querySelectorAll('a.mlc-fleche').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      var cible = document.getElementById((a.getAttribute('href') || '').slice(1));
+      var rangee = cible && cible.closest('[data-defile]');
+      if (!rangee) return;
+      var ligne = ligneDe(rangee);
+      if (!ligne) return;
+      e.preventDefault();
+
+      var cellules = ligne.cells;
+      var cellule = cible.closest('td');
+      var pas = cellule.offsetWidth;
+      var sens = a.getAttribute('data-sens');
+      var i;
+
+      if (sens) {
+        i = parseInt(rangee.dataset.index || '0', 10) + parseInt(sens, 10);
+        if (i < 0) i = 0;
+        if (i > cellules.length - 1) i = cellules.length - 1;
+      } else {
+        i = Array.prototype.indexOf.call(cellules, cellule);
+      }
+
+      rangee.dataset.index = i;
+      rangee.scrollTo({ left: i * pas, behavior: 'smooth' });
+    });
   });
-});
+
+  // Le doigt et la barre de défilement bougent la rangée sans passer par les
+  // flèches : on resynchronise l'index, sinon le clic suivant repartirait de
+  // la dernière position connue des flèches.
+  document.querySelectorAll('[data-defile]').forEach(function (rangee) {
+    var attente;
+    rangee.addEventListener('scroll', function () {
+      clearTimeout(attente);
+      attente = setTimeout(function () {
+        var ligne = ligneDe(rangee);
+        if (!ligne || !ligne.cells.length) return;
+        var pas = ligne.cells[0].offsetWidth;
+        if (pas) rangee.dataset.index = Math.round(rangee.scrollLeft / pas);
+      }, 120);
+    });
+  });
+})();
 </script>
 </body>
 </html>
