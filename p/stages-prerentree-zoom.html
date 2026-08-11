@@ -242,14 +242,14 @@
         <tr>
           <td align="center">
             <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
-              <tr><td bgcolor="#1D2057" style="background-color:#1D2057;border-radius:999px;padding:7px 16px;font-size:12px;font-weight:700;color:#FFFFFF;white-space:nowrap;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">👆&nbsp; Glissez, ou touchez les flèches&nbsp;<span style="color:#FFDD73;">◀&nbsp;▶</span></td></tr>
+              <tr><td bgcolor="#1D2057" style="background-color:#1D2057;border-radius:999px;padding:7px 16px;font-size:12px;font-weight:700;color:#FFFFFF;white-space:nowrap;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">👆&nbsp; Faites défiler pour voir les 3 stages&nbsp;<span style="color:#FFDD73;">▶</span></td></tr>
             </table>
           </td>
         </tr>
       </table>
       <div style="height:12px;line-height:12px;font-size:1px;">&nbsp;</div>
 <!--[if !mso]><!-->
-      <div data-defile style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
+      <div data-defile style="overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:6px;">
         <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">
           <tr><td valign="top" style="padding:0 10px 4px 0;"><table role="presentation" width="264" cellpadding="0" cellspacing="0" border="0" id="stage-arabe-1" style="width:264px;border-collapse:collapse;">
               <tr>
@@ -513,14 +513,14 @@
         <tr>
           <td align="center">
             <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
-              <tr><td bgcolor="#1D2057" style="background-color:#1D2057;border-radius:999px;padding:7px 16px;font-size:12px;font-weight:700;color:#FFFFFF;white-space:nowrap;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">👆&nbsp; Glissez, ou touchez les flèches&nbsp;<span style="color:#FFDD73;">◀&nbsp;▶</span></td></tr>
+              <tr><td bgcolor="#1D2057" style="background-color:#1D2057;border-radius:999px;padding:7px 16px;font-size:12px;font-weight:700;color:#FFFFFF;white-space:nowrap;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">👆&nbsp; Faites défiler pour voir les 2 stages&nbsp;<span style="color:#FFDD73;">▶</span></td></tr>
             </table>
           </td>
         </tr>
       </table>
       <div style="height:12px;line-height:12px;font-size:1px;">&nbsp;</div>
 <!--[if !mso]><!-->
-      <div data-defile style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
+      <div data-defile style="overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:6px;">
         <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">
           <tr><td valign="top" style="padding:0 10px 4px 0;"><table role="presentation" width="264" cellpadding="0" cellspacing="0" border="0" id="stage-kitabi-1" style="width:264px;border-collapse:collapse;">
               <tr>
@@ -708,14 +708,14 @@
         <tr>
           <td align="center">
             <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
-              <tr><td bgcolor="#1D2057" style="background-color:#1D2057;border-radius:999px;padding:7px 16px;font-size:12px;font-weight:700;color:#FFFFFF;white-space:nowrap;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">👆&nbsp; Glissez, ou touchez les flèches&nbsp;<span style="color:#FFDD73;">◀&nbsp;▶</span></td></tr>
+              <tr><td bgcolor="#1D2057" style="background-color:#1D2057;border-radius:999px;padding:7px 16px;font-size:12px;font-weight:700;color:#FFFFFF;white-space:nowrap;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">👆&nbsp; Faites défiler pour voir les 2 stages&nbsp;<span style="color:#FFDD73;">▶</span></td></tr>
             </table>
           </td>
         </tr>
       </table>
       <div style="height:12px;line-height:12px;font-size:1px;">&nbsp;</div>
 <!--[if !mso]><!-->
-      <div data-defile style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
+      <div data-defile style="overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:6px;">
         <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">
           <tr><td valign="top" style="padding:0 10px 4px 0;"><table role="presentation" width="264" cellpadding="0" cellspacing="0" border="0" id="stage-anglais-1" style="width:264px;border-collapse:collapse;">
               <tr>
@@ -1118,8 +1118,17 @@
   .mlc-lien:hover { opacity: .75; }
   .mlc-fleche { transition: transform .18s ease; }
   .mlc-fleche:hover { transform: translateY(-2px); }
-  [data-defile] { scrollbar-width: none; scroll-behavior: smooth; }
-  [data-defile]::-webkit-scrollbar { display: none; }
+  /* ⚠ NE PAS RECACHER CETTE BARRE DE DÉFILEMENT.
+     Elle était masquée (scrollbar-width:none) : joli sur mobile, où l'on
+     glisse au doigt — mais sur ORDINATEUR il n'y a ni glissement ni
+     JavaScript dans un email. Sans barre, les fiches 2 et 3 devenaient
+     tout simplement inatteignables à la souris. On la garde donc visible,
+     juste amincie et mise aux couleurs. */
+  [data-defile] { scroll-behavior: smooth; }
+  [data-defile]::-webkit-scrollbar { height: 8px; }
+  [data-defile]::-webkit-scrollbar-track { background: rgba(29,32,87,.08); border-radius: 999px; }
+  [data-defile]::-webkit-scrollbar-thumb { background: rgba(29,32,87,.34); border-radius: 999px; }
+  [data-defile]::-webkit-scrollbar-thumb:hover { background: rgba(29,32,87,.5); }
 </style>
 
 </div>
