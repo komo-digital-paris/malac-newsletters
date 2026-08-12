@@ -472,7 +472,12 @@
 
   <tr>
     <td style="padding:0 4px 12px 4px;">
-      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+      <!-- ⚠ border-collapse:SEPARATE. En « collapse », le trait d'une cellule
+           est dessiné par le modèle de bordures fusionnées, qui ignore
+           border-radius : on voyait un CADRE CARRÉ autour d'une fiche
+           censée être arrondie. border-spacing:0 pour ne pas rouvrir
+           d'espace entre cellules. -->
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;">
         <tr>
           <td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border:2px solid #E3E8EF;border-left:6px solid #046A38;border-radius:12px;padding:16px 18px;">
             <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
@@ -531,7 +536,12 @@
 
   <tr>
     <td style="padding:0 4px;">
-      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+      <!-- ⚠ border-collapse:SEPARATE. En « collapse », le trait d'une cellule
+           est dessiné par le modèle de bordures fusionnées, qui ignore
+           border-radius : on voyait un CADRE CARRÉ autour d'une fiche
+           censée être arrondie. border-spacing:0 pour ne pas rouvrir
+           d'espace entre cellules. -->
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;">
         <tr>
           <td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border:2px solid #E3E8EF;border-left:6px solid #DA291C;border-radius:12px;padding:16px 18px;">
             <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
