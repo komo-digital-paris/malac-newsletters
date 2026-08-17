@@ -43,43 +43,32 @@
   MALAC — Newsletter « Stages de pré-rentrée EN PRÉSENTIEL, 24-28 août »
   Bloc HTML à coller dans Unlayer (bloc « HTML »).
 
+  ▸ CE FICHIER EST GÉNÉRÉ PAR _construire.py — voir sa docstring pour le
+    pourquoi des choix. Après génération, c'est CE .html qui fait foi.
+
   ▸ EN ATTENTE — 1 image propre à cette newsletter. Cherche « REMPLACER ».
       REMPLACER_URL_HERO → hero-stages-presentiel.jpg (960×542)
-    Lance systeme/publier-images.py : les URL se branchent toutes seules.
 
-  ▸ LA SOURCE DE VÉRITÉ
-    · la page  https://malac.fr/stages-vacances-en-presentiel
-    · le carrousel ~/MALAC/Carrousels/Carrousel Stage en présentiel/
-    · les programmes ~/MALAC/Stages - Programmes HTML/stages/Aout_S1_2026/
-      (er.json, arabe.json, anglais.json, chinois.json) — horaires et thèmes
-      jour par jour viennent de là, pas d'une invention.
-
-  ▸ ⚠ LE VISUEL DE COUVERTURE PORTE UNE COQUILLE
-    « Cover Carrousel stages aout.png » écrit « STAGES PRÉ-RÉNTRÉE » —
-    RÉNTRÉE avec un accent de trop. Le hero de cette newsletter est donc un
-    RECADRAGE DU TIERS BAS de ce visuel : les tarifs, les enfants et les
-    pastilles de langue, sans le titre fautif.
+  ▸ ⚠ LE VISUEL DE COUVERTURE DU CARROUSEL PORTE UNE COQUILLE
+    « Cover Carrousel stages aout.png » écrit « STAGES PRÉ-RÉNTRÉE » — un
+    accent de trop. Le hero est un RECADRAGE DE SON TIERS BAS : tarifs,
+    enfants, pastilles de langue, sans le titre fautif.
     ⚠ La coquille est en ligne sur le carrousel Instagram : à corriger là-bas.
 
-  ▸ ⚠ QUATRE ATELIERS, MAIS LE CARROUSEL N'EN ANNONCE QUE TROIS
-    Le carrousel dit « 3 langues » et ne montre qu'arabe, anglais, chinois.
-    Le SITE, lui, publie aussi le stage d'ÉVEIL RELIGIEUX (9h-10h30, mêmes
-    dates, même tarif). Cette newsletter présente les QUATRE : un parent qui
-    arrive par l'email doit voir toute l'offre. Si l'éveil religieux ne doit
-    pas être promu par email, c'est une décision à prendre — il suffit de
-    retirer la première carte.
+  ▸ ⚠ QUATRE ATELIERS, ALORS QUE LE CARROUSEL N'EN ANNONCE QUE TROIS
+    Le carrousel dit « 3 langues » et oublie l'ÉVEIL RELIGIEUX, qui a
+    pourtant sa fiche sur le site (9h-10h30, mêmes dates, même tarif) et qui
+    permet la journée complète de 9h à 17h. Pour le retirer : supprimer sa
+    ligne dans ATELIERS et régénérer.
 
-  ▸ TARIFS — 18 € l'atelier · 90 € la semaine par langue
-    Et « animation entre 2 ateliers : +5 € », qui n'a de sens que si l'enfant
-    enchaîne deux créneaux. C'est écrit à côté de la frise, pas dans les prix,
-    parce que ce n'est pas un tarif de stage mais un supplément de garde.
+  ▸ TARIFS — 18 € l'atelier · 90 € la semaine par langue.
+    « Animation entre 2 ateliers : +5 € » est à part, à côté de la frise :
+    ce n'est pas un tarif de stage mais un supplément de garde.
 
-  ▸ LE TON EST VOLONTAIREMENT PLUS ENFANTIN QUE LES AUTRES NEWSLETTERS
-    Demandé « hyper ludique ». D'où le bandeau arc-en-ciel, la couleur par
-    atelier reprise des pastilles du carrousel (arabe vert, anglais bleu,
-    chinois rouge), l'en-tête coloré sur chaque carte et les cinq jours en
-    petites étiquettes. Le socle reste la charte : tableaux, styles en ligne,
-    boutons VML.
+  ▸ LE STYLE : voir la docstring de _construire.py. En un mot — ombres
+    franches sans flou, numéros en pastille, tuiles de jour, rayures
+    diagonales, couture perforée. Aucune de ces décorations ne porte
+    d'information : un client qui les ignore toutes affiche un email complet.
   ══════════════════════════════════════════════════════════════════════
 -->
 
@@ -87,34 +76,47 @@
 <div style="display:none;font-size:1px;color:#FFFFFF;line-height:1px;max-height:0;max-width:0;opacity:0;overflow:hidden;">Arabe, anglais, chinois et éveil religieux, dans nos locaux à Massy. 18 € l'atelier, 90 € la semaine. Places limitées.</div>
 
 <!-- ═══════════════════════════════════════════════════════════════════
-     1 · L'OUVERTURE — l'urgence, en jaune
+     1 · L'OUVERTURE — le compte à rebours
      ═══════════════════════════════════════════════════════════════════ -->
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
   <tr>
-    <td bgcolor="#FDF6E9" style="background-color:#FDF6E9;padding:26px 22px 24px 22px;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">
+    <td bgcolor="#FDF6E9" style="background-color:#FDF6E9;background-image:repeating-linear-gradient(135deg,rgba(255,255,255,.6) 0 2px,rgba(255,255,255,0) 2px 13px);padding:24px 22px 24px 22px;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">
 
-      <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;">
-        <tr><td bgcolor="#FFC217" style="background-color:#FFC217;border-radius:999px;padding:8px 16px;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#173A7A;">🎒 Stages de pré-rentrée · en présentiel</td></tr>
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td valign="middle">
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;">
+              <tr><td bgcolor="#FFC217" style="background-color:#FFC217;border-radius:999px;box-shadow:4px 4px 0 rgba(255,194,23,.4);padding:8px 15px;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#173A7A;white-space:nowrap;">🎒 Stages de pré-rentrée</td></tr>
+            </table>
+          </td>
+          <!-- La pastille J-7 : c'est l'information la plus urgente de l'email,
+               elle mérite d'être lue avant le titre. -->
+          <td valign="middle" align="right" width="62">
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="right" style="border-collapse:separate;border-spacing:0;">
+              <tr><td width="56" height="56" align="center" valign="middle" bgcolor="#E03127" style="width:56px;height:56px;background-color:#E03127;border-radius:999px;box-shadow:4px 4px 0 rgba(224,49,39,.4);font-size:17px;font-weight:700;line-height:1.05;color:#FFFFFF;text-align:center;">J-7</td></tr>
+            </table>
+          </td>
+        </tr>
       </table>
 
-      <div style="padding-top:16px;font-size:33px;line-height:1.12;font-weight:700;color:#173A7A;letter-spacing:-.03em;">
-        C'est <span style="background-image:linear-gradient(180deg,rgba(255,194,23,0) 52%,#FFC217 52%,#FFC217 94%,rgba(255,194,23,0) 94%);">dans une semaine</span>&nbsp;!
+      <div style="padding-top:18px;font-size:34px;line-height:1.1;font-weight:700;color:#173A7A;letter-spacing:-.03em;">
+        Ça commence<br><span style="background-image:linear-gradient(180deg,rgba(255,194,23,0) 50%,#FFC217 50%,#FFC217 93%,rgba(255,194,23,0) 93%);">lundi prochain</span>&nbsp;!
       </div>
 
       <div style="padding-top:16px;font-size:17px;line-height:1.55;color:#3A4152;">
         <strong style="font-weight:700;color:#173A7A;">Du 24 au 28 août</strong>, dans nos locaux à Massy&nbsp;: une semaine, un thème, <strong style="font-weight:700;color:#173A7A;">quatre ateliers par jour</strong>. Pour les <strong style="font-weight:700;color:#173A7A;">3-10 ans</strong>, sans aucun prérequis.
       </div>
 
-      <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="margin:22px auto 0 auto;">
+      <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="margin:24px auto 0 auto;border-collapse:separate;border-spacing:0;">
         <tr>
           <td align="center">
             <!--[if mso]>
-            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://malac.fr/stages-vacances-en-presentiel" style="height:52px;v-text-anchor:middle;width:280px;" arcsize="50%" stroke="f" fillcolor="#1E4FA8">
+            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://malac.fr/stages-vacances-en-presentiel" style="height:52px;v-text-anchor:middle;width:290px;" arcsize="50%" stroke="f" fillcolor="#1E4FA8">
               <w:anchorlock/><center style="color:#ffffff;font-family:Arial,sans-serif;font-size:16px;font-weight:bold;">Réserver un atelier</center>
             </v:roundrect>
             <![endif]-->
             <!--[if !mso]><!-->
-            <a href="https://malac.fr/stages-vacances-en-presentiel" class="mlc-btn" style="display:inline-block;background-color:#1E4FA8;color:#FFFFFF;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;font-size:16px;font-weight:700;line-height:24px;text-decoration:none;padding:14px 30px;border-radius:999px;">Réserver un atelier&nbsp;→</a>
+            <a href="https://malac.fr/stages-vacances-en-presentiel" class="mlc-btn" style="display:inline-block;background-color:#1E4FA8;color:#FFFFFF;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;font-size:16px;font-weight:700;line-height:24px;text-decoration:none;padding:14px 30px;border-radius:999px;box-shadow:5px 5px 0 rgba(30,79,168,.35);">Réserver un atelier&nbsp;→</a>
             <!--<![endif]-->
           </td>
         </tr>
@@ -127,38 +129,30 @@
       <img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/2026-08-stages-presentiel/hero-stages-presentiel.jpg" alt="Stages de pré-rentrée : 18 € l'atelier, 90 € la semaine par langue — arabe, anglais, chinois" width="100%" border="0" style="display:block;width:100%;max-width:100%;height:auto;border:0;outline:none;">
     </td>
   </tr>
-  <!-- Bandeau arc-en-ciel : la transition « ludique » de la maison. Huit
-       aplats de 9 px, aucun dégradé — donc aucun risque de rendu. -->
   <tr>
     <td style="padding:0;">
-      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;"><tr><td width="12.5%" height="9" bgcolor="#1E4FA8" style="height:9px;line-height:9px;font-size:1px;background-color:#1E4FA8;">&nbsp;</td><td width="12.5%" height="9" bgcolor="#FFC217" style="height:9px;line-height:9px;font-size:1px;background-color:#FFC217;">&nbsp;</td><td width="12.5%" height="9" bgcolor="#2E7D32" style="height:9px;line-height:9px;font-size:1px;background-color:#2E7D32;">&nbsp;</td><td width="12.5%" height="9" bgcolor="#E03127" style="height:9px;line-height:9px;font-size:1px;background-color:#E03127;">&nbsp;</td><td width="12.5%" height="9" bgcolor="#6B4FA8" style="height:9px;line-height:9px;font-size:1px;background-color:#6B4FA8;">&nbsp;</td><td width="12.5%" height="9" bgcolor="#F07C22" style="height:9px;line-height:9px;font-size:1px;background-color:#F07C22;">&nbsp;</td><td width="12.5%" height="9" bgcolor="#1E4FA8" style="height:9px;line-height:9px;font-size:1px;background-color:#1E4FA8;">&nbsp;</td><td width="12.5%" height="9" bgcolor="#FFC217" style="height:9px;line-height:9px;font-size:1px;background-color:#FFC217;">&nbsp;</td></tr></table>
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;"><tr><td width="12.5%" height="10" bgcolor="#1E4FA8" style="height:10px;line-height:10px;font-size:1px;background-color:#1E4FA8;">&nbsp;</td><td width="12.5%" height="10" bgcolor="#FFC217" style="height:10px;line-height:10px;font-size:1px;background-color:#FFC217;">&nbsp;</td><td width="12.5%" height="10" bgcolor="#2E7D32" style="height:10px;line-height:10px;font-size:1px;background-color:#2E7D32;">&nbsp;</td><td width="12.5%" height="10" bgcolor="#E03127" style="height:10px;line-height:10px;font-size:1px;background-color:#E03127;">&nbsp;</td><td width="12.5%" height="10" bgcolor="#6B4FA8" style="height:10px;line-height:10px;font-size:1px;background-color:#6B4FA8;">&nbsp;</td><td width="12.5%" height="10" bgcolor="#F07C22" style="height:10px;line-height:10px;font-size:1px;background-color:#F07C22;">&nbsp;</td><td width="12.5%" height="10" bgcolor="#1E4FA8" style="height:10px;line-height:10px;font-size:1px;background-color:#1E4FA8;">&nbsp;</td><td width="12.5%" height="10" bgcolor="#FFC217" style="height:10px;line-height:10px;font-size:1px;background-color:#FFC217;">&nbsp;</td></tr></table>
     </td>
   </tr>
 </table>
 
 
 <!-- ═══════════════════════════════════════════════════════════════════
-     2 · LES QUATRE ATELIERS — la journée dans l'ordre des horaires
-     Chaque carte : bandeau horaire coloré, langue, thème de la semaine,
-     les CINQ JOURS en étiquettes, puis « Voir le stage » (la fiche du site)
-     et « Réserver » (WhatsApp, message pré-rempli avec le stage exact).
-     ⚠ Les couleurs viennent des pastilles du carrousel : arabe vert,
-     anglais bleu, chinois rouge. L'éveil religieux n'y figure pas — le
-     violet lui a été attribué ici, il ne vient de nulle part.
+     2 · LES QUATRE ATELIERS, dans l'ordre des horaires
      ═══════════════════════════════════════════════════════════════════ -->
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">
   <tr>
-    <td style="padding:36px 4px 10px 4px;font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#6B7280;">
+    <td style="padding:34px 4px 10px 4px;font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#6B7280;">
       <span style="color:#E03127;">◆</span>&nbsp; Le programme de la semaine
     </td>
   </tr>
   <tr>
-    <td style="padding:0 4px 8px 4px;font-size:26px;line-height:1.2;font-weight:700;color:#173A7A;letter-spacing:-.02em;">
-      Une journée, <span style="background-image:linear-gradient(180deg,rgba(255,194,23,0) 52%,#FFC217 52%,#FFC217 94%,rgba(255,194,23,0) 94%);">quatre ateliers</span>
+    <td style="padding:0 4px 8px 4px;font-size:27px;line-height:1.18;font-weight:700;color:#173A7A;letter-spacing:-.025em;">
+      Une journée, <span style="background-image:linear-gradient(180deg,rgba(255,194,23,0) 50%,#FFC217 50%,#FFC217 93%,rgba(255,194,23,0) 93%);">quatre ateliers</span>
     </td>
   </tr>
   <tr>
-    <td style="padding:0 4px 18px 4px;font-size:15px;line-height:1.6;color:#48536B;">
+    <td style="padding:0 4px 20px 4px;font-size:15px;line-height:1.6;color:#48536B;">
       On vient à un atelier, à deux, ou on reste toute la journée. À vous de composer.
     </td>
   </tr>
@@ -166,47 +160,58 @@
 
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">
       <tr>
-        <td style="padding:0 0 14px 0;">
+        <td style="padding:0 0 16px 0;">
           <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;">
             <tr>
-              <td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border:2px solid #F1ECF9;border-radius:16px;padding:0;">
+              <td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border:2px solid #F1ECF9;border-radius:16px;box-shadow:5px 5px 0 rgba(107,79,168,.4);padding:0;">
 
+                <!-- bandeau horaire : numéro en pastille, heure, emoji à droite -->
                 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;">
                   <tr>
-                    <td bgcolor="#6B4FA8" style="background-color:#6B4FA8;border-radius:14px 14px 0 0;padding:10px 16px;font-size:14px;font-weight:700;color:#FFFFFF;">
-                      🌙&nbsp; 9h00 – 10h30
+                    <td bgcolor="#6B4FA8" style="background-color:#6B4FA8;background-image:repeating-linear-gradient(135deg,rgba(255,255,255,.14) 0 3px,rgba(255,255,255,0) 3px 15px);border-radius:14px 14px 0 0;padding:11px 15px;">
+                      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                          <td width="26" valign="middle" style="padding-right:10px;">
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;">
+                              <tr><td width="26" height="26" align="center" valign="middle" bgcolor="#FFFFFF" style="width:26px;height:26px;background-color:#FFFFFF;border-radius:999px;font-size:13px;font-weight:700;color:#6B4FA8;text-align:center;">1</td></tr>
+                            </table>
+                          </td>
+                          <td valign="middle" style="font-size:15px;font-weight:700;letter-spacing:.02em;color:#FFFFFF;">9h00 – 10h30</td>
+                          <td valign="middle" align="right" style="font-size:18px;line-height:1;">🌙</td>
+                        </tr>
+                      </table>
                     </td>
                   </tr>
                 </table>
 
-                <div style="padding:14px 16px 0 16px;">
+                <div style="padding:15px 16px 0 16px;">
                   <div style="font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#6B4FA8;">Éveil religieux</div>
-                  <div style="padding-top:5px;font-size:20px;line-height:1.2;font-weight:700;color:#1A1A1A;letter-spacing:-.01em;">Les 5 piliers de l'Islam</div>
-                  <div style="padding-top:7px;font-size:14px;line-height:1.55;color:#48536B;">Un pilier par jour, raconté et bricolé.</div>
+                  <div style="padding-top:5px;font-size:21px;line-height:1.18;font-weight:700;color:#1A1A1A;letter-spacing:-.015em;">Les 5 piliers de l'Islam</div>
+                  <div style="padding-top:8px;font-size:14px;line-height:1.55;color:#48536B;">Un pilier par jour, raconté et bricolé.</div>
                 </div>
 
-                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:12px;">
+                <!-- les cinq jours, en tuiles blanches sur le fond teinté -->
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:13px;">
                   <tr>
-                    <td bgcolor="#F1ECF9" style="background-color:#F1ECF9;padding:11px 16px 12px 16px;">
-                      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="20%" valign="top" style="padding:0 3px 0 0;"><div style="font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#6B4FA8;padding-bottom:2px;">Lun</div><div style="font-size:11px;line-height:1.3;color:#48536B;">La Chahada</div></td><td width="20%" valign="top" style="padding:0 3px 0 0;"><div style="font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#6B4FA8;padding-bottom:2px;">Mar</div><div style="font-size:11px;line-height:1.3;color:#48536B;">La prière</div></td><td width="20%" valign="top" style="padding:0 3px 0 0;"><div style="font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#6B4FA8;padding-bottom:2px;">Mer</div><div style="font-size:11px;line-height:1.3;color:#48536B;">L'aumône</div></td><td width="20%" valign="top" style="padding:0 3px 0 0;"><div style="font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#6B4FA8;padding-bottom:2px;">Jeu</div><div style="font-size:11px;line-height:1.3;color:#48536B;">Le jeûne</div></td><td width="20%" valign="top" style="padding:0 3px 0 0;"><div style="font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#6B4FA8;padding-bottom:2px;">Ven</div><div style="font-size:11px;line-height:1.3;color:#48536B;">Le pèlerinage</div></td></tr></table>
+                    <td bgcolor="#F1ECF9" style="background-color:#F1ECF9;padding:12px 10px 13px 12px;">
+                      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="20%" valign="top" style="padding:0 3px 0 0;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;"><tr><td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border-radius:9px;padding:8px 3px 9px 3px;text-align:center;"><table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="margin:0 auto 5px auto;border-collapse:separate;border-spacing:0;"><tr><td width="20" height="20" align="center" valign="middle" bgcolor="#6B4FA8" style="width:20px;height:20px;background-color:#6B4FA8;border-radius:999px;font-size:10px;font-weight:700;color:#FFFFFF;text-align:center;">L</td></tr></table><div style="font-size:10px;line-height:1.3;color:#48536B;word-break:break-word;overflow-wrap:break-word;">La Chahada</div></td></tr></table></td><td width="20%" valign="top" style="padding:0 3px 0 0;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;"><tr><td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border-radius:9px;padding:8px 3px 9px 3px;text-align:center;"><table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="margin:0 auto 5px auto;border-collapse:separate;border-spacing:0;"><tr><td width="20" height="20" align="center" valign="middle" bgcolor="#6B4FA8" style="width:20px;height:20px;background-color:#6B4FA8;border-radius:999px;font-size:10px;font-weight:700;color:#FFFFFF;text-align:center;">M</td></tr></table><div style="font-size:10px;line-height:1.3;color:#48536B;word-break:break-word;overflow-wrap:break-word;">La prière</div></td></tr></table></td><td width="20%" valign="top" style="padding:0 3px 0 0;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;"><tr><td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border-radius:9px;padding:8px 3px 9px 3px;text-align:center;"><table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="margin:0 auto 5px auto;border-collapse:separate;border-spacing:0;"><tr><td width="20" height="20" align="center" valign="middle" bgcolor="#6B4FA8" style="width:20px;height:20px;background-color:#6B4FA8;border-radius:999px;font-size:10px;font-weight:700;color:#FFFFFF;text-align:center;">M</td></tr></table><div style="font-size:10px;line-height:1.3;color:#48536B;word-break:break-word;overflow-wrap:break-word;">L'aumône</div></td></tr></table></td><td width="20%" valign="top" style="padding:0 3px 0 0;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;"><tr><td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border-radius:9px;padding:8px 3px 9px 3px;text-align:center;"><table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="margin:0 auto 5px auto;border-collapse:separate;border-spacing:0;"><tr><td width="20" height="20" align="center" valign="middle" bgcolor="#6B4FA8" style="width:20px;height:20px;background-color:#6B4FA8;border-radius:999px;font-size:10px;font-weight:700;color:#FFFFFF;text-align:center;">J</td></tr></table><div style="font-size:10px;line-height:1.3;color:#48536B;word-break:break-word;overflow-wrap:break-word;">Le jeûne</div></td></tr></table></td><td width="20%" valign="top" style="padding:0 3px 0 0;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;"><tr><td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border-radius:9px;padding:8px 3px 9px 3px;text-align:center;"><table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="margin:0 auto 5px auto;border-collapse:separate;border-spacing:0;"><tr><td width="20" height="20" align="center" valign="middle" bgcolor="#6B4FA8" style="width:20px;height:20px;background-color:#6B4FA8;border-radius:999px;font-size:10px;font-weight:700;color:#FFFFFF;text-align:center;">V</td></tr></table><div style="font-size:10px;line-height:1.3;color:#48536B;word-break:break-word;overflow-wrap:break-word;">Le pèle-<br>rinage</div></td></tr></table></td></tr></table>
                     </td>
                   </tr>
                 </table>
 
-                <div style="padding:13px 16px 15px 16px;font-size:0;line-height:0;">
+                <div style="padding:14px 16px 8px 16px;font-size:0;line-height:0;">
                   <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="display:inline-table;border-collapse:separate;border-spacing:0;margin:0 8px 8px 0;">
                     <tr><td>
                       <!--[if mso]>
                       <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://malac.fr/stages-malac/aout-s1-eveil" style="height:38px;v-text-anchor:middle;width:132px;" arcsize="50%" stroke="f" fillcolor="#6B4FA8">
-                        <w:anchorlock/><center style="color:#ffffff;font-family:Arial,sans-serif;font-size:13px;font-weight:bold;">Voir le stage</center>
+                        <w:anchorlock/><center style="color:#ffffff;font-family:Arial,sans-serif;font-size:13px;font-weight:bold;">Voir le stage&nbsp;→</center>
                       </v:roundrect>
                       <![endif]-->
                       <!--[if !mso]><!-->
                       <a href="https://malac.fr/stages-malac/aout-s1-eveil" class="mlc-btn" style="display:inline-block;background-color:#6B4FA8;color:#FFFFFF;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;font-size:13px;font-weight:700;line-height:19px;text-decoration:none;padding:9px 18px;border-radius:999px;white-space:nowrap;">Voir le stage&nbsp;→</a>
                       <!--<![endif]-->
                     </td></tr>
-                  </table>
-                  <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="display:inline-table;border-collapse:separate;border-spacing:0;margin:0 0 8px 0;">
+                  </table><table role="presentation" cellpadding="0" cellspacing="0" border="0" style="display:inline-table;border-collapse:separate;border-spacing:0;margin:0 8px 8px 0;">
                     <tr><td>
                       <!--[if mso]>
                       <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter%20et%20je%20souhaite%20r%C3%A9server%20le%20stage%20%C2%AB%20%C3%89veil%20religieux%20%E2%80%94%20Les%205%20piliers%20de%20l%27Islam%20%C2%BB%20du%2024%20au%2028%20ao%C3%BBt%20%289h00%20%E2%80%93%2010h30%29." style="height:38px;v-text-anchor:middle;width:126px;" arcsize="50%" stroke="f" fillcolor="#25D366">
@@ -226,47 +231,58 @@
         </td>
       </tr>
       <tr>
-        <td style="padding:0 0 14px 0;">
+        <td style="padding:0 0 16px 0;">
           <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;">
             <tr>
-              <td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border:2px solid #E9F3EA;border-radius:16px;padding:0;">
+              <td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border:2px solid #E9F3EA;border-radius:16px;box-shadow:5px 5px 0 rgba(46,125,50,.4);padding:0;">
 
+                <!-- bandeau horaire : numéro en pastille, heure, emoji à droite -->
                 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;">
                   <tr>
-                    <td bgcolor="#2E7D32" style="background-color:#2E7D32;border-radius:14px 14px 0 0;padding:10px 16px;font-size:14px;font-weight:700;color:#FFFFFF;">
-                      🇸🇦&nbsp; 11h00 – 12h30
+                    <td bgcolor="#2E7D32" style="background-color:#2E7D32;background-image:repeating-linear-gradient(135deg,rgba(255,255,255,.14) 0 3px,rgba(255,255,255,0) 3px 15px);border-radius:14px 14px 0 0;padding:11px 15px;">
+                      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                          <td width="26" valign="middle" style="padding-right:10px;">
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;">
+                              <tr><td width="26" height="26" align="center" valign="middle" bgcolor="#FFFFFF" style="width:26px;height:26px;background-color:#FFFFFF;border-radius:999px;font-size:13px;font-weight:700;color:#2E7D32;text-align:center;">2</td></tr>
+                            </table>
+                          </td>
+                          <td valign="middle" style="font-size:15px;font-weight:700;letter-spacing:.02em;color:#FFFFFF;">11h00 – 12h30</td>
+                          <td valign="middle" align="right" style="font-size:18px;line-height:1;">🇸🇦</td>
+                        </tr>
+                      </table>
                     </td>
                   </tr>
                 </table>
 
-                <div style="padding:14px 16px 0 16px;">
+                <div style="padding:15px 16px 0 16px;">
                   <div style="font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#2E7D32;">Arabe</div>
-                  <div style="padding-top:5px;font-size:20px;line-height:1.2;font-weight:700;color:#1A1A1A;letter-spacing:-.01em;">L'histoire de l'écriture arabe</div>
-                  <div style="padding-top:7px;font-size:14px;line-height:1.55;color:#48536B;">Des hiéroglyphes à son propre prénom, écrit en arabe.</div>
+                  <div style="padding-top:5px;font-size:21px;line-height:1.18;font-weight:700;color:#1A1A1A;letter-spacing:-.015em;">L'histoire de l'écriture arabe</div>
+                  <div style="padding-top:8px;font-size:14px;line-height:1.55;color:#48536B;">Des hiéroglyphes à son propre prénom, écrit en arabe.</div>
                 </div>
 
-                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:12px;">
+                <!-- les cinq jours, en tuiles blanches sur le fond teinté -->
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:13px;">
                   <tr>
-                    <td bgcolor="#E9F3EA" style="background-color:#E9F3EA;padding:11px 16px 12px 16px;">
-                      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="20%" valign="top" style="padding:0 3px 0 0;"><div style="font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#2E7D32;padding-bottom:2px;">Lun</div><div style="font-size:11px;line-height:1.3;color:#48536B;">Les hiéroglyphes</div></td><td width="20%" valign="top" style="padding:0 3px 0 0;"><div style="font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#2E7D32;padding-bottom:2px;">Mar</div><div style="font-size:11px;line-height:1.3;color:#48536B;">La calligraphie</div></td><td width="20%" valign="top" style="padding:0 3px 0 0;"><div style="font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#2E7D32;padding-bottom:2px;">Mer</div><div style="font-size:11px;line-height:1.3;color:#48536B;">L'abjadiya</div></td><td width="20%" valign="top" style="padding:0 3px 0 0;"><div style="font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#2E7D32;padding-bottom:2px;">Jeu</div><div style="font-size:11px;line-height:1.3;color:#48536B;">J'écris mon prénom</div></td><td width="20%" valign="top" style="padding:0 3px 0 0;"><div style="font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#2E7D32;padding-bottom:2px;">Ven</div><div style="font-size:11px;line-height:1.3;color:#48536B;">Mes premiers mots</div></td></tr></table>
+                    <td bgcolor="#E9F3EA" style="background-color:#E9F3EA;padding:12px 10px 13px 12px;">
+                      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="20%" valign="top" style="padding:0 3px 0 0;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;"><tr><td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border-radius:9px;padding:8px 3px 9px 3px;text-align:center;"><table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="margin:0 auto 5px auto;border-collapse:separate;border-spacing:0;"><tr><td width="20" height="20" align="center" valign="middle" bgcolor="#2E7D32" style="width:20px;height:20px;background-color:#2E7D32;border-radius:999px;font-size:10px;font-weight:700;color:#FFFFFF;text-align:center;">L</td></tr></table><div style="font-size:10px;line-height:1.3;color:#48536B;word-break:break-word;overflow-wrap:break-word;">Hiéro-<br>glyphes</div></td></tr></table></td><td width="20%" valign="top" style="padding:0 3px 0 0;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;"><tr><td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border-radius:9px;padding:8px 3px 9px 3px;text-align:center;"><table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="margin:0 auto 5px auto;border-collapse:separate;border-spacing:0;"><tr><td width="20" height="20" align="center" valign="middle" bgcolor="#2E7D32" style="width:20px;height:20px;background-color:#2E7D32;border-radius:999px;font-size:10px;font-weight:700;color:#FFFFFF;text-align:center;">M</td></tr></table><div style="font-size:10px;line-height:1.3;color:#48536B;word-break:break-word;overflow-wrap:break-word;">Calli-<br>graphie</div></td></tr></table></td><td width="20%" valign="top" style="padding:0 3px 0 0;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;"><tr><td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border-radius:9px;padding:8px 3px 9px 3px;text-align:center;"><table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="margin:0 auto 5px auto;border-collapse:separate;border-spacing:0;"><tr><td width="20" height="20" align="center" valign="middle" bgcolor="#2E7D32" style="width:20px;height:20px;background-color:#2E7D32;border-radius:999px;font-size:10px;font-weight:700;color:#FFFFFF;text-align:center;">M</td></tr></table><div style="font-size:10px;line-height:1.3;color:#48536B;word-break:break-word;overflow-wrap:break-word;">L'abjadiya</div></td></tr></table></td><td width="20%" valign="top" style="padding:0 3px 0 0;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;"><tr><td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border-radius:9px;padding:8px 3px 9px 3px;text-align:center;"><table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="margin:0 auto 5px auto;border-collapse:separate;border-spacing:0;"><tr><td width="20" height="20" align="center" valign="middle" bgcolor="#2E7D32" style="width:20px;height:20px;background-color:#2E7D32;border-radius:999px;font-size:10px;font-weight:700;color:#FFFFFF;text-align:center;">J</td></tr></table><div style="font-size:10px;line-height:1.3;color:#48536B;word-break:break-word;overflow-wrap:break-word;">Mon prénom</div></td></tr></table></td><td width="20%" valign="top" style="padding:0 3px 0 0;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;"><tr><td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border-radius:9px;padding:8px 3px 9px 3px;text-align:center;"><table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="margin:0 auto 5px auto;border-collapse:separate;border-spacing:0;"><tr><td width="20" height="20" align="center" valign="middle" bgcolor="#2E7D32" style="width:20px;height:20px;background-color:#2E7D32;border-radius:999px;font-size:10px;font-weight:700;color:#FFFFFF;text-align:center;">V</td></tr></table><div style="font-size:10px;line-height:1.3;color:#48536B;word-break:break-word;overflow-wrap:break-word;">Premiers mots</div></td></tr></table></td></tr></table>
                     </td>
                   </tr>
                 </table>
 
-                <div style="padding:13px 16px 15px 16px;font-size:0;line-height:0;">
+                <div style="padding:14px 16px 8px 16px;font-size:0;line-height:0;">
                   <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="display:inline-table;border-collapse:separate;border-spacing:0;margin:0 8px 8px 0;">
                     <tr><td>
                       <!--[if mso]>
                       <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://malac.fr/stages-malac/aout-s1-arabe" style="height:38px;v-text-anchor:middle;width:132px;" arcsize="50%" stroke="f" fillcolor="#2E7D32">
-                        <w:anchorlock/><center style="color:#ffffff;font-family:Arial,sans-serif;font-size:13px;font-weight:bold;">Voir le stage</center>
+                        <w:anchorlock/><center style="color:#ffffff;font-family:Arial,sans-serif;font-size:13px;font-weight:bold;">Voir le stage&nbsp;→</center>
                       </v:roundrect>
                       <![endif]-->
                       <!--[if !mso]><!-->
                       <a href="https://malac.fr/stages-malac/aout-s1-arabe" class="mlc-btn" style="display:inline-block;background-color:#2E7D32;color:#FFFFFF;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;font-size:13px;font-weight:700;line-height:19px;text-decoration:none;padding:9px 18px;border-radius:999px;white-space:nowrap;">Voir le stage&nbsp;→</a>
                       <!--<![endif]-->
                     </td></tr>
-                  </table>
-                  <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="display:inline-table;border-collapse:separate;border-spacing:0;margin:0 0 8px 0;">
+                  </table><table role="presentation" cellpadding="0" cellspacing="0" border="0" style="display:inline-table;border-collapse:separate;border-spacing:0;margin:0 8px 8px 0;">
                     <tr><td>
                       <!--[if mso]>
                       <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter%20et%20je%20souhaite%20r%C3%A9server%20le%20stage%20%C2%AB%20Arabe%20%E2%80%94%20L%27histoire%20de%20l%27%C3%A9criture%20arabe%20%C2%BB%20du%2024%20au%2028%20ao%C3%BBt%20%2811h00%20%E2%80%93%2012h30%29." style="height:38px;v-text-anchor:middle;width:126px;" arcsize="50%" stroke="f" fillcolor="#25D366">
@@ -286,47 +302,58 @@
         </td>
       </tr>
       <tr>
-        <td style="padding:0 0 14px 0;">
+        <td style="padding:0 0 16px 0;">
           <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;">
             <tr>
-              <td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border:2px solid #E8EEF9;border-radius:16px;padding:0;">
+              <td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border:2px solid #E8EEF9;border-radius:16px;box-shadow:5px 5px 0 rgba(30,79,168,.4);padding:0;">
 
+                <!-- bandeau horaire : numéro en pastille, heure, emoji à droite -->
                 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;">
                   <tr>
-                    <td bgcolor="#1E4FA8" style="background-color:#1E4FA8;border-radius:14px 14px 0 0;padding:10px 16px;font-size:14px;font-weight:700;color:#FFFFFF;">
-                      🇬🇧&nbsp; 13h30 – 15h00
+                    <td bgcolor="#1E4FA8" style="background-color:#1E4FA8;background-image:repeating-linear-gradient(135deg,rgba(255,255,255,.14) 0 3px,rgba(255,255,255,0) 3px 15px);border-radius:14px 14px 0 0;padding:11px 15px;">
+                      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                          <td width="26" valign="middle" style="padding-right:10px;">
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;">
+                              <tr><td width="26" height="26" align="center" valign="middle" bgcolor="#FFFFFF" style="width:26px;height:26px;background-color:#FFFFFF;border-radius:999px;font-size:13px;font-weight:700;color:#1E4FA8;text-align:center;">3</td></tr>
+                            </table>
+                          </td>
+                          <td valign="middle" style="font-size:15px;font-weight:700;letter-spacing:.02em;color:#FFFFFF;">13h30 – 15h00</td>
+                          <td valign="middle" align="right" style="font-size:18px;line-height:1;">🇬🇧</td>
+                        </tr>
+                      </table>
                     </td>
                   </tr>
                 </table>
 
-                <div style="padding:14px 16px 0 16px;">
+                <div style="padding:15px 16px 0 16px;">
                   <div style="font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#1E4FA8;">Anglais</div>
-                  <div style="padding-top:5px;font-size:20px;line-height:1.2;font-weight:700;color:#1A1A1A;letter-spacing:-.01em;">Back to School!</div>
-                  <div style="padding-top:7px;font-size:14px;line-height:1.55;color:#48536B;">Retrouver l'anglais par le jeu, juste avant de reprendre.</div>
+                  <div style="padding-top:5px;font-size:21px;line-height:1.18;font-weight:700;color:#1A1A1A;letter-spacing:-.015em;">Back to School!</div>
+                  <div style="padding-top:8px;font-size:14px;line-height:1.55;color:#48536B;">Retrouver l'anglais par le jeu, juste avant de reprendre.</div>
                 </div>
 
-                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:12px;">
+                <!-- les cinq jours, en tuiles blanches sur le fond teinté -->
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:13px;">
                   <tr>
-                    <td bgcolor="#E8EEF9" style="background-color:#E8EEF9;padding:11px 16px 12px 16px;">
-                      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="20%" valign="top" style="padding:0 3px 0 0;"><div style="font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#1E4FA8;padding-bottom:2px;">Lun</div><div style="font-size:11px;line-height:1.3;color:#48536B;">At school</div></td><td width="20%" valign="top" style="padding:0 3px 0 0;"><div style="font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#1E4FA8;padding-bottom:2px;">Mar</div><div style="font-size:11px;line-height:1.3;color:#48536B;">School games</div></td><td width="20%" valign="top" style="padding:0 3px 0 0;"><div style="font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#1E4FA8;padding-bottom:2px;">Mer</div><div style="font-size:11px;line-height:1.3;color:#48536B;">My school supplies</div></td><td width="20%" valign="top" style="padding:0 3px 0 0;"><div style="font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#1E4FA8;padding-bottom:2px;">Jeu</div><div style="font-size:11px;line-height:1.3;color:#48536B;">Classroom creators</div></td><td width="20%" valign="top" style="padding:0 3px 0 0;"><div style="font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#1E4FA8;padding-bottom:2px;">Ven</div><div style="font-size:11px;line-height:1.3;color:#48536B;">Back to school party</div></td></tr></table>
+                    <td bgcolor="#E8EEF9" style="background-color:#E8EEF9;padding:12px 10px 13px 12px;">
+                      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="20%" valign="top" style="padding:0 3px 0 0;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;"><tr><td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border-radius:9px;padding:8px 3px 9px 3px;text-align:center;"><table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="margin:0 auto 5px auto;border-collapse:separate;border-spacing:0;"><tr><td width="20" height="20" align="center" valign="middle" bgcolor="#1E4FA8" style="width:20px;height:20px;background-color:#1E4FA8;border-radius:999px;font-size:10px;font-weight:700;color:#FFFFFF;text-align:center;">L</td></tr></table><div style="font-size:10px;line-height:1.3;color:#48536B;word-break:break-word;overflow-wrap:break-word;">At school</div></td></tr></table></td><td width="20%" valign="top" style="padding:0 3px 0 0;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;"><tr><td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border-radius:9px;padding:8px 3px 9px 3px;text-align:center;"><table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="margin:0 auto 5px auto;border-collapse:separate;border-spacing:0;"><tr><td width="20" height="20" align="center" valign="middle" bgcolor="#1E4FA8" style="width:20px;height:20px;background-color:#1E4FA8;border-radius:999px;font-size:10px;font-weight:700;color:#FFFFFF;text-align:center;">M</td></tr></table><div style="font-size:10px;line-height:1.3;color:#48536B;word-break:break-word;overflow-wrap:break-word;">School games</div></td></tr></table></td><td width="20%" valign="top" style="padding:0 3px 0 0;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;"><tr><td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border-radius:9px;padding:8px 3px 9px 3px;text-align:center;"><table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="margin:0 auto 5px auto;border-collapse:separate;border-spacing:0;"><tr><td width="20" height="20" align="center" valign="middle" bgcolor="#1E4FA8" style="width:20px;height:20px;background-color:#1E4FA8;border-radius:999px;font-size:10px;font-weight:700;color:#FFFFFF;text-align:center;">M</td></tr></table><div style="font-size:10px;line-height:1.3;color:#48536B;word-break:break-word;overflow-wrap:break-word;">School supplies</div></td></tr></table></td><td width="20%" valign="top" style="padding:0 3px 0 0;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;"><tr><td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border-radius:9px;padding:8px 3px 9px 3px;text-align:center;"><table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="margin:0 auto 5px auto;border-collapse:separate;border-spacing:0;"><tr><td width="20" height="20" align="center" valign="middle" bgcolor="#1E4FA8" style="width:20px;height:20px;background-color:#1E4FA8;border-radius:999px;font-size:10px;font-weight:700;color:#FFFFFF;text-align:center;">J</td></tr></table><div style="font-size:10px;line-height:1.3;color:#48536B;word-break:break-word;overflow-wrap:break-word;">Classroom creators</div></td></tr></table></td><td width="20%" valign="top" style="padding:0 3px 0 0;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;"><tr><td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border-radius:9px;padding:8px 3px 9px 3px;text-align:center;"><table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="margin:0 auto 5px auto;border-collapse:separate;border-spacing:0;"><tr><td width="20" height="20" align="center" valign="middle" bgcolor="#1E4FA8" style="width:20px;height:20px;background-color:#1E4FA8;border-radius:999px;font-size:10px;font-weight:700;color:#FFFFFF;text-align:center;">V</td></tr></table><div style="font-size:10px;line-height:1.3;color:#48536B;word-break:break-word;overflow-wrap:break-word;">School party</div></td></tr></table></td></tr></table>
                     </td>
                   </tr>
                 </table>
 
-                <div style="padding:13px 16px 15px 16px;font-size:0;line-height:0;">
+                <div style="padding:14px 16px 8px 16px;font-size:0;line-height:0;">
                   <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="display:inline-table;border-collapse:separate;border-spacing:0;margin:0 8px 8px 0;">
                     <tr><td>
                       <!--[if mso]>
                       <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://malac.fr/stages-malac/aout-s1-anglais" style="height:38px;v-text-anchor:middle;width:132px;" arcsize="50%" stroke="f" fillcolor="#1E4FA8">
-                        <w:anchorlock/><center style="color:#ffffff;font-family:Arial,sans-serif;font-size:13px;font-weight:bold;">Voir le stage</center>
+                        <w:anchorlock/><center style="color:#ffffff;font-family:Arial,sans-serif;font-size:13px;font-weight:bold;">Voir le stage&nbsp;→</center>
                       </v:roundrect>
                       <![endif]-->
                       <!--[if !mso]><!-->
                       <a href="https://malac.fr/stages-malac/aout-s1-anglais" class="mlc-btn" style="display:inline-block;background-color:#1E4FA8;color:#FFFFFF;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;font-size:13px;font-weight:700;line-height:19px;text-decoration:none;padding:9px 18px;border-radius:999px;white-space:nowrap;">Voir le stage&nbsp;→</a>
                       <!--<![endif]-->
                     </td></tr>
-                  </table>
-                  <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="display:inline-table;border-collapse:separate;border-spacing:0;margin:0 0 8px 0;">
+                  </table><table role="presentation" cellpadding="0" cellspacing="0" border="0" style="display:inline-table;border-collapse:separate;border-spacing:0;margin:0 8px 8px 0;">
                     <tr><td>
                       <!--[if mso]>
                       <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter%20et%20je%20souhaite%20r%C3%A9server%20le%20stage%20%C2%AB%20Anglais%20%E2%80%94%20Back%20to%20School%21%20%C2%BB%20du%2024%20au%2028%20ao%C3%BBt%20%2813h30%20%E2%80%93%2015h00%29." style="height:38px;v-text-anchor:middle;width:126px;" arcsize="50%" stroke="f" fillcolor="#25D366">
@@ -346,47 +373,58 @@
         </td>
       </tr>
       <tr>
-        <td style="padding:0 0 14px 0;">
+        <td style="padding:0 0 16px 0;">
           <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;">
             <tr>
-              <td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border:2px solid #FBEAE9;border-radius:16px;padding:0;">
+              <td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border:2px solid #FBEAE9;border-radius:16px;box-shadow:5px 5px 0 rgba(224,49,39,.4);padding:0;">
 
+                <!-- bandeau horaire : numéro en pastille, heure, emoji à droite -->
                 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;">
                   <tr>
-                    <td bgcolor="#E03127" style="background-color:#E03127;border-radius:14px 14px 0 0;padding:10px 16px;font-size:14px;font-weight:700;color:#FFFFFF;">
-                      🇨🇳&nbsp; 15h30 – 17h00
+                    <td bgcolor="#E03127" style="background-color:#E03127;background-image:repeating-linear-gradient(135deg,rgba(255,255,255,.14) 0 3px,rgba(255,255,255,0) 3px 15px);border-radius:14px 14px 0 0;padding:11px 15px;">
+                      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                          <td width="26" valign="middle" style="padding-right:10px;">
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;">
+                              <tr><td width="26" height="26" align="center" valign="middle" bgcolor="#FFFFFF" style="width:26px;height:26px;background-color:#FFFFFF;border-radius:999px;font-size:13px;font-weight:700;color:#E03127;text-align:center;">4</td></tr>
+                            </table>
+                          </td>
+                          <td valign="middle" style="font-size:15px;font-weight:700;letter-spacing:.02em;color:#FFFFFF;">15h30 – 17h00</td>
+                          <td valign="middle" align="right" style="font-size:18px;line-height:1;">🇨🇳</td>
+                        </tr>
+                      </table>
                     </td>
                   </tr>
                 </table>
 
-                <div style="padding:14px 16px 0 16px;">
+                <div style="padding:15px 16px 0 16px;">
                   <div style="font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#E03127;">Chinois</div>
-                  <div style="padding-top:5px;font-size:20px;line-height:1.2;font-weight:700;color:#1A1A1A;letter-spacing:-.01em;">Découverte de la Chine</div>
-                  <div style="padding-top:7px;font-size:14px;line-height:1.55;color:#48536B;">Premiers mots, premiers caractères, première fête.</div>
+                  <div style="padding-top:5px;font-size:21px;line-height:1.18;font-weight:700;color:#1A1A1A;letter-spacing:-.015em;">Découverte de la Chine</div>
+                  <div style="padding-top:8px;font-size:14px;line-height:1.55;color:#48536B;">Premiers mots, premiers caractères, première fête.</div>
                 </div>
 
-                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:12px;">
+                <!-- les cinq jours, en tuiles blanches sur le fond teinté -->
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:13px;">
                   <tr>
-                    <td bgcolor="#FBEAE9" style="background-color:#FBEAE9;padding:11px 16px 12px 16px;">
-                      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="20%" valign="top" style="padding:0 3px 0 0;"><div style="font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#E03127;padding-bottom:2px;">Lun</div><div style="font-size:11px;line-height:1.3;color:#48536B;">你好 — Bonjour</div></td><td width="20%" valign="top" style="padding:0 3px 0 0;"><div style="font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#E03127;padding-bottom:2px;">Mar</div><div style="font-size:11px;line-height:1.3;color:#48536B;">玩游戏 — Je joue</div></td><td width="20%" valign="top" style="padding:0 3px 0 0;"><div style="font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#E03127;padding-bottom:2px;">Mer</div><div style="font-size:11px;line-height:1.3;color:#48536B;">我的家 — Ma famille</div></td><td width="20%" valign="top" style="padding:0 3px 0 0;"><div style="font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#E03127;padding-bottom:2px;">Jeu</div><div style="font-size:11px;line-height:1.3;color:#48536B;">写字 — J'écris</div></td><td width="20%" valign="top" style="padding:0 3px 0 0;"><div style="font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#E03127;padding-bottom:2px;">Ven</div><div style="font-size:11px;line-height:1.3;color:#48536B;">节日 — La fête</div></td></tr></table>
+                    <td bgcolor="#FBEAE9" style="background-color:#FBEAE9;padding:12px 10px 13px 12px;">
+                      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="20%" valign="top" style="padding:0 3px 0 0;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;"><tr><td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border-radius:9px;padding:8px 3px 9px 3px;text-align:center;"><table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="margin:0 auto 5px auto;border-collapse:separate;border-spacing:0;"><tr><td width="20" height="20" align="center" valign="middle" bgcolor="#E03127" style="width:20px;height:20px;background-color:#E03127;border-radius:999px;font-size:10px;font-weight:700;color:#FFFFFF;text-align:center;">L</td></tr></table><div style="font-size:10px;line-height:1.3;color:#48536B;word-break:break-word;overflow-wrap:break-word;">你好 Bonjour</div></td></tr></table></td><td width="20%" valign="top" style="padding:0 3px 0 0;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;"><tr><td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border-radius:9px;padding:8px 3px 9px 3px;text-align:center;"><table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="margin:0 auto 5px auto;border-collapse:separate;border-spacing:0;"><tr><td width="20" height="20" align="center" valign="middle" bgcolor="#E03127" style="width:20px;height:20px;background-color:#E03127;border-radius:999px;font-size:10px;font-weight:700;color:#FFFFFF;text-align:center;">M</td></tr></table><div style="font-size:10px;line-height:1.3;color:#48536B;word-break:break-word;overflow-wrap:break-word;">玩游戏 Je joue</div></td></tr></table></td><td width="20%" valign="top" style="padding:0 3px 0 0;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;"><tr><td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border-radius:9px;padding:8px 3px 9px 3px;text-align:center;"><table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="margin:0 auto 5px auto;border-collapse:separate;border-spacing:0;"><tr><td width="20" height="20" align="center" valign="middle" bgcolor="#E03127" style="width:20px;height:20px;background-color:#E03127;border-radius:999px;font-size:10px;font-weight:700;color:#FFFFFF;text-align:center;">M</td></tr></table><div style="font-size:10px;line-height:1.3;color:#48536B;word-break:break-word;overflow-wrap:break-word;">我的家 Ma famille</div></td></tr></table></td><td width="20%" valign="top" style="padding:0 3px 0 0;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;"><tr><td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border-radius:9px;padding:8px 3px 9px 3px;text-align:center;"><table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="margin:0 auto 5px auto;border-collapse:separate;border-spacing:0;"><tr><td width="20" height="20" align="center" valign="middle" bgcolor="#E03127" style="width:20px;height:20px;background-color:#E03127;border-radius:999px;font-size:10px;font-weight:700;color:#FFFFFF;text-align:center;">J</td></tr></table><div style="font-size:10px;line-height:1.3;color:#48536B;word-break:break-word;overflow-wrap:break-word;">写字 J'écris</div></td></tr></table></td><td width="20%" valign="top" style="padding:0 3px 0 0;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;"><tr><td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border-radius:9px;padding:8px 3px 9px 3px;text-align:center;"><table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="margin:0 auto 5px auto;border-collapse:separate;border-spacing:0;"><tr><td width="20" height="20" align="center" valign="middle" bgcolor="#E03127" style="width:20px;height:20px;background-color:#E03127;border-radius:999px;font-size:10px;font-weight:700;color:#FFFFFF;text-align:center;">V</td></tr></table><div style="font-size:10px;line-height:1.3;color:#48536B;word-break:break-word;overflow-wrap:break-word;">节日 La fête</div></td></tr></table></td></tr></table>
                     </td>
                   </tr>
                 </table>
 
-                <div style="padding:13px 16px 15px 16px;font-size:0;line-height:0;">
+                <div style="padding:14px 16px 8px 16px;font-size:0;line-height:0;">
                   <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="display:inline-table;border-collapse:separate;border-spacing:0;margin:0 8px 8px 0;">
                     <tr><td>
                       <!--[if mso]>
                       <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://malac.fr/stages-malac/aout-s1-chinois" style="height:38px;v-text-anchor:middle;width:132px;" arcsize="50%" stroke="f" fillcolor="#E03127">
-                        <w:anchorlock/><center style="color:#ffffff;font-family:Arial,sans-serif;font-size:13px;font-weight:bold;">Voir le stage</center>
+                        <w:anchorlock/><center style="color:#ffffff;font-family:Arial,sans-serif;font-size:13px;font-weight:bold;">Voir le stage&nbsp;→</center>
                       </v:roundrect>
                       <![endif]-->
                       <!--[if !mso]><!-->
                       <a href="https://malac.fr/stages-malac/aout-s1-chinois" class="mlc-btn" style="display:inline-block;background-color:#E03127;color:#FFFFFF;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;font-size:13px;font-weight:700;line-height:19px;text-decoration:none;padding:9px 18px;border-radius:999px;white-space:nowrap;">Voir le stage&nbsp;→</a>
                       <!--<![endif]-->
                     </td></tr>
-                  </table>
-                  <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="display:inline-table;border-collapse:separate;border-spacing:0;margin:0 0 8px 0;">
+                  </table><table role="presentation" cellpadding="0" cellspacing="0" border="0" style="display:inline-table;border-collapse:separate;border-spacing:0;margin:0 8px 8px 0;">
                     <tr><td>
                       <!--[if mso]>
                       <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter%20et%20je%20souhaite%20r%C3%A9server%20le%20stage%20%C2%AB%20Chinois%20%E2%80%94%20D%C3%A9couverte%20de%20la%20Chine%20%C2%BB%20du%2024%20au%2028%20ao%C3%BBt%20%2815h30%20%E2%80%93%2017h00%29." style="height:38px;v-text-anchor:middle;width:126px;" arcsize="50%" stroke="f" fillcolor="#25D366">
@@ -409,7 +447,7 @@
 
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">
   <tr>
-    <td style="padding:4px 4px 0 4px;">
+    <td style="padding:2px 4px 0 4px;">
       <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;">
         <tr>
           <td bgcolor="#FFF6DC" style="background-color:#FFF6DC;border-left:5px solid #FFC217;border-radius:12px;padding:14px 16px;font-size:14px;line-height:1.55;color:#3A4152;">
@@ -422,12 +460,17 @@
 </table>
 
 
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="height:34px;line-height:34px;font-size:1px;">&nbsp;</td></tr></table>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr><td style="padding:0 4px;"><div style="border-top:2px dashed #D8DEEA;font-size:1px;line-height:1px;">&nbsp;</div></td></tr>
+</table>
+
 <!-- ═══════════════════════════════════════════════════════════════════
-     3 · LES TARIFS — repris de la fiche « Infos pratiques » du carrousel
+     3 · LES TARIFS — deux étiquettes, reprises de la fiche « Infos pratiques »
      ═══════════════════════════════════════════════════════════════════ -->
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">
   <tr>
-    <td style="padding:36px 4px 12px 4px;font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#6B7280;">
+    <td style="padding:30px 4px 14px 4px;font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#6B7280;">
       <span style="color:#E03127;">◆</span>&nbsp; Tarifs
     </td>
   </tr>
@@ -435,14 +478,14 @@
     <td style="padding:0 4px;">
       <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;">
         <tr>
-          <td bgcolor="#E03127" style="background-color:#E03127;border-radius:14px 0 0 14px;padding:18px 16px;font-size:15px;line-height:1.35;font-weight:700;color:#FFFFFF;">L'atelier<br><span style="font-weight:400;font-size:13px;">à l'unité</span></td>
-          <td bgcolor="#E03127" align="right" valign="middle" style="background-color:#E03127;border-radius:0 14px 14px 0;padding:18px 16px 18px 6px;font-size:32px;line-height:1;font-weight:700;color:#FFFFFF;white-space:nowrap;">18 €</td>
+          <td bgcolor="#E03127" style="background-color:#E03127;background-image:repeating-linear-gradient(135deg,rgba(255,255,255,.14) 0 3px,rgba(255,255,255,0) 3px 15px);border-radius:16px 0 0 16px;box-shadow:5px 5px 0 rgba(224,49,39,.4);padding:18px 16px;font-size:15px;line-height:1.35;font-weight:700;color:#FFFFFF;">L'atelier<br><span style="font-weight:400;font-size:13px;">à l'unité</span></td>
+          <td bgcolor="#E03127" align="right" valign="middle" style="background-color:#E03127;background-image:repeating-linear-gradient(135deg,rgba(255,255,255,.14) 0 3px,rgba(255,255,255,0) 3px 15px);border-radius:0 16px 16px 0;box-shadow:5px 5px 0 rgba(224,49,39,.4);padding:18px 16px 18px 6px;font-size:34px;line-height:1;font-weight:700;color:#FFFFFF;white-space:nowrap;">18 €</td>
         </tr>
       </table>
-      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;margin-top:10px;">
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;margin-top:14px;">
         <tr>
-          <td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border:2px solid #1E4FA8;border-right:0;border-radius:14px 0 0 14px;padding:18px 16px;font-size:15px;line-height:1.35;font-weight:700;color:#173A7A;">La semaine<br><span style="font-weight:400;font-size:13px;color:#6B7280;">par langue, les 5 jours</span></td>
-          <td bgcolor="#FFFFFF" align="right" valign="middle" style="background-color:#FFFFFF;border:2px solid #1E4FA8;border-left:0;border-radius:0 14px 14px 0;padding:18px 16px 18px 6px;font-size:32px;line-height:1;font-weight:700;color:#1E4FA8;white-space:nowrap;">90 €</td>
+          <td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border:2px solid #1E4FA8;border-right:0;border-radius:16px 0 0 16px;box-shadow:5px 5px 0 rgba(30,79,168,.35);padding:18px 16px;font-size:15px;line-height:1.35;font-weight:700;color:#173A7A;">La semaine<br><span style="font-weight:400;font-size:13px;color:#6B7280;">par langue, les 5 jours</span></td>
+          <td bgcolor="#FFFFFF" align="right" valign="middle" style="background-color:#FFFFFF;border:2px solid #1E4FA8;border-left:0;border-radius:0 16px 16px 0;box-shadow:5px 5px 0 rgba(30,79,168,.35);padding:18px 16px 18px 6px;font-size:34px;line-height:1;font-weight:700;color:#1E4FA8;white-space:nowrap;">90 €</td>
         </tr>
       </table>
     </td>
@@ -451,13 +494,13 @@
 
 
 <!-- ═══════════════════════════════════════════════════════════════════
-     4 · LES QUATRE PROMESSES — reprises telles quelles du carrousel
+     4 · LES QUATRE PROMESSES — quatre stickers, une couleur chacun
      ═══════════════════════════════════════════════════════════════════ -->
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">
   <tr>
-    <td style="padding:30px 4px 0 4px;">
+    <td style="padding:32px 4px 0 4px;">
       <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-        <tr><td width="50%" valign="top" style="padding:0 5px 10px 0;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;"><tr><td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border:2px solid #E7EDF7;border-radius:12px;padding:12px 13px;font-size:13px;line-height:1.4;font-weight:700;color:#173A7A;text-align:center;">👥<br>Petits groupes</td></tr></table></td><td width="50%" valign="top" style="padding:0 5px 10px 0;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;"><tr><td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border:2px solid #E7EDF7;border-radius:12px;padding:12px 13px;font-size:13px;line-height:1.4;font-weight:700;color:#173A7A;text-align:center;">⭐<br>Apprendre en s'amusant</td></tr></table></td></tr><tr><td width="50%" valign="top" style="padding:0 5px 10px 0;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;"><tr><td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border:2px solid #E7EDF7;border-radius:12px;padding:12px 13px;font-size:13px;line-height:1.4;font-weight:700;color:#173A7A;text-align:center;">📘<br>Professeurs passionnés</td></tr></table></td><td width="50%" valign="top" style="padding:0 5px 10px 0;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;"><tr><td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border:2px solid #E7EDF7;border-radius:12px;padding:12px 13px;font-size:13px;line-height:1.4;font-weight:700;color:#173A7A;text-align:center;">📈<br>Progression assurée</td></tr></table></td></tr>
+        <tr><td width="50%" valign="top" style="padding:0 6px 12px 0px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;"><tr><td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border:2px solid #2E7D32;border-radius:14px;box-shadow:4px 4px 0 rgba(46,125,50,.4);padding:14px 10px;font-size:13px;line-height:1.35;font-weight:700;color:#173A7A;text-align:center;"><div style="font-size:22px;line-height:1;padding-bottom:7px;">👥</div>Petits groupes</td></tr></table></td><td width="50%" valign="top" style="padding:0 0px 12px 6px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;"><tr><td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border:2px solid #F0A21C;border-radius:14px;box-shadow:4px 4px 0 rgba(240,162,28,.4);padding:14px 10px;font-size:13px;line-height:1.35;font-weight:700;color:#173A7A;text-align:center;"><div style="font-size:22px;line-height:1;padding-bottom:7px;">⭐</div>Apprendre<br>en s'amusant</td></tr></table></td></tr><tr><td width="50%" valign="top" style="padding:0 6px 12px 0px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;"><tr><td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border:2px solid #1E4FA8;border-radius:14px;box-shadow:4px 4px 0 rgba(30,79,168,.4);padding:14px 10px;font-size:13px;line-height:1.35;font-weight:700;color:#173A7A;text-align:center;"><div style="font-size:22px;line-height:1;padding-bottom:7px;">📘</div>Professeurs<br>passionnés</td></tr></table></td><td width="50%" valign="top" style="padding:0 0px 12px 6px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;"><tr><td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border:2px solid #6B4FA8;border-radius:14px;box-shadow:4px 4px 0 rgba(107,79,168,.4);padding:14px 10px;font-size:13px;line-height:1.35;font-weight:700;color:#173A7A;text-align:center;"><div style="font-size:22px;line-height:1;padding-bottom:7px;">📈</div>Progression<br>assurée</td></tr></table></td></tr>
       </table>
     </td>
   </tr>
@@ -467,13 +510,12 @@
 <!-- ═══════════════════════════════════════════════════════════════════
      5 · L'APPEL FINAL, SIGNÉ PAR LA PRÉSIDENTE
      Bloc de marque présent dans TOUTES les newsletters.
-     Ici sur le bleu roi de la campagne, et non sur le bleu nuit habituel.
      ═══════════════════════════════════════════════════════════════════ -->
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin-top:36px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin-top:34px;">
   <tr>
-    <td bgcolor="#173A7A" style="background-color:#173A7A;background-image:repeating-linear-gradient(135deg,rgba(255,255,255,.05) 0 2px,rgba(255,255,255,0) 2px 11px);padding:28px 22px 30px 22px;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">
+    <td bgcolor="#173A7A" style="background-color:#173A7A;background-image:repeating-linear-gradient(135deg,rgba(255,255,255,.06) 0 2px,rgba(255,255,255,0) 2px 12px);padding:28px 22px 30px 22px;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">
 
-      <div style="font-size:25px;line-height:1.28;font-weight:700;color:#FFFFFF;text-align:center;">
+      <div style="font-size:26px;line-height:1.25;font-weight:700;color:#FFFFFF;text-align:center;">
         Places limitées.<br><span style="color:#FFC217;">Ça commence lundi</span> 🎒
       </div>
 
@@ -482,7 +524,7 @@
         Dites-moi l'âge de votre enfant et l'atelier qui vous intéresse&nbsp;: je vous dis ce qu'il reste.
       </div>
 
-      <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="margin:22px auto 0 auto;">
+      <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="margin:22px auto 0 auto;border-collapse:separate;border-spacing:0;">
         <tr>
           <td align="center">
             <!--[if mso]>
@@ -491,13 +533,13 @@
             </v:roundrect>
             <![endif]-->
             <!--[if !mso]><!-->
-            <a href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter%20et%20je%20souhaite%20des%20informations%20sur%20vos%20stages%20de%20pr%C3%A9-rentr%C3%A9e%20en%20pr%C3%A9sentiel%20du%2024%20au%2028%20ao%C3%BBt." class="mlc-btn" style="display:inline-block;background-color:#25D366;color:#FFFFFF;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;font-size:16px;font-weight:700;line-height:24px;text-decoration:none;padding:14px 30px;border-radius:999px;"><img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/reseaux/whatsapp.png" alt="" width="24" height="24" border="0" style="width:24px;height:24px;border:0;outline:none;vertical-align:middle;margin-right:9px;">Écrire sur WhatsApp</a>
+            <a href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter%20et%20je%20souhaite%20des%20informations%20sur%20vos%20stages%20de%20pr%C3%A9-rentr%C3%A9e%20en%20pr%C3%A9sentiel%20du%2024%20au%2028%20ao%C3%BBt." class="mlc-btn" style="display:inline-block;background-color:#25D366;color:#FFFFFF;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;font-size:16px;font-weight:700;line-height:24px;text-decoration:none;padding:14px 30px;border-radius:999px;box-shadow:5px 5px 0 rgba(37,211,102,.4);"><img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/reseaux/whatsapp.png" alt="" width="24" height="24" border="0" style="width:24px;height:24px;border:0;outline:none;vertical-align:middle;margin-right:9px;">Écrire sur WhatsApp</a>
             <!--<![endif]-->
           </td>
         </tr>
       </table>
 
-      <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="margin:14px auto 0 auto;">
+      <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="margin:16px auto 0 auto;">
         <tr><td align="center">
           <a href="tel:+33160144326" class="mlc-lien" style="font-size:14px;font-weight:700;color:#FFC217;text-decoration:none;">Ou par téléphone&nbsp;: 01 60 14 43 26</a>
         </td></tr>
@@ -558,8 +600,6 @@
   </tr>
 </table>
 
-<!-- Décor pur : ignoré par Gmail et Outlook, appliqué par Apple Mail et Mail
-     iOS. Rien de la mise en page n'en dépend. -->
 <style>
   .mlc-btn { transition: transform .18s ease, opacity .18s ease; }
   .mlc-btn:hover { transform: translateY(-2px); opacity: .92; }
