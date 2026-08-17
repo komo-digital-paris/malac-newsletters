@@ -55,8 +55,9 @@
     le plan n'existe que dans une diapositive, et un tarif reste lisible même
     quand les images sont bloquées.
 
-  ▸ EN ATTENTE — 1 image. Cherche « REMPLACER ».
+  ▸ EN ATTENTE — 1 image propre + le logo noir de commun/.
       REMPLACER_URL_HERO → hero-portes-ouvertes.jpg (960×540)
+      REMPLACER_URL_LOGO_LONG_NOIR → commun/logo-long-noir.png
     C'est le visuel du carrousel d'accueil, récupéré tel quel sur le site.
 
   ▸ ⚠ DEUX INCOHÉRENCES DU SITE, NON CORRIGÉES ICI
@@ -84,8 +85,23 @@
   <tr>
     <td bgcolor="#FBF7F0" style="background-color:#FBF7F0;padding:26px 22px 22px 22px;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">
 
-      <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;">
-        <tr><td bgcolor="#FFC217" style="background-color:#FFC217;border-radius:999px;box-shadow:4px 4px 0 rgba(255,194,23,.4);padding:8px 16px;font-size:11px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:#2B3A8F;">🎉 Portes ouvertes</td></tr>
+      <!-- Badge à gauche, logo à droite : le coin haut droit était vide, et
+           un email d'invitation gagne à dire QUI invite dès la première
+           ligne — surtout chez un lecteur qui bloque les images plus bas.
+           Le logo NOIR et non le blanc : le fond est crème.
+           ⚠ Deux <td> dans une même rangée plutôt que deux blocs empilés :
+           à 320 px le logo passe simplement sous le badge, sans casser. -->
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td valign="middle">
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;">
+              <tr><td bgcolor="#FFC217" style="background-color:#FFC217;border-radius:999px;box-shadow:4px 4px 0 rgba(255,194,23,.4);padding:8px 16px;font-size:11px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:#2B3A8F;">🎉 Portes ouvertes</td></tr>
+            </table>
+          </td>
+          <td valign="middle" align="right" width="130" style="padding-left:12px;font-size:0;line-height:0;">
+            <img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/logo-long-noir.png" alt="MALAC" width="130" border="0" style="width:130px;max-width:130px;height:auto;border:0;outline:none;display:block;">
+          </td>
+        </tr>
       </table>
 
       <div style="padding-top:18px;font-size:33px;line-height:1.12;font-weight:700;color:#2B3A8F;letter-spacing:-.03em;">
