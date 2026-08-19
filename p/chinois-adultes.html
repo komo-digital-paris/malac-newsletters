@@ -583,49 +583,44 @@
        moitié. En texte, elle est lisible et elle survit. NE PAS la
        supprimer pour alléger : c'est une obligation, pas un ornement.
 
-       ⚠ AUCUNE PROMESSE DE PRISE EN CHARGE. Le badge CPF atteste que
-       MALAC respecte la charte de déontologie des organismes ; il ne
-       dit pas que le compte du lecteur couvrira la formation.
+       ⚠ LE BANDEAU « MON COMPTE FORMATION » EST LE SEUL VISUEL QU'UN
+       ORGANISME A LE DROIT D'AFFICHER pour annoncer l'éligibilité — le
+       logo Mon Compte Formation nu est réservé à la plateforme. Ne pas le
+       recadrer autrement, ne pas le recolorer, ne pas en retirer
+       l'adresse moncompteformation.gouv.fr : la charte graphique
+       l'interdit, et c'est elle qui rend l'usage légitime.
+       Un badge « charte de déontologie » avait d'abord été posé ici, puis
+       une pastille texte : le premier atteste de l'engagement de
+       l'organisme et non de l'éligibilité de CETTE formation, la seconde
+       n'était qu'un pis-aller en attendant le fichier officiel.
+
+       ⚠ AUCUNE PROMESSE DE PRISE EN CHARGE. Le bandeau dit que la
+       formation est éligible, pas que le compte du lecteur la couvrira.
+
+       ⚠ LES TROIS SUR UNE SEULE LIGNE — trois <td> d'une même rangée, en
+       POURCENTAGES et non en pixels. Chaque image porte
+       width:100% + max-width, donc elle se cale sur sa colonne : pleine
+       taille à 480 px, réduite d'un tiers à 300 px, et la ligne ne casse
+       jamais. Trois blocs en display:inline-table passaient à la ligne
+       sur mobile, ce qui remettait le CPF tout seul en bas.
+       ⚠ Les alt sont complets : chez qui bloque les images, il reste
+       trois phrases lisibles là où il n'y aurait sinon rien.
        ═══════════════════════════════════════════════════════════════ -->
   <tr>
-    <td align="center" style="padding:26px 4px 0 4px;font-size:0;line-height:0;">
-
-      <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="display:inline-table;border-collapse:collapse;margin:0 10px 10px 10px;">
+    <td style="padding:26px 4px 0 4px;">
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
         <tr>
-          <td align="center" valign="middle">
-            <img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/logo-qualiopi.png" alt="Qualiopi — processus certifié — République française" width="160" border="0" style="display:block;width:160px;max-width:100%;height:auto;border:0;outline:none;">
+          <td width="38%" align="center" valign="middle" style="padding:0 5px;font-size:0;line-height:0;">
+            <img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/logo-qualiopi.png" alt="Qualiopi — processus certifié — République française" width="150" border="0" style="display:block;width:100%;max-width:150px;height:auto;border:0;outline:none;margin:0 auto;">
+          </td>
+          <td width="27%" align="center" valign="middle" style="padding:0 5px;font-size:0;line-height:0;">
+            <img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/logo-cpf-eligible.png" alt="Cette formation est éligible à Mon Compte Formation — moncompteformation.gouv.fr" width="100" border="0" style="display:block;width:100%;max-width:100px;height:auto;border:0;outline:none;margin:0 auto;">
+          </td>
+          <td width="35%" align="center" valign="middle" style="padding:0 5px;font-size:0;line-height:0;">
+            <img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/logo-lilate.png" alt="LILATE — test d'aptitude à travailler dans une langue étrangère" width="125" border="0" style="display:block;width:100%;max-width:125px;height:auto;border:0;outline:none;margin:0 auto;">
           </td>
         </tr>
       </table>
-
-      <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="display:inline-table;border-collapse:collapse;margin:0 10px 10px 10px;">
-        <tr>
-          <td align="center" valign="middle">
-            <img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/logo-lilate.png" alt="LILATE — test d'aptitude à travailler dans une langue étrangère" width="130" border="0" style="display:block;width:130px;max-width:100%;height:auto;border:0;outline:none;">
-          </td>
-        </tr>
-      </table>
-
-    </td>
-  </tr>
-
-  <!-- ⚠ LE BANDEAU OFFICIEL « MON COMPTE FORMATION », FOURNI PAR MALAC.
-       C'est le SEUL visuel qu'un organisme a le droit d'afficher pour
-       annoncer l'éligibilité : le logo « Mon Compte Formation » nu est
-       réservé à la plateforme. Ne pas le recadrer autrement, ne pas le
-       recolorer, ne pas en retirer l'adresse moncompteformation.gouv.fr
-       — la charte graphique l'interdit et c'est elle qui rend l'usage
-       légitime.
-       Une pastille texte tenait ce rôle en attendant le fichier ; elle
-       est remplacée depuis le 19 août.
-       ⚠ Un badge « charte de déontologie » avait d'abord été posé ici,
-       puis retiré : il atteste de l'engagement de l'organisme, pas de
-       l'éligibilité de CETTE formation. Ce n'est pas la même promesse.
-       ⚠ L'alt porte la phrase en toutes lettres : chez qui bloque les
-       images, l'information doit rester lisible. -->
-  <tr>
-    <td align="center" style="padding:6px 4px 0 4px;font-size:0;line-height:0;">
-      <img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/logo-cpf-eligible.png" alt="Cette formation est éligible à Mon Compte Formation — moncompteformation.gouv.fr" width="120" border="0" style="display:block;width:120px;max-width:100%;height:auto;border:0;outline:none;">
     </td>
   </tr>
 
