@@ -85,6 +85,36 @@
     Les deux seules langues à créneau confirmé sont l'arabe et
     l'anglais (14h-15h).
 
+  ▸ ⚠ CHAQUE LANGUE A SA CARTE, PAS UNE LIGNE DE PLANNING (28 août).
+    La version précédente posait les sept langues dans une liste
+    d'horaires : on y lisait un planning, pas une offre. Demande :
+    « mets un peu plus en avant chaque langue au lieu de juste les
+    poser dans un tableau d'horaires ».
+    Chaque carte porte donc, dans cet ordre : le drapeau, le nom, LA
+    SALUTATION DANS LA LANGUE, puis CE QU'ON SAIT FAIRE au bout d'une
+    heure. C'est la promesse concrète qui fait choisir, pas l'horaire.
+    ⚠ LE TABLEAU RESTE, en récapitulatif compact SOUS les cartes —
+    même consigne : « bien sûr le tableau reste, c'est nécessaire pour
+    bien clarifier les langues, les horaires ». Il est le seul endroit
+    qui dit qui a son créneau et qui attend confirmation : la phrase
+    du bandeau de chapitre a été raccourcie pour ne pas le doubler.
+    ⚠ LES CARTES SONT GÉNÉRÉES — systeme/cartes-langues-jpo.py.
+    Modifier le script, pas le HTML : sept cartes éditées à la main
+    divergent à la première correction.
+
+  ▸ ⚠ LES PROMESSES DOIVENT ÊTRE TENABLES EN UNE HEURE, et rien de
+    plus. Ne pas y ajouter « lire », « écrire couramment », « tenir une
+    conversation ». Une promesse démentie à 15h le samedi coûte plus
+    cher que l'inscription qu'elle a gagnée.
+
+  ▸ ⚠ PAS DE BIDI MIXTE. L'arabe et les écritures asiatiques sont sur
+    LEUR PROPRE LIGNE, jamais dans une phrase française entre
+    guillemets : les guillemets sont des caractères neutres, et
+    l'algorithme bidirectionnel les fait sauter d'un côté à l'autre
+    selon le client mail. Une ligne = une direction. La salutation
+    arabe porte dir="rtl" (ordre des lettres) ET text-align:left
+    (pour rester alignée sur le rail gauche des autres cartes).
+
   ▸ ⚠ SEPT LANGUES, DEUX RÉGIMES.
     ▸ Arabe   6a8832531276a07b58fc4354 — « Samedis 14:00 à 15:00 »
     ▸ Anglais 6a8833221276a07b58fc4363 — même créneau
@@ -359,7 +389,7 @@
             <img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/2026-08-seances-decouverte/ruban-sept-langues.png" alt="" width="260" border="0" style="width:260px;max-width:84%;height:auto;border:0;outline:none;margin-top:16px;">
 
             <div style="padding-top:14px;font-size:15px;line-height:1.62;color:#3A4152;">
-              Tout se passe <strong style="font-weight:700;color:#1A1A1A;">samedi 5 septembre</strong>, pendant les portes ouvertes. L'arabe et l'anglais ont leur créneau de 14h à 15h&nbsp;; pour les cinq autres, Shirin vous confirme l'horaire par WhatsApp.
+              Tout se passe <strong style="font-weight:700;color:#1A1A1A;">samedi 5 septembre</strong>, pendant les portes ouvertes. Sept langues, une heure chacune&nbsp;— choisissez la vôtre.
             </div>
 
           </td>
@@ -369,130 +399,324 @@
   </tr>
 </table>
 
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin-top:12px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin-top:10px;">
   <tr>
     <td style="padding:0 4px;">
       <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;">
         <tr>
-          <td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border:1px solid #D8E1F5;border-radius:18px;padding:18px 18px 16px 18px;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">
+          <td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border:1px solid #D8E1F5;border-radius:16px;padding:16px 16px 16px 16px;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">
 
             <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
               <tr>
-                <td style="padding:12px 0;">
-                  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
-                    <tr>
-                      <td width="32" valign="middle" style="padding:0 11px 0 0;font-size:0;line-height:0;">
-                        <img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/drapeau-arabe.png" alt="" width="32" height="32" border="0" style="display:block;width:32px;height:32px;border:0;outline:none;">
-                      </td>
-                      <td valign="middle">
-                        <span style="font-size:16px;line-height:1.35;font-weight:700;color:#0A2870;">Arabe</span><br>
-                        <span style="font-size:13px;line-height:1.4;color:#5A6472;">Samedi 5 septembre&nbsp;· 14h – 15h</span>
-                      </td>
-                      <td valign="middle" align="right" width="100" style="padding-left:6px;">
-                        <a href="https://ent.malac.fr/newformulaireinsc?coursId=6a8832531276a07b58fc4354" class="mlc-lien" style="display:inline-block;font-size:13px;line-height:1.4;font-weight:700;color:#5271FF;text-decoration:none;white-space:nowrap;">S'inscrire&nbsp;→</a>
-                        <br>
-                        <a href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter.%20Je%20souhaite%20m%E2%80%99inscrire%20%C3%A0%20l%E2%80%99heure%20d%E2%80%99initiation%20d%E2%80%99arabe%20pour%20adultes%2C%20samedi%205%20septembre%20de%2014h%20%C3%A0%2015h%2C%20pendant%20la%20journ%C3%A9e%20portes%20ouvertes.%20" class="mlc-lien" style="display:inline-block;margin-top:8px;font-size:12px;line-height:1.4;font-weight:700;color:#128C4A;text-decoration:none;white-space:nowrap;"><img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/reseaux/whatsapp.png" alt="" width="15" height="15" border="0" style="width:15px;height:15px;border:0;outline:none;vertical-align:-3px;margin-right:5px;">WhatsApp</a>
-                      </td>
-                    </tr>
-                  </table>
+                <td width="32" valign="middle" style="padding:0 11px 0 0;font-size:0;line-height:0;">
+                  <img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/drapeau-arabe.png" alt="" width="32" height="32" border="0" style="display:block;width:32px;height:32px;border:0;outline:none;">
                 </td>
-              </tr>
-              <tr>
-                <td style="padding:12px 0;border-top:1px solid #E3E9F5;">
-                  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
-                    <tr>
-                      <td width="32" valign="middle" style="padding:0 11px 0 0;font-size:0;line-height:0;">
-                        <img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/drapeau-anglais.png" alt="" width="32" height="32" border="0" style="display:block;width:32px;height:32px;border:0;outline:none;">
-                      </td>
-                      <td valign="middle">
-                        <span style="font-size:16px;line-height:1.35;font-weight:700;color:#0A2870;">Anglais</span><br>
-                        <span style="font-size:13px;line-height:1.4;color:#5A6472;">Samedi 5 septembre&nbsp;· 14h – 15h</span>
-                      </td>
-                      <td valign="middle" align="right" width="100" style="padding-left:6px;">
-                        <a href="https://ent.malac.fr/newformulaireinsc?coursId=6a8833221276a07b58fc4363" class="mlc-lien" style="display:inline-block;font-size:13px;line-height:1.4;font-weight:700;color:#5271FF;text-decoration:none;white-space:nowrap;">S'inscrire&nbsp;→</a>
-                        <br>
-                        <a href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter.%20Je%20souhaite%20m%E2%80%99inscrire%20%C3%A0%20l%E2%80%99heure%20d%E2%80%99initiation%20d%E2%80%99anglais%20pour%20adultes%2C%20samedi%205%20septembre%20de%2014h%20%C3%A0%2015h%2C%20pendant%20la%20journ%C3%A9e%20portes%20ouvertes.%20" class="mlc-lien" style="display:inline-block;margin-top:8px;font-size:12px;line-height:1.4;font-weight:700;color:#128C4A;text-decoration:none;white-space:nowrap;"><img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/reseaux/whatsapp.png" alt="" width="15" height="15" border="0" style="width:15px;height:15px;border:0;outline:none;vertical-align:-3px;margin-right:5px;">WhatsApp</a>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td style="padding:12px 0;border-top:1px solid #E3E9F5;">
-                  <a href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter.%20Je%20souhaite%20r%C3%A9server%20l%E2%80%99heure%20d%E2%80%99initiation%20de%20chinois%20pour%20adultes%20du%20samedi%205%20septembre%2C%20pendant%20la%20journ%C3%A9e%20portes%20ouvertes.%20Pouvez-vous%20me%20confirmer%20l%E2%80%99horaire%20%3F%20" class="mlc-lien" style="display:block;text-decoration:none;color:#0A2870;">
-                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
-                      <tr>
-                        <td width="32" valign="middle" style="padding:0 11px 0 0;font-size:0;line-height:0;">
-                          <img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/drapeau-chinois.png" alt="" width="32" height="32" border="0" style="display:block;width:32px;height:32px;border:0;outline:none;">
-                        </td>
-                        <td valign="middle" style="font-size:16px;line-height:1.35;font-weight:700;color:#0A2870;">Chinois</td>
-                        <td valign="middle" align="right" width="96" style="padding-left:6px;"><span style="font-size:13px;line-height:1.4;font-weight:700;color:#128C4A;white-space:nowrap;"><img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/reseaux/whatsapp.png" alt="" width="15" height="15" border="0" style="width:15px;height:15px;border:0;outline:none;vertical-align:-3px;margin-right:5px;">Réserver&nbsp;→</span></td>
-                      </tr>
-                    </table>
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td style="padding:12px 0;border-top:1px solid #E3E9F5;">
-                  <a href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter.%20Je%20souhaite%20r%C3%A9server%20l%E2%80%99heure%20d%E2%80%99initiation%20de%20portugais%20pour%20adultes%20du%20samedi%205%20septembre%2C%20pendant%20la%20journ%C3%A9e%20portes%20ouvertes.%20Pouvez-vous%20me%20confirmer%20l%E2%80%99horaire%20%3F%20" class="mlc-lien" style="display:block;text-decoration:none;color:#0A2870;">
-                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
-                      <tr>
-                        <td width="32" valign="middle" style="padding:0 11px 0 0;font-size:0;line-height:0;">
-                          <img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/drapeau-portugais.png" alt="" width="32" height="32" border="0" style="display:block;width:32px;height:32px;border:0;outline:none;">
-                        </td>
-                        <td valign="middle" style="font-size:16px;line-height:1.35;font-weight:700;color:#0A2870;">Portugais</td>
-                        <td valign="middle" align="right" width="96" style="padding-left:6px;"><span style="font-size:13px;line-height:1.4;font-weight:700;color:#128C4A;white-space:nowrap;"><img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/reseaux/whatsapp.png" alt="" width="15" height="15" border="0" style="width:15px;height:15px;border:0;outline:none;vertical-align:-3px;margin-right:5px;">Réserver&nbsp;→</span></td>
-                      </tr>
-                    </table>
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td style="padding:12px 0;border-top:1px solid #E3E9F5;">
-                  <a href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter.%20Je%20souhaite%20r%C3%A9server%20l%E2%80%99heure%20d%E2%80%99initiation%20d%E2%80%99espagnol%20pour%20adultes%20du%20samedi%205%20septembre%2C%20pendant%20la%20journ%C3%A9e%20portes%20ouvertes.%20Pouvez-vous%20me%20confirmer%20l%E2%80%99horaire%20%3F%20" class="mlc-lien" style="display:block;text-decoration:none;color:#0A2870;">
-                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
-                      <tr>
-                        <td width="32" valign="middle" style="padding:0 11px 0 0;font-size:0;line-height:0;">
-                          <img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/drapeau-espagnol.png" alt="" width="32" height="32" border="0" style="display:block;width:32px;height:32px;border:0;outline:none;">
-                        </td>
-                        <td valign="middle" style="font-size:16px;line-height:1.35;font-weight:700;color:#0A2870;">Espagnol</td>
-                        <td valign="middle" align="right" width="96" style="padding-left:6px;"><span style="font-size:13px;line-height:1.4;font-weight:700;color:#128C4A;white-space:nowrap;"><img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/reseaux/whatsapp.png" alt="" width="15" height="15" border="0" style="width:15px;height:15px;border:0;outline:none;vertical-align:-3px;margin-right:5px;">Réserver&nbsp;→</span></td>
-                      </tr>
-                    </table>
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td style="padding:12px 0;border-top:1px solid #E3E9F5;">
-                  <a href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter.%20Je%20souhaite%20r%C3%A9server%20l%E2%80%99heure%20d%E2%80%99initiation%20d%E2%80%99italien%20pour%20adultes%20du%20samedi%205%20septembre%2C%20pendant%20la%20journ%C3%A9e%20portes%20ouvertes.%20Pouvez-vous%20me%20confirmer%20l%E2%80%99horaire%20%3F%20" class="mlc-lien" style="display:block;text-decoration:none;color:#0A2870;">
-                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
-                      <tr>
-                        <td width="32" valign="middle" style="padding:0 11px 0 0;font-size:0;line-height:0;">
-                          <img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/drapeau-italien.png" alt="" width="32" height="32" border="0" style="display:block;width:32px;height:32px;border:0;outline:none;">
-                        </td>
-                        <td valign="middle" style="font-size:16px;line-height:1.35;font-weight:700;color:#0A2870;">Italien</td>
-                        <td valign="middle" align="right" width="96" style="padding-left:6px;"><span style="font-size:13px;line-height:1.4;font-weight:700;color:#128C4A;white-space:nowrap;"><img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/reseaux/whatsapp.png" alt="" width="15" height="15" border="0" style="width:15px;height:15px;border:0;outline:none;vertical-align:-3px;margin-right:5px;">Réserver&nbsp;→</span></td>
-                      </tr>
-                    </table>
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td style="padding:12px 0;border-top:1px solid #E3E9F5;">
-                  <a href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter.%20Je%20souhaite%20r%C3%A9server%20l%E2%80%99heure%20d%E2%80%99initiation%20de%20japonais%20pour%20adultes%20du%20samedi%205%20septembre%2C%20pendant%20la%20journ%C3%A9e%20portes%20ouvertes.%20Pouvez-vous%20me%20confirmer%20l%E2%80%99horaire%20%3F%20" class="mlc-lien" style="display:block;text-decoration:none;color:#0A2870;">
-                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
-                      <tr>
-                        <td width="32" valign="middle" style="padding:0 11px 0 0;font-size:0;line-height:0;">
-                          <img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/drapeau-japonais.png" alt="" width="32" height="32" border="0" style="display:block;width:32px;height:32px;border:0;outline:none;">
-                        </td>
-                        <td valign="middle" style="font-size:16px;line-height:1.35;font-weight:700;color:#0A2870;">Japonais</td>
-                        <td valign="middle" align="right" width="96" style="padding-left:6px;"><span style="font-size:13px;line-height:1.4;font-weight:700;color:#128C4A;white-space:nowrap;"><img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/reseaux/whatsapp.png" alt="" width="15" height="15" border="0" style="width:15px;height:15px;border:0;outline:none;vertical-align:-3px;margin-right:5px;">Réserver&nbsp;→</span></td>
-                      </tr>
-                    </table>
-                  </a>
-                </td>
+                <td valign="middle" style="font-size:18px;line-height:1.3;font-weight:700;color:#0A2870;">Arabe</td>
               </tr>
             </table>
+
+            <div dir="rtl" style="padding-top:13px;font-size:19px;line-height:1.35;font-weight:700;color:#5271FF;text-align:left;">أهلاً وسهلاً</div>
+
+            <div style="padding-top:7px;font-size:14px;line-height:1.6;color:#3A4152;">Saluer, remercier, et <strong style="font-weight:700;color:#1A1A1A;">écrire votre prénom en lettres arabes</strong>.</div>
+
+            <div style="padding-top:12px;font-size:13px;line-height:1.45;font-weight:700;color:#0A2870;">🗓&nbsp; Samedi 5 septembre · 14h – 15h</div>
+
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin-top:14px;">
+                <tr>
+                  <td width="50%" valign="top" style="padding:0 5px 0 0;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;">
+                    <tr><td bgcolor="#5271FF" align="center" style="background-color:#5271FF;border-radius:8px;">
+                      <a href="https://ent.malac.fr/newformulaireinsc?coursId=6a8832531276a07b58fc4354" class="mlc-lien" style="display:block;padding:11px 8px;font-size:13px;line-height:1.2;font-weight:700;color:#FFFFFF;text-decoration:none;">S’inscrire&nbsp;→</a>
+                    </td></tr>
+                  </table></td>
+                  <td width="50%" valign="top" style="padding:0 0 0 5px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;">
+                    <tr><td bgcolor="#128C4A" align="center" style="background-color:#128C4A;border-radius:8px;">
+                      <a href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter.%20Je%20souhaite%20m%E2%80%99inscrire%20%C3%A0%20l%E2%80%99heure%20d%E2%80%99initiation%20de%20arabe%20pour%20adultes%2C%20samedi%205%20septembre%20de%2014h%20%C3%A0%2015h%2C%20pendant%20la%20journ%C3%A9e%20portes%20ouvertes.%20" class="mlc-lien" style="display:block;padding:11px 8px;font-size:13px;line-height:1.2;font-weight:700;color:#FFFFFF;text-decoration:none;"><img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/reseaux/whatsapp.png" alt="" width="15" height="15" border="0" style="width:15px;height:15px;border:0;outline:none;vertical-align:-3px;margin-right:6px;">WhatsApp</a>
+                    </td></tr>
+                  </table></td>
+                </tr>
+              </table>
+
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin-top:10px;">
+  <tr>
+    <td style="padding:0 4px;">
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;">
+        <tr>
+          <td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border:1px solid #D8E1F5;border-radius:16px;padding:16px 16px 16px 16px;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">
+
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+              <tr>
+                <td width="32" valign="middle" style="padding:0 11px 0 0;font-size:0;line-height:0;">
+                  <img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/drapeau-anglais.png" alt="" width="32" height="32" border="0" style="display:block;width:32px;height:32px;border:0;outline:none;">
+                </td>
+                <td valign="middle" style="font-size:18px;line-height:1.3;font-weight:700;color:#0A2870;">Anglais</td>
+              </tr>
+            </table>
+
+            <div dir="ltr" style="padding-top:13px;font-size:19px;line-height:1.35;font-weight:700;color:#5271FF;text-align:left;">Hello there!</div>
+
+            <div style="padding-top:7px;font-size:14px;line-height:1.6;color:#3A4152;">Vous présenter, poser vos premières questions, et <strong style="font-weight:700;color:#1A1A1A;">parler sans traduire dans votre tête</strong>.</div>
+
+            <div style="padding-top:12px;font-size:13px;line-height:1.45;font-weight:700;color:#0A2870;">🗓&nbsp; Samedi 5 septembre · 14h – 15h</div>
+
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin-top:14px;">
+                <tr>
+                  <td width="50%" valign="top" style="padding:0 5px 0 0;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;">
+                    <tr><td bgcolor="#5271FF" align="center" style="background-color:#5271FF;border-radius:8px;">
+                      <a href="https://ent.malac.fr/newformulaireinsc?coursId=6a8833221276a07b58fc4363" class="mlc-lien" style="display:block;padding:11px 8px;font-size:13px;line-height:1.2;font-weight:700;color:#FFFFFF;text-decoration:none;">S’inscrire&nbsp;→</a>
+                    </td></tr>
+                  </table></td>
+                  <td width="50%" valign="top" style="padding:0 0 0 5px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;">
+                    <tr><td bgcolor="#128C4A" align="center" style="background-color:#128C4A;border-radius:8px;">
+                      <a href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter.%20Je%20souhaite%20m%E2%80%99inscrire%20%C3%A0%20l%E2%80%99heure%20d%E2%80%99initiation%20de%20anglais%20pour%20adultes%2C%20samedi%205%20septembre%20de%2014h%20%C3%A0%2015h%2C%20pendant%20la%20journ%C3%A9e%20portes%20ouvertes.%20" class="mlc-lien" style="display:block;padding:11px 8px;font-size:13px;line-height:1.2;font-weight:700;color:#FFFFFF;text-decoration:none;"><img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/reseaux/whatsapp.png" alt="" width="15" height="15" border="0" style="width:15px;height:15px;border:0;outline:none;vertical-align:-3px;margin-right:6px;">WhatsApp</a>
+                    </td></tr>
+                  </table></td>
+                </tr>
+              </table>
+
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin-top:10px;">
+  <tr>
+    <td style="padding:0 4px;">
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;">
+        <tr>
+          <td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border:1px solid #D8E1F5;border-radius:16px;padding:16px 16px 16px 16px;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">
+
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+              <tr>
+                <td width="32" valign="middle" style="padding:0 11px 0 0;font-size:0;line-height:0;">
+                  <img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/drapeau-chinois.png" alt="" width="32" height="32" border="0" style="display:block;width:32px;height:32px;border:0;outline:none;">
+                </td>
+                <td valign="middle" style="font-size:18px;line-height:1.3;font-weight:700;color:#0A2870;">Chinois</td>
+              </tr>
+            </table>
+
+            <div dir="ltr" style="padding-top:13px;font-size:19px;line-height:1.35;font-weight:700;color:#5271FF;text-align:left;">你好 · 谢谢 · 再见</div>
+
+            <div style="padding-top:7px;font-size:14px;line-height:1.6;color:#3A4152;">Dire bonjour, merci et au revoir, et <strong style="font-weight:700;color:#1A1A1A;">tracer vos premiers caractères</strong>.</div>
+
+            <div style="padding-top:12px;font-size:13px;line-height:1.45;font-weight:700;color:#0A2870;">🗓&nbsp; Samedi 5 septembre&nbsp;· <span style="font-weight:400;color:#5A6472;">horaire confirmé par WhatsApp</span></div>
+
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin-top:14px;">
+                <tr><td><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;">
+                    <tr><td bgcolor="#128C4A" align="center" style="background-color:#128C4A;border-radius:8px;">
+                      <a href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter.%20Je%20souhaite%20r%C3%A9server%20l%E2%80%99heure%20d%E2%80%99initiation%20de%20chinois%20pour%20adultes%20du%20samedi%205%20septembre%2C%20pendant%20la%20journ%C3%A9e%20portes%20ouvertes.%20Pouvez-vous%20me%20confirmer%20l%E2%80%99horaire%20%3F%20" class="mlc-lien" style="display:block;padding:11px 8px;font-size:13px;line-height:1.2;font-weight:700;color:#FFFFFF;text-decoration:none;"><img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/reseaux/whatsapp.png" alt="" width="15" height="15" border="0" style="width:15px;height:15px;border:0;outline:none;vertical-align:-3px;margin-right:6px;">Réserver mon heure</a>
+                    </td></tr>
+                  </table></td></tr>
+              </table>
+
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin-top:10px;">
+  <tr>
+    <td style="padding:0 4px;">
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;">
+        <tr>
+          <td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border:1px solid #D8E1F5;border-radius:16px;padding:16px 16px 16px 16px;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">
+
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+              <tr>
+                <td width="32" valign="middle" style="padding:0 11px 0 0;font-size:0;line-height:0;">
+                  <img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/drapeau-portugais.png" alt="" width="32" height="32" border="0" style="display:block;width:32px;height:32px;border:0;outline:none;">
+                </td>
+                <td valign="middle" style="font-size:18px;line-height:1.3;font-weight:700;color:#0A2870;">Portugais</td>
+              </tr>
+            </table>
+
+            <div dir="ltr" style="padding-top:13px;font-size:19px;line-height:1.35;font-weight:700;color:#5271FF;text-align:left;">Olá, tudo bem?</div>
+
+            <div style="padding-top:7px;font-size:14px;line-height:1.6;color:#3A4152;">Vous présenter, et <strong style="font-weight:700;color:#1A1A1A;">entendre enfin la différence</strong> entre le portugais du Portugal et celui du Brésil.</div>
+
+            <div style="padding-top:12px;font-size:13px;line-height:1.45;font-weight:700;color:#0A2870;">🗓&nbsp; Samedi 5 septembre&nbsp;· <span style="font-weight:400;color:#5A6472;">horaire confirmé par WhatsApp</span></div>
+
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin-top:14px;">
+                <tr><td><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;">
+                    <tr><td bgcolor="#128C4A" align="center" style="background-color:#128C4A;border-radius:8px;">
+                      <a href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter.%20Je%20souhaite%20r%C3%A9server%20l%E2%80%99heure%20d%E2%80%99initiation%20de%20portugais%20pour%20adultes%20du%20samedi%205%20septembre%2C%20pendant%20la%20journ%C3%A9e%20portes%20ouvertes.%20Pouvez-vous%20me%20confirmer%20l%E2%80%99horaire%20%3F%20" class="mlc-lien" style="display:block;padding:11px 8px;font-size:13px;line-height:1.2;font-weight:700;color:#FFFFFF;text-decoration:none;"><img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/reseaux/whatsapp.png" alt="" width="15" height="15" border="0" style="width:15px;height:15px;border:0;outline:none;vertical-align:-3px;margin-right:6px;">Réserver mon heure</a>
+                    </td></tr>
+                  </table></td></tr>
+              </table>
+
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin-top:10px;">
+  <tr>
+    <td style="padding:0 4px;">
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;">
+        <tr>
+          <td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border:1px solid #D8E1F5;border-radius:16px;padding:16px 16px 16px 16px;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">
+
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+              <tr>
+                <td width="32" valign="middle" style="padding:0 11px 0 0;font-size:0;line-height:0;">
+                  <img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/drapeau-espagnol.png" alt="" width="32" height="32" border="0" style="display:block;width:32px;height:32px;border:0;outline:none;">
+                </td>
+                <td valign="middle" style="font-size:18px;line-height:1.3;font-weight:700;color:#0A2870;">Espagnol</td>
+              </tr>
+            </table>
+
+            <div dir="ltr" style="padding-top:13px;font-size:19px;line-height:1.35;font-weight:700;color:#5271FF;text-align:left;">¡Hola! ¿Qué tal?</div>
+
+            <div style="padding-top:7px;font-size:14px;line-height:1.6;color:#3A4152;"><strong style="font-weight:700;color:#1A1A1A;">Vous présenter en espagnol</strong> : qui vous êtes, d'où vous venez, ce que vous faites.</div>
+
+            <div style="padding-top:12px;font-size:13px;line-height:1.45;font-weight:700;color:#0A2870;">🗓&nbsp; Samedi 5 septembre&nbsp;· <span style="font-weight:400;color:#5A6472;">horaire confirmé par WhatsApp</span></div>
+
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin-top:14px;">
+                <tr><td><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;">
+                    <tr><td bgcolor="#128C4A" align="center" style="background-color:#128C4A;border-radius:8px;">
+                      <a href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter.%20Je%20souhaite%20r%C3%A9server%20l%E2%80%99heure%20d%E2%80%99initiation%20de%20espagnol%20pour%20adultes%20du%20samedi%205%20septembre%2C%20pendant%20la%20journ%C3%A9e%20portes%20ouvertes.%20Pouvez-vous%20me%20confirmer%20l%E2%80%99horaire%20%3F%20" class="mlc-lien" style="display:block;padding:11px 8px;font-size:13px;line-height:1.2;font-weight:700;color:#FFFFFF;text-decoration:none;"><img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/reseaux/whatsapp.png" alt="" width="15" height="15" border="0" style="width:15px;height:15px;border:0;outline:none;vertical-align:-3px;margin-right:6px;">Réserver mon heure</a>
+                    </td></tr>
+                  </table></td></tr>
+              </table>
+
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin-top:10px;">
+  <tr>
+    <td style="padding:0 4px;">
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;">
+        <tr>
+          <td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border:1px solid #D8E1F5;border-radius:16px;padding:16px 16px 16px 16px;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">
+
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+              <tr>
+                <td width="32" valign="middle" style="padding:0 11px 0 0;font-size:0;line-height:0;">
+                  <img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/drapeau-italien.png" alt="" width="32" height="32" border="0" style="display:block;width:32px;height:32px;border:0;outline:none;">
+                </td>
+                <td valign="middle" style="font-size:18px;line-height:1.3;font-weight:700;color:#0A2870;">Italien</td>
+              </tr>
+            </table>
+
+            <div dir="ltr" style="padding-top:13px;font-size:19px;line-height:1.35;font-weight:700;color:#5271FF;text-align:left;">Ciao, piacere!</div>
+
+            <div style="padding-top:7px;font-size:14px;line-height:1.6;color:#3A4152;">Vous présenter, commander un café, et voir <strong style="font-weight:700;color:#1A1A1A;">à quelle vitesse l'italien vient quand on parle français</strong>.</div>
+
+            <div style="padding-top:12px;font-size:13px;line-height:1.45;font-weight:700;color:#0A2870;">🗓&nbsp; Samedi 5 septembre&nbsp;· <span style="font-weight:400;color:#5A6472;">horaire confirmé par WhatsApp</span></div>
+
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin-top:14px;">
+                <tr><td><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;">
+                    <tr><td bgcolor="#128C4A" align="center" style="background-color:#128C4A;border-radius:8px;">
+                      <a href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter.%20Je%20souhaite%20r%C3%A9server%20l%E2%80%99heure%20d%E2%80%99initiation%20de%20italien%20pour%20adultes%20du%20samedi%205%20septembre%2C%20pendant%20la%20journ%C3%A9e%20portes%20ouvertes.%20Pouvez-vous%20me%20confirmer%20l%E2%80%99horaire%20%3F%20" class="mlc-lien" style="display:block;padding:11px 8px;font-size:13px;line-height:1.2;font-weight:700;color:#FFFFFF;text-decoration:none;"><img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/reseaux/whatsapp.png" alt="" width="15" height="15" border="0" style="width:15px;height:15px;border:0;outline:none;vertical-align:-3px;margin-right:6px;">Réserver mon heure</a>
+                    </td></tr>
+                  </table></td></tr>
+              </table>
+
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin-top:10px;">
+  <tr>
+    <td style="padding:0 4px;">
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;">
+        <tr>
+          <td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border:1px solid #D8E1F5;border-radius:16px;padding:16px 16px 16px 16px;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">
+
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+              <tr>
+                <td width="32" valign="middle" style="padding:0 11px 0 0;font-size:0;line-height:0;">
+                  <img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/drapeau-japonais.png" alt="" width="32" height="32" border="0" style="display:block;width:32px;height:32px;border:0;outline:none;">
+                </td>
+                <td valign="middle" style="font-size:18px;line-height:1.3;font-weight:700;color:#0A2870;">Japonais</td>
+              </tr>
+            </table>
+
+            <div dir="ltr" style="padding-top:13px;font-size:19px;line-height:1.35;font-weight:700;color:#5271FF;text-align:left;">はじめまして</div>
+
+            <div style="padding-top:7px;font-size:14px;line-height:1.6;color:#3A4152;">Vous présenter, compter jusqu'à dix, et <strong style="font-weight:700;color:#1A1A1A;">comprendre comment marchent les trois écritures</strong>.</div>
+
+            <div style="padding-top:12px;font-size:13px;line-height:1.45;font-weight:700;color:#0A2870;">🗓&nbsp; Samedi 5 septembre&nbsp;· <span style="font-weight:400;color:#5A6472;">horaire confirmé par WhatsApp</span></div>
+
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin-top:14px;">
+                <tr><td><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;">
+                    <tr><td bgcolor="#128C4A" align="center" style="background-color:#128C4A;border-radius:8px;">
+                      <a href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter.%20Je%20souhaite%20r%C3%A9server%20l%E2%80%99heure%20d%E2%80%99initiation%20de%20japonais%20pour%20adultes%20du%20samedi%205%20septembre%2C%20pendant%20la%20journ%C3%A9e%20portes%20ouvertes.%20Pouvez-vous%20me%20confirmer%20l%E2%80%99horaire%20%3F%20" class="mlc-lien" style="display:block;padding:11px 8px;font-size:13px;line-height:1.2;font-weight:700;color:#FFFFFF;text-decoration:none;"><img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/reseaux/whatsapp.png" alt="" width="15" height="15" border="0" style="width:15px;height:15px;border:0;outline:none;vertical-align:-3px;margin-right:6px;">Réserver mon heure</a>
+                    </td></tr>
+                  </table></td></tr>
+              </table>
+
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin-top:16px;">
+  <tr>
+    <td style="padding:0 4px;">
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;">
+        <tr>
+          <td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border:2px solid #C9D8F5;border-radius:16px;padding:16px 18px 14px 18px;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">
+
+            <div style="font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#5271FF;">
+              ⏱&nbsp; Les horaires en un coup d’œil
+            </div>
+
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin-top:10px;">
+              <tr>
+                <td style="padding:9px 0;font-size:14px;line-height:1.4;font-weight:700;color:#0A2870;">Arabe</td>
+                <td align="right" style="padding:9px 0;font-size:13px;line-height:1.4;color:#0A2870;">14h – 15h</td>
+              </tr>
+              <tr>
+                <td style="border-top:1px solid #E3E9F5;padding:9px 0;font-size:14px;line-height:1.4;font-weight:700;color:#0A2870;">Anglais</td>
+                <td align="right" style="border-top:1px solid #E3E9F5;padding:9px 0;font-size:13px;line-height:1.4;color:#0A2870;">14h – 15h</td>
+              </tr>
+              <tr>
+                <td style="border-top:1px solid #E3E9F5;padding:9px 0;font-size:14px;line-height:1.4;font-weight:700;color:#0A2870;">Chinois</td>
+                <td align="right" style="border-top:1px solid #E3E9F5;padding:9px 0;font-size:13px;line-height:1.4;color:#5A6472;">horaire par WhatsApp</td>
+              </tr>
+              <tr>
+                <td style="border-top:1px solid #E3E9F5;padding:9px 0;font-size:14px;line-height:1.4;font-weight:700;color:#0A2870;">Portugais</td>
+                <td align="right" style="border-top:1px solid #E3E9F5;padding:9px 0;font-size:13px;line-height:1.4;color:#5A6472;">horaire par WhatsApp</td>
+              </tr>
+              <tr>
+                <td style="border-top:1px solid #E3E9F5;padding:9px 0;font-size:14px;line-height:1.4;font-weight:700;color:#0A2870;">Espagnol</td>
+                <td align="right" style="border-top:1px solid #E3E9F5;padding:9px 0;font-size:13px;line-height:1.4;color:#5A6472;">horaire par WhatsApp</td>
+              </tr>
+              <tr>
+                <td style="border-top:1px solid #E3E9F5;padding:9px 0;font-size:14px;line-height:1.4;font-weight:700;color:#0A2870;">Italien</td>
+                <td align="right" style="border-top:1px solid #E3E9F5;padding:9px 0;font-size:13px;line-height:1.4;color:#5A6472;">horaire par WhatsApp</td>
+              </tr>
+              <tr>
+                <td style="border-top:1px solid #E3E9F5;padding:9px 0;font-size:14px;line-height:1.4;font-weight:700;color:#0A2870;">Japonais</td>
+                <td align="right" style="border-top:1px solid #E3E9F5;padding:9px 0;font-size:13px;line-height:1.4;color:#5A6472;">horaire par WhatsApp</td>
+              </tr>
+            </table>
+
+            <div style="padding-top:12px;font-size:13px;line-height:1.55;color:#5A6472;">
+              Tout se passe <strong style="font-weight:700;color:#0A2870;">samedi 5 septembre</strong>, à l’institut. Les cinq langues sans horaire affiché n’ont pas encore leur créneau ouvert&nbsp;: Shirin vous le confirme par WhatsApp.
+            </div>
 
           </td>
         </tr>
