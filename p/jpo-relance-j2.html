@@ -184,19 +184,34 @@
            donc un vrai bouton ici aussi, pas un lien souligné.
            ⚠⚠ AGRANDI LE MÊME JOUR : « trop petit » à 13 px avec un
            padding de 8×16. Passé à 16 px et un padding de 13×24 —
-           même gabarit de police que les autres boutons de l'email
-           (16 px), pour ne plus lire comme une mention annexe.
-           ⚠ EN CONTOUR, PAS PLEIN : la version pleine (marine sur fond
-           blanc) est réservée au bouton principal de la section dédiée
-           plus bas. Un deuxième bouton plein marine dans le hero
-           écraserait la hiérarchie — la promesse du hero reste la
-           séance découverte, juste après. Le contour dit « cette
-           action existe aussi ici », sans rivaliser — sa TAILLE
-           rivalise, sa COULEUR non. -->
-      <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;margin-top:14px;">
+           même gabarit de police que les autres boutons de l'email.
+           ⚠⚠⚠ REFAIT EN VRAI BOUTON LE MÊME JOUR : « on dirait un
+           bouton, autant ajouter fond blanc et rendre le bouton
+           cliquable ». La version précédente mettait le fond et la
+           bordure sur le <td>, et le lien <a> seulement autour du
+           texte : ça RESSEMBLAIT à un bouton mais seule l'étroite
+           bande de texte était cliquable — cliquer sur le padding ou
+           le contour ne faisait rien.
+           ⚠ MAINTENANT BULLETPROOF, comme tous les autres boutons de
+           l'email (VML pour Outlook + <a> plein pour le reste) :
+           fond BLANC (pas crème #FBF7F0comme avant, blanc franc), et
+           TOUTE la pastille — fond, padding, contour compris — répond
+           au clic.
+           ⚠ EN CONTOUR, PAS PLEIN MARINE : la version pleine (marine
+           sur fond blanc) est réservée au bouton principal de la
+           section dédiée plus bas. Un deuxième bouton plein marine
+           dans le hero écraserait la hiérarchie. -->
+      <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="left" style="border-collapse:separate;border-spacing:0;margin-top:14px;">
         <tr>
-          <td bgcolor="#FBF7F0" style="background-color:#FBF7F0;border:2px solid #2B3A8F;border-radius:999px;padding:13px 24px;">
-            <a href="https://ent.malac.fr/newformulairesmart" class="mlc-lien" style="font-size:16px;font-weight:700;color:#2B3A8F;text-decoration:none;">🔥 Inscriptions ouvertes — s'inscrire&nbsp;→</a>
+          <td align="center">
+            <!--[if mso]>
+            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://ent.malac.fr/newformulairesmart" style="height:48px;v-text-anchor:middle;width:300px;" arcsize="50%" strokecolor="#2B3A8F" strokeweight="2px" fillcolor="#FFFFFF">
+              <w:anchorlock/><center style="color:#2B3A8F;font-family:Arial,sans-serif;font-size:15px;font-weight:bold;">Inscriptions ouvertes — s'inscrire</center>
+            </v:roundrect>
+            <![endif]-->
+            <!--[if !mso]><!-->
+            <a href="https://ent.malac.fr/newformulairesmart" class="mlc-btn" style="display:inline-block;background-color:#FFFFFF;color:#2B3A8F;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;font-size:16px;font-weight:700;line-height:22px;text-decoration:none;padding:13px 24px;border:2px solid #2B3A8F;border-radius:999px;">🔥 Inscriptions ouvertes — s'inscrire&nbsp;→</a>
+            <!--<![endif]-->
           </td>
         </tr>
       </table>
@@ -651,12 +666,20 @@
 
       <img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/logo-long-blanc.png" alt="MALAC" width="150" border="0" style="width:150px;max-width:60%;height:auto;border:0;outline:none;">
 
+      <!-- ⚠ CORRIGÉ LE 3 SEPTEMBRE : « l'hyperlien adresse ne se voit
+           pas en bleu comme ça sur le bleu ». #93A2DA (un bleu clair)
+           sur le fond marine #2B3A8F du bloc restait dans la même
+           famille de teinte : le lien se distinguait mal du texte
+           autour. Passé au jaune #FFC217, déjà utilisé pour les liens
+           sur fond marine ailleurs dans cet email (le bouton contour
+           du hero, le bloc WhatsApp) — un jaune sur bleu tranche,
+           un bleu sur bleu se fond. -->
       <div style="padding-top:14px;font-size:13px;line-height:1.7;color:#C3CCEC;">
         MALAC — Institut des langues<br>
         2 ter Avenue de France, 1<sup>er</sup> étage — 91300 MASSY<br>
-        <a href="tel:+33160144326" class="mlc-lien" style="color:#93A2DA;text-decoration:none;font-weight:700;">01 60 14 43 26</a>
+        <a href="tel:+33160144326" class="mlc-lien" style="color:#FFC217;text-decoration:none;font-weight:700;">01 60 14 43 26</a>
         &nbsp;·&nbsp;
-        <a href="https://malac.fr" class="mlc-lien" style="color:#93A2DA;text-decoration:none;font-weight:700;">malac.fr</a>
+        <a href="https://malac.fr" class="mlc-lien" style="color:#FFC217;text-decoration:none;font-weight:700;">malac.fr</a>
       </div>
 
       <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="margin:18px auto 0 auto;">
