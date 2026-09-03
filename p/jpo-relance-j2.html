@@ -140,25 +140,28 @@
       </table>
 
       <!-- ⚠ « JPO » ET « JOURNÉE PORTES OUVERTES » DEMANDÉS EXPLICITEMENT
-           DANS LE HERO (3 septembre), PUIS RENFORCÉS LE MÊME JOUR :
-           « pas assez mis en avant » — un kicker gris 12 px passait
-           inaperçu à côté du titre à 31 px. Deux changements :
-             1. « JPO » entre dans le BADGE lui-même — l'endroit le
-                plus visible du hero, pastille colorée, en haut ;
-             2. « Journée Portes Ouvertes » devient une ligne à 17 px,
-                grasse, en bleu nuit — au même poids que l'accroche,
-                pas un sous-titre discret.
-           NE PAS redescendre en dessous de 15 px ni en gris clair :
-           c'est précisément ce qui a été jugé insuffisant.
+           DANS LE HERO (3 septembre), RENFORCÉS DEUX FOIS LE MÊME JOUR :
+           d'abord « pas assez mis en avant » (kicker gris 12 px → JPO
+           dans le badge + ligne 17 px), PUIS « JPO plus grand que
+           Samedi on vous attend » — la hiérarchie est inversée cette
+           fois : JPO devient le plus gros texte du hero, « Samedi, on
+           vous attend » passe en dessous, à une taille plus petite.
+           ⚠ 44 PX POUR « JPO », CONTRE 26 PX POUR LE TITRE — l'écart
+           doit rester net à l'œil, pas juste techniquement supérieur.
+           NE PAS RÉDUIRE CET ÉCART. « Journée Portes Ouvertes » reste
+           en légende juste en dessous du sigle, plus petite que lui.
            ⚠ « OUVERTES » AU PLURIEL, accord avec « Portes » — le
            carrousel du site écrit « Ouverte » au singulier, une coquille
            déjà relevée dans 2026-09-portes-ouvertes/contenu.md. -->
-      <div style="padding-top:16px;font-size:17px;line-height:1.3;font-weight:700;color:#2B3A8F;">
+      <div style="padding-top:18px;font-size:44px;line-height:1;font-weight:800;color:#2B3A8F;letter-spacing:-.02em;">
+        JPO
+      </div>
+      <div style="padding-top:2px;font-size:15px;line-height:1.3;font-weight:700;color:#6B7280;letter-spacing:.02em;">
         🎈 Journée Portes Ouvertes
       </div>
 
-      <div style="padding-top:6px;font-size:31px;line-height:1.16;font-weight:700;color:#2B3A8F;letter-spacing:-.03em;">
-        Samedi, on<br><span style="background-image:linear-gradient(180deg,rgba(255,194,23,0) 50%,#FFC217 50%,#FFC217 93%,rgba(255,194,23,0) 93%);">vous attend.</span>
+      <div style="padding-top:14px;font-size:26px;line-height:1.2;font-weight:700;color:#2B3A8F;letter-spacing:-.02em;">
+        Samedi, on <span style="background-image:linear-gradient(180deg,rgba(255,194,23,0) 50%,#FFC217 50%,#FFC217 93%,rgba(255,194,23,0) 93%);">vous attend.</span>
       </div>
 
       <div style="padding-top:12px;font-size:17px;line-height:1.45;font-weight:500;color:#5A6472;">
@@ -174,16 +177,21 @@
            un lien texte seul avait déjà été jugé insuffisant deux fois
            dans cet email (le kicker JPO, puis l'absence de bouton) :
            donc un vrai bouton ici aussi, pas un lien souligné.
+           ⚠⚠ AGRANDI LE MÊME JOUR : « trop petit » à 13 px avec un
+           padding de 8×16. Passé à 16 px et un padding de 13×24 —
+           même gabarit de police que les autres boutons de l'email
+           (16 px), pour ne plus lire comme une mention annexe.
            ⚠ EN CONTOUR, PAS PLEIN : la version pleine (marine sur fond
            blanc) est réservée au bouton principal de la section dédiée
            plus bas. Un deuxième bouton plein marine dans le hero
            écraserait la hiérarchie — la promesse du hero reste la
            séance découverte, juste après. Le contour dit « cette
-           action existe aussi ici », sans rivaliser. -->
-      <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;margin-top:12px;">
+           action existe aussi ici », sans rivaliser — sa TAILLE
+           rivalise, sa COULEUR non. -->
+      <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;margin-top:14px;">
         <tr>
-          <td bgcolor="#FBF7F0" style="background-color:#FBF7F0;border:2px solid #2B3A8F;border-radius:999px;padding:8px 16px;">
-            <a href="https://ent.malac.fr/newformulairesmart" class="mlc-lien" style="font-size:13px;font-weight:700;color:#2B3A8F;text-decoration:none;">🔥 Inscriptions ouvertes — s'inscrire&nbsp;→</a>
+          <td bgcolor="#FBF7F0" style="background-color:#FBF7F0;border:2px solid #2B3A8F;border-radius:999px;padding:13px 24px;">
+            <a href="https://ent.malac.fr/newformulairesmart" class="mlc-lien" style="font-size:16px;font-weight:700;color:#2B3A8F;text-decoration:none;">🔥 Inscriptions ouvertes — s'inscrire&nbsp;→</a>
           </td>
         </tr>
       </table>
