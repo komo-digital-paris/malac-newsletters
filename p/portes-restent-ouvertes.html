@@ -216,57 +216,68 @@
         Samedi, l'institut était plein. Si vous n'avez pas pu venir, <strong style="font-weight:700;color:#2B3A8F;">il ne s'est rien passé d'irréversible</strong>&nbsp;: demain, on recommence.
       </div>
 
-      <!-- ⚠ LES TROIS JOURS EN PASTILLES DE CALENDRIER (8 septembre).
-           Avant : une phrase posée dans un rectangle marine — « Mercredi
-           9, jeudi 10, vendredi 11 septembre » — trois dates noyées dans
-           une ligne de texte, qu'on lit sans les voir.
-           ⚠ CE N'EST PAS DE L'ORNEMENT : la porte reste ouverte TROIS
-           JOURS, c'est le sujet même de l'email, et trois pastilles le
-           disent d'un coup d'oeil là où la phrase demandait d'être lue.
-           ⚠ LA PREMIÈRE EST PLEINE ET PORTE « DEMAIN » EN JAUNE : le
-           lecteur doit repartir avec UNE date, pas trois. Les deux
-           autres sont en contour — présentes, disponibles, mais elles ne
-           se disputent pas le regard avec mercredi.
-           ⚠ LE MOIS EST SOUS LES PASTILLES, PAS DEDANS : « 9 » tient à
-           23 px dans une colonne de 96 px (sa largeur à 320 px) ;
-           « 9 sept. » n'y tiendrait pas et casserait l'alignement des
-           trois chiffres, qui fait tout l'effet.
-           ⚠ TROIS CELLULES À 33,33 % avec gouttières de 5 px. Contrôlé
-           aux deux largeurs.
-           ⚠ BORDURE ET RAYON SUR LE <td>, JAMAIS SUR LA <table>, avec
-           border-collapse:separate — sinon Outlook les ignore
-           (charte § 8). -->
+      <!-- ⚠ LES TROIS JOURS EN PAGES D'ÉPHÉMÉRIDE (8 septembre, second
+           passage). La première version posait « DEMAIN » au-dessus
+           d'un « 9 » nu : retour immédiat, « on dirait le nombre
+           d'élèves, il faut que visuellement ça se comprenne que c'est
+           du calendrier ». Un chiffre seul n'est pas une date — ce qui
+           fait reconnaître un calendrier, c'est LA FORME DE LA PAGE :
+           un bandeau avec le mois, le grand numéro dessous, le jour de
+           la semaine en petit. C'est l'icône Calendrier de tous les
+           téléphones et le calendrier à effeuiller de tous les bureaux.
+           ⚠ LE MOIS EST DANS LE BANDEAU DES TROIS TUILES, identique :
+           c'est lui qui fait « calendrier », pas le chiffre. Ne pas le
+           remplacer par « DEMAIN » sur la première — c'est exactement
+           ce qui rendait le chiffre illisible.
+           ⚠ LE JOUR DE LA SEMAINE EST ÉCRIT EN TOUTES LETTRES sous le
+           numéro : « mercredi » et non « mer. », parce que l'objet de
+           l'email dit « mercredi 9 » et que le lecteur doit retrouver
+           les mêmes mots. « vendredi » (8 lettres) tient à 11 px dans
+           les 96 px de colonne à 320 px.
+           ⚠ DEMAIN SE DIT PAR LA COULEUR ET PAR LA PHRASE DU DESSOUS,
+           pas par un mot dans la tuile : la première page est pleine,
+           bandeau jaune, chiffre blanc — les deux autres sont en
+           contour. Et la ligne sous les tuiles commence par « Demain
+           mercredi ». Le mot et la date sont côte à côte, sans se
+           gêner.
+           ⚠ BANDEAU JAUNE = TEXTE SOMBRE (charte § 7). Bordure et rayons
+           sur les <td>, border-collapse:separate (charte § 8) : Outlook
+           perd les arrondis mais garde deux rectangles empilés, ce qui
+           reste une page de calendrier. -->
       <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:20px;border-collapse:separate;border-spacing:0;">
         <tr>
           <td width="33.33%" valign="top" style="padding:0 5px 0 0;">
         <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;">
-          <tr><td align="center" bgcolor="#2B3A8F" style="background-color:#2B3A8F;border:2px solid #2B3A8F;border-radius:14px;box-shadow:4px 4px 0 rgba(43,58,143,.28);padding:11px 4px 12px 4px;">
-            <div style="font-size:9px;line-height:1.2;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#FFC217;">Demain</div>
-            <div style="padding-top:3px;font-size:23px;line-height:1.1;font-weight:800;color:#FFFFFF;">9</div>
+          <tr><td align="center" bgcolor="#FFC217" style="background-color:#FFC217;border:2px solid #FFC217;border-bottom:0;border-radius:12px 12px 0 0;padding:6px 4px 5px 4px;font-size:9px;line-height:1.2;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#1A1A1A;">Sept.</td></tr>
+          <tr><td align="center" bgcolor="#2B3A8F" style="background-color:#2B3A8F;border:2px solid #2B3A8F;border-top:0;border-radius:0 0 12px 12px;padding:9px 4px 9px 4px;box-shadow:4px 4px 0 rgba(43,58,143,.28);">
+            <div style="font-size:27px;line-height:1;font-weight:800;color:#FFFFFF;">9</div>
+            <div style="padding-top:5px;font-size:11px;line-height:1.2;font-weight:700;color:#FFC217;">mercredi</div>
           </td></tr>
         </table>
           </td>
           <td width="33.33%" valign="top" style="padding:0 3px;">
         <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;">
-          <tr><td align="center" bgcolor="#FFFFFF" style="background-color:#FFFFFF;border:2px solid #C9D2EE;border-radius:14px;padding:11px 4px 12px 4px;">
-            <div style="font-size:9px;line-height:1.2;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#8A93A3;">Jeudi</div>
-            <div style="padding-top:3px;font-size:23px;line-height:1.1;font-weight:800;color:#2B3A8F;">10</div>
+          <tr><td align="center" bgcolor="#2B3A8F" style="background-color:#2B3A8F;border:2px solid #2B3A8F;border-bottom:0;border-radius:12px 12px 0 0;padding:6px 4px 5px 4px;font-size:9px;line-height:1.2;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#FFFFFF;">Sept.</td></tr>
+          <tr><td align="center" bgcolor="#FFFFFF" style="background-color:#FFFFFF;border:2px solid #C9D2EE;border-top:0;border-radius:0 0 12px 12px;padding:9px 4px 9px 4px;">
+            <div style="font-size:27px;line-height:1;font-weight:800;color:#2B3A8F;">10</div>
+            <div style="padding-top:5px;font-size:11px;line-height:1.2;font-weight:700;color:#8A93A3;">jeudi</div>
           </td></tr>
         </table>
           </td>
           <td width="33.33%" valign="top" style="padding:0 0 0 5px;">
         <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;">
-          <tr><td align="center" bgcolor="#FFFFFF" style="background-color:#FFFFFF;border:2px solid #C9D2EE;border-radius:14px;padding:11px 4px 12px 4px;">
-            <div style="font-size:9px;line-height:1.2;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#8A93A3;">Vendredi</div>
-            <div style="padding-top:3px;font-size:23px;line-height:1.1;font-weight:800;color:#2B3A8F;">11</div>
+          <tr><td align="center" bgcolor="#2B3A8F" style="background-color:#2B3A8F;border:2px solid #2B3A8F;border-bottom:0;border-radius:12px 12px 0 0;padding:6px 4px 5px 4px;font-size:9px;line-height:1.2;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#FFFFFF;">Sept.</td></tr>
+          <tr><td align="center" bgcolor="#FFFFFF" style="background-color:#FFFFFF;border:2px solid #C9D2EE;border-top:0;border-radius:0 0 12px 12px;padding:9px 4px 9px 4px;">
+            <div style="font-size:27px;line-height:1;font-weight:800;color:#2B3A8F;">11</div>
+            <div style="padding-top:5px;font-size:11px;line-height:1.2;font-weight:700;color:#8A93A3;">vendredi</div>
           </td></tr>
         </table>
           </td>
         </tr>
       </table>
 
-      <div style="padding-top:10px;font-size:14px;line-height:1.5;font-weight:600;color:#5A6472;">
-        septembre&nbsp;· de <strong style="font-weight:700;color:#2B3A8F;">9h à 18h</strong>, en continu
+      <div style="padding-top:12px;font-size:14px;line-height:1.5;font-weight:600;color:#5A6472;">
+        <strong style="font-weight:700;color:#2B3A8F;">Demain mercredi</strong>, puis jeudi et vendredi&nbsp;· de <strong style="font-weight:700;color:#2B3A8F;">9h à 18h</strong>, en continu
       </div>
 
       <div style="padding-top:12px;font-size:14px;line-height:1.5;color:#5A6472;">
