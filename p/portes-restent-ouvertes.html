@@ -174,6 +174,51 @@
 
 
 <!-- ═══════════════════════════════════════════════════════════════════
+     0 · LE BANDEAU DE RENTRÉE
+     ⚠ AJOUTÉ LE 8 SEPTEMBRE : « le design peut mieux capter l'intention,
+     c'est quand même la rentrée, c'est un gros événement ». La version
+     précédente ne nommait la rentrée qu'au § 5, tout en bas — l'email
+     s'ouvrait donc sur une nuance de calendrier (« la JPO est passée »)
+     sans jamais dire de quel événement on parlait. Le bandeau plante
+     l'événement dans les 60 premiers pixels.
+     ⚠ IL ANNONCE, IL NE PRESSE PAS. Pas de compte à rebours, pas de
+     « plus que X jours », pas de « dernières places » : la consigne du
+     jour est de ne PAS inquiéter. Une date et une promesse, rien
+     d'autre — l'urgence viendrait contredire tout le reste de l'email.
+     ⚠ ROUGE #E00E12 (charte § 3), COMME LE BANDEAU JPO DE
+     2026-09-jpo-une-heure : c'est devenu la couleur d'annonce
+     d'événement de la maison, et elle passe le contraste — blanc sur
+     #E00E12 donne 5,0:1, au-dessus des 4,5:1 exigés (charte § 7).
+     ⚠ NE PAS LE PASSER EN CORAIL #F4713F : blanc sur corail tombe à
+     2,9:1, très en dessous du seuil. Mesuré, pas estimé.
+     ⚠ EN TEXTE, PAS EN IMAGE : près d'un destinataire sur deux bloque
+     les images, et l'email s'ouvrirait sur du vide.
+     ⚠ HIÉRARCHIE PAR LA TAILLE, PAS PAR LA COULEUR (12 / 28 / 15 px),
+     tout le texte en blanc plein : sur ce rouge, un jaune ou un bleu
+     clair repasserait sous le seuil de contraste.
+     ═══════════════════════════════════════════════════════════════════ -->
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+  <tr>
+    <td bgcolor="#E00E12" style="background-color:#E00E12;background-image:repeating-linear-gradient(135deg,rgba(255,255,255,.07) 0 2px,rgba(255,255,255,0) 2px 15px);padding:20px 22px 22px 22px;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;text-align:center;">
+
+      <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#FFFFFF;">
+        🎒&nbsp; Rentrée 2026 · 2027
+      </div>
+
+      <div style="padding-top:10px;font-size:28px;line-height:1.2;font-weight:700;color:#FFFFFF;letter-spacing:-.02em;">
+        Samedi 12 septembre
+      </div>
+
+      <div style="padding-top:11px;font-size:15px;line-height:1.55;font-weight:500;color:#FFFFFF;">
+        Dix langues, de la maternelle aux adultes.
+      </div>
+
+    </td>
+  </tr>
+</table>
+
+
+<!-- ═══════════════════════════════════════════════════════════════════
      1 · L'OUVERTURE
      ═══════════════════════════════════════════════════════════════════ -->
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
@@ -203,7 +248,12 @@
         La journée portes ouvertes est passée.
       </div>
 
-      <div style="padding-top:6px;font-size:30px;line-height:1.15;font-weight:800;color:#1A1A1A;letter-spacing:-.015em;">
+      <!-- ⚠ 34 px ET NON 30 (8 septembre) : le bandeau rouge au-dessus
+           porte un 28 px. À 30, le titre du hero ne creusait pas
+           l'écart et les deux blocs se disputaient l'entrée de
+           l'email. À 34, la hiérarchie se rétablit — le bandeau
+           annonce, le hero parle. -->
+      <div style="padding-top:6px;font-size:34px;line-height:1.12;font-weight:800;color:#1A1A1A;letter-spacing:-.02em;">
         Nos portes, elles, <span style="background-image:linear-gradient(180deg,rgba(255,194,23,0) 50%,#FFC217 50%,#FFC217 93%,rgba(255,194,23,0) 93%);">restent ouvertes.</span>
       </div>
 
@@ -253,12 +303,30 @@
      2 · DEMAIN — LE CŒUR DE L'EMAIL
      ⚠ C'EST LA SECTION LA PLUS HAUTE ET LA PLUS DÉTAILLÉE, À DESSEIN.
      L'essai est ce qu'on vend ; l'inscription attend le § 5.
-     ═══════════════════════════════════════════════════════════════════ -->
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">
-  <tr>
-    <td style="padding:30px 4px 0 4px;">
 
-      <div style="font-size:23px;line-height:1.25;font-weight:700;color:#2B3A8F;letter-spacing:-.02em;">
+     ⚠ SECTION SUR FOND TEINTÉ DEPUIS LE 8 SEPTEMBRE. Avant, une carte
+     blanche posée sur du blanc : la section la plus importante de
+     l'email était celle qui se voyait le moins. Le fond crème chaud
+     #FFF9EC la détache, et la carte blanche de la grille reprend du
+     relief en se posant dessus.
+     ⚠ C'EST AUSSI CE QUI DONNE SON RYTHME À L'EMAIL — rouge, crème,
+     photo, CRÈME CHAUD, bleu clair, marine, bleu clair, vert, marine.
+     Sans ce bloc, quatre sections d'affilée partageaient le même fond
+     et l'œil ne trouvait plus où commencer.
+     ═══════════════════════════════════════════════════════════════════ -->
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+  <tr>
+    <td bgcolor="#FFF9EC" style="background-color:#FFF9EC;padding:28px 20px 26px 20px;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">
+
+      <!-- ⚠ KICKER AJOUTÉ LE 8 SEPTEMBRE : la section démarrait sur son
+           titre, sans dire de quel jour elle parlait — il fallait
+           atteindre l'en-tête de la grille, quatre paragraphes plus
+           bas, pour l'apprendre. -->
+      <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#C2410C;">
+        ⭐&nbsp; Demain, mercredi 9
+      </div>
+
+      <div style="padding-top:10px;font-size:26px;line-height:1.2;font-weight:700;color:#2B3A8F;letter-spacing:-.02em;">
         Une heure de cours, <span style="background-image:linear-gradient(180deg,rgba(255,194,23,0) 50%,#FFC217 50%,#FFC217 93%,rgba(255,194,23,0) 93%);">avant de décider</span>
       </div>
 
@@ -268,39 +336,48 @@
 
       <!-- ⚠ LE PRIX ICI, ET PAS AILLEURS : juste après la promesse,
            juste avant la grille. C'est le moment exact où le lecteur
-           se demande ce que va lui coûter un oui. -->
-      <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;margin-top:16px;">
+           se demande ce que va lui coûter un oui.
+           ⚠ PASSÉ EN JAUNE PLEIN LE 8 SEPTEMBRE : sur le nouveau fond
+           crème, l'ancienne pastille #FFF6DC ne se détachait plus du
+           tout. Le jaune #FFC217 en fait l'objet le plus lumineux de
+           la section — c'est « 15 €, c'est valorisant » traduit en
+           image, et non plus seulement écrit.
+           ⚠ TEXTE SOMBRE SUR LE JAUNE, JAMAIS BLANC (charte § 7) :
+           #1A1A1A sur #FFC217 donne 11,7:1. Du blanc y tomberait à
+           1,8:1, illisible. -->
+      <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;margin-top:18px;">
         <tr>
-          <td bgcolor="#FFF6DC" style="background-color:#FFF6DC;border-radius:10px;padding:11px 15px;font-size:15px;line-height:1.5;color:#5A4A1A;">
-            <strong style="font-weight:700;color:#2B3A8F;">Une heure, 15 €.</strong> 25 € pour deux enfants, 30 € pour trois.
+          <td bgcolor="#FFC217" style="background-color:#FFC217;border-radius:999px;box-shadow:4px 4px 0 rgba(255,194,23,.4);padding:12px 20px;font-size:15px;line-height:1.45;color:#1A1A1A;">
+            <strong style="font-weight:800;">Une heure, 15 €.</strong> 25 € pour deux enfants, 30 € pour trois.
           </td>
         </tr>
       </table>
 
-    </td>
-  </tr>
-</table>
-
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">
-  <tr>
-    <td style="padding:20px 4px 0 4px;">
-      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;">
+      <!-- ⚠ EN-TÊTE DE GRILLE EN BANDEAU MARINE DEPUIS LE 8 SEPTEMBRE.
+           « Mercredi 9 septembre » était un simple titre gris posé
+           au-dessus d'une liste : la grille se lisait comme un tableau
+           d'horaires administratif. En bandeau plein, la carte devient
+           le PROGRAMME de la journée — c'est le même contenu, mais il
+           se regarde comme un événement.
+           ⚠ RAYONS HAUTS SUR LE BANDEAU, RAYONS BAS SUR LE CORPS : les
+           deux <td> forment une seule carte. Le border-radius et la
+           bordure sont sur les <td>, jamais sur la <table> — Outlook
+           les ignorerait (charte § 8), d'où aussi le
+           border-collapse:separate. -->
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;margin-top:22px;">
         <tr>
-          <td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border:2px solid #E3E9F5;border-radius:16px;box-shadow:5px 5px 0 #EAEDFB;padding:18px 18px 8px 18px;">
-
-            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-              <tr>
-                <td>
-                  <div style="font-size:17px;line-height:1.25;font-weight:700;color:#1A1A1A;letter-spacing:-.01em;">Mercredi 9 septembre</div>
-                  <!-- ⚠ « CINQ À L'INSTITUT, UN EN VISIO » ET NON
-                       « SIX À L'INSTITUT » : l'arabe 4-6 ans de
-                       11h-11h45 est une séance Zoom, pas une séance
-                       sur place. Un parent qui lit « à l'institut »
-                       et réserve ce créneau se déplace pour rien. -->
-                  <div style="padding-top:3px;font-size:13px;line-height:1.4;color:#5A6472;">Cinq créneaux à l'institut, un en visio</div>
-                </td>
-              </tr>
-            </table>
+          <td bgcolor="#2B3A8F" style="background-color:#2B3A8F;background-image:repeating-linear-gradient(135deg,rgba(255,255,255,.07) 0 2px,rgba(255,255,255,0) 2px 13px);border-radius:16px 16px 0 0;padding:15px 18px 14px 18px;">
+            <div style="font-size:19px;line-height:1.2;font-weight:700;color:#FFFFFF;letter-spacing:-.01em;">Mercredi 9 septembre</div>
+            <!-- ⚠ « CINQ À L'INSTITUT, UN EN VISIO » ET NON
+                 « SIX À L'INSTITUT » : l'arabe 4-6 ans de
+                 11h-11h45 est une séance Zoom, pas une séance
+                 sur place. Un parent qui lit « à l'institut »
+                 et réserve ce créneau se déplace pour rien. -->
+            <div style="padding-top:4px;font-size:13px;line-height:1.4;color:#C3CCEC;">Cinq créneaux à l'institut, un en visio</div>
+          </td>
+        </tr>
+        <tr>
+          <td bgcolor="#FFFFFF" style="background-color:#FFFFFF;border-radius:0 0 16px 16px;padding:4px 18px 8px 18px;">
 
             <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
 <tr>
@@ -569,9 +646,27 @@
     <td style="padding:30px 4px 0 4px;">
       <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;">
         <tr>
-          <td bgcolor="#EAEDFB" style="background-color:#EAEDFB;border-radius:16px;padding:22px 20px 24px 20px;text-align:center;">
+          <td bgcolor="#EAEDFB" style="background-color:#EAEDFB;border-radius:16px;padding:24px 20px 24px 20px;text-align:center;">
 
-            <div style="font-size:21px;line-height:1.25;font-weight:700;color:#2B3A8F;letter-spacing:-.02em;">
+            <!-- ⚠ RUBAN AJOUTÉ LE 8 SEPTEMBRE. C'était la section la
+                 plus pâle de l'email alors qu'elle en porte le payoff :
+                 dix langues, adultes et enfants, la rentrée. Six
+                 pastilles de drapeaux qui se chevauchent disent « tout
+                 un monde de langues » en une image, là où la liste
+                 seule se lisait comme un formulaire.
+                 ⚠ MOTIF, PAS INVENTAIRE : les pastilles se recouvrent
+                 et ne se comptent pas. Ne JAMAIS le remplacer par une
+                 rangée de drapeaux alignés et dénombrables — on serait
+                 aussitôt à six contre les dix annoncés juste en
+                 dessous, exactement l'écart reproché le 3 septembre.
+                 ⚠ 220 px d'affichage pour 915 px de source, soit plus
+                 de 4× : net sur écran Retina.
+                 ⚠ PUREMENT DÉCORATIF, donc alt vide : chez qui bloque
+                 les images, il ne reste rien à lire — et rien ne
+                 manque, le titre juste en dessous porte l'information. -->
+            <img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/ruban-drapeaux.png" alt="" width="220" border="0" style="display:block;width:220px;max-width:70%;height:auto;border:0;outline:none;margin:0 auto 16px auto;">
+
+            <div style="font-size:24px;line-height:1.2;font-weight:700;color:#2B3A8F;letter-spacing:-.02em;">
               Adultes et enfants, <span style="background-image:linear-gradient(180deg,rgba(255,194,23,0) 50%,#FFC217 50%,#FFC217 93%,rgba(255,194,23,0) 93%);">dix langues</span>
             </div>
 
