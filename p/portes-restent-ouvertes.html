@@ -174,56 +174,11 @@
 
 
 <!-- ═══════════════════════════════════════════════════════════════════
-     0 · LE BANDEAU DE RENTRÉE
-     ⚠ AJOUTÉ LE 8 SEPTEMBRE : « le design peut mieux capter l'intention,
-     c'est quand même la rentrée, c'est un gros événement ». La version
-     précédente ne nommait la rentrée qu'au § 5, tout en bas — l'email
-     s'ouvrait donc sur une nuance de calendrier (« la JPO est passée »)
-     sans jamais dire de quel événement on parlait. Le bandeau plante
-     l'événement dans les 60 premiers pixels.
-     ⚠ IL ANNONCE, IL NE PRESSE PAS. Pas de compte à rebours, pas de
-     « plus que X jours », pas de « dernières places » : la consigne du
-     jour est de ne PAS inquiéter. Une date et une promesse, rien
-     d'autre — l'urgence viendrait contredire tout le reste de l'email.
-     ⚠ ROUGE #E00E12 (charte § 3), COMME LE BANDEAU JPO DE
-     2026-09-jpo-une-heure : c'est devenu la couleur d'annonce
-     d'événement de la maison, et elle passe le contraste — blanc sur
-     #E00E12 donne 5,0:1, au-dessus des 4,5:1 exigés (charte § 7).
-     ⚠ NE PAS LE PASSER EN CORAIL #F4713F : blanc sur corail tombe à
-     2,9:1, très en dessous du seuil. Mesuré, pas estimé.
-     ⚠ EN TEXTE, PAS EN IMAGE : près d'un destinataire sur deux bloque
-     les images, et l'email s'ouvrirait sur du vide.
-     ⚠ HIÉRARCHIE PAR LA TAILLE, PAS PAR LA COULEUR (12 / 28 / 15 px),
-     tout le texte en blanc plein : sur ce rouge, un jaune ou un bleu
-     clair repasserait sous le seuil de contraste.
-     ═══════════════════════════════════════════════════════════════════ -->
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
-  <tr>
-    <td bgcolor="#E00E12" style="background-color:#E00E12;background-image:repeating-linear-gradient(135deg,rgba(255,255,255,.07) 0 2px,rgba(255,255,255,0) 2px 15px);padding:20px 22px 22px 22px;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;text-align:center;">
-
-      <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#FFFFFF;">
-        🎒&nbsp; Rentrée 2026 · 2027
-      </div>
-
-      <div style="padding-top:10px;font-size:28px;line-height:1.2;font-weight:700;color:#FFFFFF;letter-spacing:-.02em;">
-        Samedi 12 septembre
-      </div>
-
-      <div style="padding-top:11px;font-size:15px;line-height:1.55;font-weight:500;color:#FFFFFF;">
-        Dix langues, de la maternelle aux adultes.
-      </div>
-
-    </td>
-  </tr>
-</table>
-
-
-<!-- ═══════════════════════════════════════════════════════════════════
      1 · L'OUVERTURE
      ═══════════════════════════════════════════════════════════════════ -->
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
   <tr>
-    <td bgcolor="#FBF7F0" style="background-color:#FBF7F0;padding:26px 22px 22px 22px;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">
+    <td bgcolor="#FBF7F0" style="background-color:#FBF7F0;background-image:repeating-linear-gradient(135deg,rgba(43,58,143,.035) 0 2px,rgba(43,58,143,0) 2px 14px);padding:26px 22px 22px 22px;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;">
 
       <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
         <tr>
@@ -261,12 +216,61 @@
         Samedi, l'institut était plein. Si vous n'avez pas pu venir, <strong style="font-weight:700;color:#2B3A8F;">il ne s'est rien passé d'irréversible</strong>&nbsp;: demain, on recommence.
       </div>
 
-      <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;margin-top:18px;">
-        <tr><td bgcolor="#2B3A8F" style="background-color:#2B3A8F;border-radius:10px;box-shadow:4px 4px 0 rgba(43,58,143,.3);padding:10px 16px;font-size:17px;line-height:1.3;font-weight:700;color:#FFFFFF;">📅 Mercredi 9, jeudi 10, vendredi 11 septembre</td></tr>
+      <!-- ⚠ LES TROIS JOURS EN PASTILLES DE CALENDRIER (8 septembre).
+           Avant : une phrase posée dans un rectangle marine — « Mercredi
+           9, jeudi 10, vendredi 11 septembre » — trois dates noyées dans
+           une ligne de texte, qu'on lit sans les voir.
+           ⚠ CE N'EST PAS DE L'ORNEMENT : la porte reste ouverte TROIS
+           JOURS, c'est le sujet même de l'email, et trois pastilles le
+           disent d'un coup d'oeil là où la phrase demandait d'être lue.
+           ⚠ LA PREMIÈRE EST PLEINE ET PORTE « DEMAIN » EN JAUNE : le
+           lecteur doit repartir avec UNE date, pas trois. Les deux
+           autres sont en contour — présentes, disponibles, mais elles ne
+           se disputent pas le regard avec mercredi.
+           ⚠ LE MOIS EST SOUS LES PASTILLES, PAS DEDANS : « 9 » tient à
+           23 px dans une colonne de 96 px (sa largeur à 320 px) ;
+           « 9 sept. » n'y tiendrait pas et casserait l'alignement des
+           trois chiffres, qui fait tout l'effet.
+           ⚠ TROIS CELLULES À 33,33 % avec gouttières de 5 px. Contrôlé
+           aux deux largeurs.
+           ⚠ BORDURE ET RAYON SUR LE <td>, JAMAIS SUR LA <table>, avec
+           border-collapse:separate — sinon Outlook les ignore
+           (charte § 8). -->
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:20px;border-collapse:separate;border-spacing:0;">
+        <tr>
+          <td width="33.33%" valign="top" style="padding:0 5px 0 0;">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;">
+          <tr><td align="center" bgcolor="#2B3A8F" style="background-color:#2B3A8F;border:2px solid #2B3A8F;border-radius:14px;box-shadow:4px 4px 0 rgba(43,58,143,.28);padding:11px 4px 12px 4px;">
+            <div style="font-size:9px;line-height:1.2;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#FFC217;">Demain</div>
+            <div style="padding-top:3px;font-size:23px;line-height:1.1;font-weight:800;color:#FFFFFF;">9</div>
+          </td></tr>
+        </table>
+          </td>
+          <td width="33.33%" valign="top" style="padding:0 3px;">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;">
+          <tr><td align="center" bgcolor="#FFFFFF" style="background-color:#FFFFFF;border:2px solid #C9D2EE;border-radius:14px;padding:11px 4px 12px 4px;">
+            <div style="font-size:9px;line-height:1.2;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#8A93A3;">Jeudi</div>
+            <div style="padding-top:3px;font-size:23px;line-height:1.1;font-weight:800;color:#2B3A8F;">10</div>
+          </td></tr>
+        </table>
+          </td>
+          <td width="33.33%" valign="top" style="padding:0 0 0 5px;">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;">
+          <tr><td align="center" bgcolor="#FFFFFF" style="background-color:#FFFFFF;border:2px solid #C9D2EE;border-radius:14px;padding:11px 4px 12px 4px;">
+            <div style="font-size:9px;line-height:1.2;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#8A93A3;">Vendredi</div>
+            <div style="padding-top:3px;font-size:23px;line-height:1.1;font-weight:800;color:#2B3A8F;">11</div>
+          </td></tr>
+        </table>
+          </td>
+        </tr>
       </table>
 
+      <div style="padding-top:10px;font-size:14px;line-height:1.5;font-weight:600;color:#5A6472;">
+        septembre&nbsp;· de <strong style="font-weight:700;color:#2B3A8F;">9h à 18h</strong>, en continu
+      </div>
+
       <div style="padding-top:12px;font-size:14px;line-height:1.5;color:#5A6472;">
-        🎫 <strong style="font-weight:700;color:#2B3A8F;">Sans rendez-vous</strong> — vous passez quand vous voulez dans la journée.
+        🎫 <strong style="font-weight:700;color:#2B3A8F;">Sans rendez-vous</strong> — vous poussez la porte, c'est tout.
       </div>
 
       <!-- ⚠ BOUTON EN CONTOUR, PAS PLEIN : la grille de demain est
@@ -384,12 +388,12 @@
             <td style="padding:12px 0;">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
               <tr>
-                <td width="30" valign="middle" style="padding:0 10px 0 0;font-size:0;line-height:0;">
-                  <img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/drapeau-arabe.png" alt="" width="30" height="30" border="0" style="display:block;width:30px;height:30px;border:0;outline:none;">
+                <td width="34" valign="middle" style="padding:0 12px 0 0;font-size:0;line-height:0;">
+                  <img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/drapeau-arabe.png" alt="" width="34" height="34" border="0" style="display:block;width:34px;height:34px;border:0;outline:none;">
                 </td>
                 <td valign="middle">
-                  <span style="font-size:15px;line-height:1.35;font-weight:700;color:#0A2870;">10h – 11h</span><br>
-                  <span style="font-size:13px;line-height:1.4;color:#5A6472;">Arabe</span>
+                  <div style="font-size:16px;line-height:1.3;font-weight:700;color:#0A2870;">Arabe</div>
+                  <div style="padding-top:5px;font-size:0;line-height:0;"><span style="display:inline-block;background-color:#EAEDFB;border-radius:999px;padding:3px 10px;font-size:12px;line-height:1.45;font-weight:700;color:#2B3A8F;">10h – 11h</span></div>
                 </td>
                 <td valign="middle" align="right" width="100" style="padding-left:6px;">
                   <a href="https://ent.malac.fr/newformulaireinsc?coursId=6a96cd10353b7955d927d5ea" class="mlc-lien" style="display:inline-block;font-size:13px;line-height:1.4;font-weight:700;color:#5271FF;text-decoration:none;white-space:nowrap;">S'inscrire&nbsp;→</a>
@@ -404,12 +408,12 @@
             <td style="padding:12px 0;border-top:1px solid #E3E9F5;">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
               <tr>
-                <td width="30" valign="middle" style="padding:0 10px 0 0;font-size:0;line-height:0;">
-                  <img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/drapeau-anglais.png" alt="" width="30" height="30" border="0" style="display:block;width:30px;height:30px;border:0;outline:none;">
+                <td width="34" valign="middle" style="padding:0 12px 0 0;font-size:0;line-height:0;">
+                  <img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/drapeau-anglais.png" alt="" width="34" height="34" border="0" style="display:block;width:34px;height:34px;border:0;outline:none;">
                 </td>
                 <td valign="middle">
-                  <span style="font-size:15px;line-height:1.35;font-weight:700;color:#0A2870;">11h – 12h</span><br>
-                  <span style="font-size:13px;line-height:1.4;color:#5A6472;">Anglais</span>
+                  <div style="font-size:16px;line-height:1.3;font-weight:700;color:#0A2870;">Anglais</div>
+                  <div style="padding-top:5px;font-size:0;line-height:0;"><span style="display:inline-block;background-color:#EAEDFB;border-radius:999px;padding:3px 10px;font-size:12px;line-height:1.45;font-weight:700;color:#2B3A8F;">11h – 12h</span></div>
                 </td>
                 <td valign="middle" align="right" width="100" style="padding-left:6px;">
                   <a href="https://ent.malac.fr/newformulaireinsc?coursId=6a96ce2897e4f957449557a1" class="mlc-lien" style="display:inline-block;font-size:13px;line-height:1.4;font-weight:700;color:#5271FF;text-decoration:none;white-space:nowrap;">S'inscrire&nbsp;→</a>
@@ -424,13 +428,12 @@
             <td style="padding:12px 0;border-top:1px solid #E3E9F5;">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
               <tr>
-                <td width="30" valign="middle" style="padding:0 10px 0 0;font-size:0;line-height:0;">
-                  <img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/drapeau-arabe.png" alt="" width="30" height="30" border="0" style="display:block;width:30px;height:30px;border:0;outline:none;">
+                <td width="34" valign="middle" style="padding:0 12px 0 0;font-size:0;line-height:0;">
+                  <img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/drapeau-arabe.png" alt="" width="34" height="34" border="0" style="display:block;width:34px;height:34px;border:0;outline:none;">
                 </td>
                 <td valign="middle">
-                  <span style="font-size:15px;line-height:1.35;font-weight:700;color:#0A2870;">11h – 11h45</span><br>
-                  <span style="font-size:13px;line-height:1.4;color:#5A6472;">Arabe 4-6 ans</span><br>
-                  <span style="font-size:12px;line-height:1.4;font-weight:700;color:#5271FF;">💻 en visio</span>
+                  <div style="font-size:16px;line-height:1.3;font-weight:700;color:#0A2870;">Arabe 4-6 ans</div>
+                  <div style="padding-top:5px;font-size:0;line-height:0;"><span style="display:inline-block;background-color:#EAEDFB;border-radius:999px;padding:3px 10px;font-size:12px;line-height:1.45;font-weight:700;color:#2B3A8F;">11h – 11h45</span><span style="display:inline-block;margin-left:5px;background-color:#E4E9FF;border-radius:999px;padding:3px 9px;font-size:12px;line-height:1.45;font-weight:700;color:#3B52CC;">💻 visio</span></div>
                 </td>
                 <td valign="middle" align="right" width="100" style="padding-left:6px;">
                   <a href="https://ent.malac.fr/newformulaireinsc?coursId=6a96a98997e4f95744955488" class="mlc-lien" style="display:inline-block;font-size:13px;line-height:1.4;font-weight:700;color:#5271FF;text-decoration:none;white-space:nowrap;">S'inscrire&nbsp;→</a>
@@ -445,12 +448,12 @@
             <td style="padding:12px 0;border-top:1px solid #E3E9F5;">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
               <tr>
-                <td width="30" valign="middle" style="padding:0 10px 0 0;font-size:0;line-height:0;">
-                  <img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/drapeau-arabe.png" alt="" width="30" height="30" border="0" style="display:block;width:30px;height:30px;border:0;outline:none;">
+                <td width="34" valign="middle" style="padding:0 12px 0 0;font-size:0;line-height:0;">
+                  <img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/drapeau-arabe.png" alt="" width="34" height="34" border="0" style="display:block;width:34px;height:34px;border:0;outline:none;">
                 </td>
                 <td valign="middle">
-                  <span style="font-size:15px;line-height:1.35;font-weight:700;color:#0A2870;">14h – 15h</span><br>
-                  <span style="font-size:13px;line-height:1.4;color:#5A6472;">Arabe</span>
+                  <div style="font-size:16px;line-height:1.3;font-weight:700;color:#0A2870;">Arabe</div>
+                  <div style="padding-top:5px;font-size:0;line-height:0;"><span style="display:inline-block;background-color:#EAEDFB;border-radius:999px;padding:3px 10px;font-size:12px;line-height:1.45;font-weight:700;color:#2B3A8F;">14h – 15h</span></div>
                 </td>
                 <td valign="middle" align="right" width="100" style="padding-left:6px;">
                   <a href="https://ent.malac.fr/newformulaireinsc?coursId=6a96cd0a97e4f9574495577b" class="mlc-lien" style="display:inline-block;font-size:13px;line-height:1.4;font-weight:700;color:#5271FF;text-decoration:none;white-space:nowrap;">S'inscrire&nbsp;→</a>
@@ -465,12 +468,12 @@
             <td style="padding:12px 0;border-top:1px solid #E3E9F5;">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
               <tr>
-                <td width="30" valign="middle" style="padding:0 10px 0 0;font-size:0;line-height:0;">
-                  <img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/drapeau-chinois.png" alt="" width="30" height="30" border="0" style="display:block;width:30px;height:30px;border:0;outline:none;">
+                <td width="34" valign="middle" style="padding:0 12px 0 0;font-size:0;line-height:0;">
+                  <img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/drapeau-chinois.png" alt="" width="34" height="34" border="0" style="display:block;width:34px;height:34px;border:0;outline:none;">
                 </td>
                 <td valign="middle">
-                  <span style="font-size:15px;line-height:1.35;font-weight:700;color:#0A2870;">15h – 17h</span><br>
-                  <span style="font-size:13px;line-height:1.4;color:#5A6472;">Chinois <span style="font-weight:700;color:#0A2870;">· 2 h</span></span>
+                  <div style="font-size:16px;line-height:1.3;font-weight:700;color:#0A2870;">Chinois</div>
+                  <div style="padding-top:5px;font-size:0;line-height:0;"><span style="display:inline-block;background-color:#EAEDFB;border-radius:999px;padding:3px 10px;font-size:12px;line-height:1.45;font-weight:700;color:#2B3A8F;">15h – 17h</span><span style="display:inline-block;margin-left:5px;background-color:#FFC217;border-radius:999px;padding:3px 9px;font-size:12px;line-height:1.45;font-weight:800;color:#1A1A1A;">2 h</span></div>
                 </td>
                 <td valign="middle" align="right" width="100" style="padding-left:6px;">
                   <a href="https://ent.malac.fr/newformulaireinsc?coursId=6a882b3b1276a07b58fc427e" class="mlc-lien" style="display:inline-block;font-size:13px;line-height:1.4;font-weight:700;color:#5271FF;text-decoration:none;white-space:nowrap;">S'inscrire&nbsp;→</a>
@@ -485,12 +488,12 @@
             <td style="padding:12px 0;border-top:1px solid #E3E9F5;">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
               <tr>
-                <td width="30" valign="middle" style="padding:0 10px 0 0;font-size:0;line-height:0;">
-                  <img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/drapeau-anglais.png" alt="" width="30" height="30" border="0" style="display:block;width:30px;height:30px;border:0;outline:none;">
+                <td width="34" valign="middle" style="padding:0 12px 0 0;font-size:0;line-height:0;">
+                  <img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/drapeau-anglais.png" alt="" width="34" height="34" border="0" style="display:block;width:34px;height:34px;border:0;outline:none;">
                 </td>
                 <td valign="middle">
-                  <span style="font-size:15px;line-height:1.35;font-weight:700;color:#0A2870;">16h – 17h</span><br>
-                  <span style="font-size:13px;line-height:1.4;color:#5A6472;">Anglais</span>
+                  <div style="font-size:16px;line-height:1.3;font-weight:700;color:#0A2870;">Anglais</div>
+                  <div style="padding-top:5px;font-size:0;line-height:0;"><span style="display:inline-block;background-color:#EAEDFB;border-radius:999px;padding:3px 10px;font-size:12px;line-height:1.45;font-weight:700;color:#2B3A8F;">16h – 17h</span></div>
                 </td>
                 <td valign="middle" align="right" width="100" style="padding-left:6px;">
                   <a href="https://ent.malac.fr/newformulaireinsc?coursId=6a96ce2e353b7955d927d618" class="mlc-lien" style="display:inline-block;font-size:13px;line-height:1.4;font-weight:700;color:#5271FF;text-decoration:none;white-space:nowrap;">S'inscrire&nbsp;→</a>
@@ -553,29 +556,45 @@
 
       <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:20px;">
         <tr>
-          <td width="30" valign="top" style="padding:0 12px 14px 0;font-size:17px;line-height:1.3;">🗣️</td>
-          <td valign="top" style="padding:0 0 14px 0;font-size:14px;line-height:1.55;color:#FFFFFF;">
+          <td width="44" valign="top" style="padding:0 14px 18px 0;">
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;">
+              <tr><td width="42" height="42" align="center" valign="middle" bgcolor="#4356B0" style="width:42px;height:42px;background-color:#4356B0;border-radius:999px;font-size:19px;line-height:1;text-align:center;">🗣️</td></tr>
+            </table>
+          </td>
+          <td valign="top" style="padding:1px 0 18px 0;font-size:14px;line-height:1.55;color:#FFFFFF;">
             <strong style="font-weight:700;">Se renseigner</strong><br>
             <span style="color:#C3CCEC;">Quelle langue, quel niveau. On en discute, sans test formel.</span>
           </td>
         </tr>
         <tr>
-          <td width="30" valign="top" style="padding:0 12px 14px 0;font-size:17px;line-height:1.3;">🧭</td>
-          <td valign="top" style="padding:0 0 14px 0;font-size:14px;line-height:1.55;color:#FFFFFF;">
+          <td width="44" valign="top" style="padding:0 14px 18px 0;">
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;">
+              <tr><td width="42" height="42" align="center" valign="middle" bgcolor="#4356B0" style="width:42px;height:42px;background-color:#4356B0;border-radius:999px;font-size:19px;line-height:1;text-align:center;">🧭</td></tr>
+            </table>
+          </td>
+          <td valign="top" style="padding:1px 0 18px 0;font-size:14px;line-height:1.55;color:#FFFFFF;">
             <strong style="font-weight:700;">S'orienter</strong><br>
             <span style="color:#C3CCEC;">Quel créneau tient vraiment dans votre semaine — c'est presque toujours la vraie question.</span>
           </td>
         </tr>
         <tr>
-          <td width="30" valign="top" style="padding:0 12px 14px 0;font-size:17px;line-height:1.3;">👋</td>
-          <td valign="top" style="padding:0 0 14px 0;font-size:14px;line-height:1.55;color:#FFFFFF;">
+          <td width="44" valign="top" style="padding:0 14px 18px 0;">
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;">
+              <tr><td width="42" height="42" align="center" valign="middle" bgcolor="#4356B0" style="width:42px;height:42px;background-color:#4356B0;border-radius:999px;font-size:19px;line-height:1;text-align:center;">👋</td></tr>
+            </table>
+          </td>
+          <td valign="top" style="padding:1px 0 18px 0;font-size:14px;line-height:1.55;color:#FFFFFF;">
             <strong style="font-weight:700;">Rencontrer les professeurs</strong><br>
             <span style="color:#C3CCEC;">Ceux qui feront classe. Vous leur parlez en direct.</span>
           </td>
         </tr>
         <tr>
-          <td width="30" valign="top" style="padding:0 12px 0 0;font-size:17px;line-height:1.3;">✅</td>
-          <td valign="top" style="padding:0;font-size:14px;line-height:1.55;color:#FFFFFF;">
+          <td width="44" valign="top" style="padding:0 14px 0 0;">
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;">
+              <tr><td width="42" height="42" align="center" valign="middle" bgcolor="#4356B0" style="width:42px;height:42px;background-color:#4356B0;border-radius:999px;font-size:19px;line-height:1;text-align:center;">✅</td></tr>
+            </table>
+          </td>
+          <td valign="top" style="padding:1px 0 0 0;font-size:14px;line-height:1.55;color:#FFFFFF;">
             <strong style="font-weight:700;">S'inscrire sur place</strong><br>
             <span style="color:#C3CCEC;">Si vous le souhaitez. Rien à remplir le soir chez vous.</span>
           </td>
