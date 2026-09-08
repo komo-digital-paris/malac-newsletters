@@ -839,27 +839,6 @@
   .mlc-lien:hover { opacity: .75; }
 </style>
 
-<!-- ▸ Le <script> final ne sert qu'à l'aperçu local en file:// — il
-     reproduit le contexte Unlayer pour systeme/apercu.js.
-     systeme/a-coller.py le retire du bloc à coller ; dans un email il
-     serait de toute façon sans effet. -->
-<script>
-if (location.protocol === 'file:') {
-  // Reproduit le contexte Unlayer : rangée 500 px, padding 10 px, fond de page.
-  // Les data-apercu servent de prise à systeme/apercu.js pour mesurer.
-  const cadre = document.createElement('div');
-  cadre.dataset.apercu = 'cadre';
-  cadre.style.cssText = 'background:#F7F8F9;padding:24px 0;min-height:100vh;';
-  const rangee = document.createElement('div');
-  rangee.dataset.apercu = 'rangee';
-  rangee.style.cssText = 'width:500px;max-width:100%;margin:0 auto;background:#fff;padding:10px;box-sizing:border-box;';
-  document.body.style.margin = '0';
-  while (document.body.firstChild) rangee.appendChild(document.body.firstChild);
-  cadre.appendChild(rangee);
-  document.body.appendChild(cadre);
-}
-</script>
-
 </div>
 <p class="pied">Version web de notre newsletter · <a href="https://malac.fr">malac.fr</a></p>
 
