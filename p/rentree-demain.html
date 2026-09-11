@@ -11,7 +11,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="🎒 Demain, c'est la rentrée !">
 <meta property="og:description" content="Samedi 12 septembre, on vous retrouve à Massy — adresse, parking et tout ce qu'il faut savoir pour le jour J.">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/2026-09-rentree-demain/hero-rentree.jpg">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/2026-09-rentree-demain/hero-rentree-photo.jpg">
 <meta property="og:image:width" content="960">
 <meta property="og:image:height" content="540">
 <meta property="og:url" content="https://komo-digital-paris.github.io/malac-newsletters/p/rentree-demain.html">
@@ -85,14 +85,29 @@
     pas en inventer. Le CPF ne s'applique pas aux mineurs : la ligne
     dit « nos cours pour adultes ».
 
-  ▸ ⚠ ILLUSTRATION — hero-rentree.jpg, générée le 11 septembre sur
-    ElevenLabs (GPT Image 2), dans le même style que
-    illustration-tous-ages-v2.jpg de 2026-09-portes-restent-ouvertes :
-    la campagne de rentrée garde une seule famille visuelle.
-    MÊMES INTERDITS : aucun texte dans l'image (une première série
-    avait inventé « SPEAK THE WORLD — LANGUAGE SCHOOL » et du faux
-    chinois), aucun couvre-chef ni signe religieux (consigne du
-    8 septembre). SI L'IMAGE EST REMPLACÉE, VÉRIFIER LES DEUX.
+  ▸ ⚠ LE VISUEL EST UNE VRAIE PHOTO DE CLASSE — hero-rentree-photo.jpg.
+    Consigne du 11 septembre : « utilise plutôt cette image, évite
+    l'autre, ça n'accroche pas l'attention ». L'illustration ElevenLabs
+    (hero-rentree.jpg, toujours sur le CDN mais plus appelée) est
+    écartée : une classe réelle, le logo MALAC au mur, une professeure
+    penchée sur un cahier — la photo prouve ce que l'aplat évoquait.
+    ⚠ LA CARTE EST DANS L'IMAGE, PAS EN HTML : position:absolute
+    n'existe pas en email (charte § 1), un texte posé sur une photo ne
+    peut vivre que dans le raster. D'où trois règles :
+      1. la carte ne porte que ce qui se lit en grand — l'accroche,
+         l'adresse, un bouton dessiné ; tout le reste est en texte
+         vivant autour ;
+      2. l'image entière est un lien vers la page d'accès — c'est ce
+         qui rend le bouton dessiné réellement cliquable ;
+      3. l'alt reprend le texte de la carte, pour le lecteur qui
+         bloque les images.
+    ⚠ LA CARTE EST EN HAUT À DROITE, SUR LE MUR : seule zone de la
+    photo sans visage. Placée en bas, elle cachait des élèves.
+    ⚠ PAS D'ÉPHÉMÉRIDE DANS LA CARTE : elle est déjà en HTML juste
+    au-dessus. La carte dit OÙ (l'adresse, le bouton d'accès), le
+    hero dit QUAND.
+    ⚠⚠ ÉLÈVES MINEURS RECONNAISSABLES : vérifier les autorisations de
+    droit à l'image avant l'envoi.
   ══════════════════════════════════════════════════════════════════════
 -->
 
@@ -160,7 +175,10 @@
   </tr>
   <tr>
     <td style="padding:0;font-size:0;line-height:0;">
-      <img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/2026-09-rentree-demain/hero-rentree.jpg" alt="Des élèves de tous les âges arrivent joyeusement à MALAC pour la rentrée" width="100%" border="0" style="display:block;width:100%;max-width:100%;height:auto;border:0;outline:none;">
+      <!-- ⚠ L'IMAGE ENTIÈRE EST UN LIEN : le bouton « Préparer ma venue »
+           est dessiné dans la photo, c'est ce lien qui le rend
+           cliquable. Même destination que le bouton jaune du § 2. -->
+      <a href="https://malac.fr/se-garer-a-malac" class="mlc-lien" style="display:block;text-decoration:none;"><img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/2026-09-rentree-demain/hero-rentree-photo.jpg" alt="En classe à MALAC. Votre place vous attend — 2 ter avenue de France, Massy. Préparer ma venue." width="100%" border="0" style="display:block;width:100%;max-width:100%;height:auto;border:0;outline:none;"></a>
     </td>
   </tr>
 </table>
