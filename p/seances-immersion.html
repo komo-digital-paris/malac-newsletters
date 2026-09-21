@@ -10,7 +10,7 @@
      balises, personne ne clique. -->
 <meta property="og:type" content="article">
 <meta property="og:title" content="🎓 Vivez un cours de MALAC en immersion">
-<meta property="og:description" content="Deux heures dans un vrai cours, avec son groupe et son formateur — 30 € déduits si vous vous inscrivez.">
+<meta property="og:description" content="Deux heures dans un vrai cours, avec son groupe et son formateur — 30 € la séance, sans engagement.">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/2026-09-rentree-demain/stickers-rentree.jpg">
 <meta property="og:image:width" content="960">
 <meta property="og:image:height" content="220">
@@ -18,7 +18,7 @@
 <meta property="og:site_name" content="MALAC — Institut des langues">
 <meta property="og:locale" content="fr_FR">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="description" content="Deux heures dans un vrai cours, avec son groupe et son formateur — 30 € déduits si vous vous inscrivez.">
+<meta name="description" content="Deux heures dans un vrai cours, avec son groupe et son formateur — 30 € la séance, sans engagement.">
 
 <style>
   html { -webkit-text-size-adjust: 100%; }
@@ -55,10 +55,16 @@
     l'inscription (PAS MAINTENANT) ». Nous sommes le 19 : le feu est
     vert, et la demande du jour le confirme.
 
-  ▸ ⚠ 30 € LA SÉANCE, ET LES 30 € SONT DÉDUITS DE L'INSCRIPTION.
-    La demande disait « 30 euros la séance » ; la déduction vient de la
-    source et c'est l'argument qui décide — elle est donc écrite, à
-    chaque fois qu'un prix apparaît. NE PAS citer le prix sans elle.
+  ▸ ⚠⚠ 30 € LA SÉANCE — ET LA DÉDUCTION N'EST JAMAIS ÉCRITE.
+    Consigne du 21 septembre : « ne dis pas déductible, ce sera qu'en
+    interne, face au client, en privé ». La déduction des 30 € en cas
+    d'inscription existe, mais elle se dit de vive voix ou en message
+    individuel — JAMAIS dans un support envoyé à toute la liste.
+    Retirée partout : préheader, pastille, étape 3, carte d'inscription,
+    ET LES DOUZE MESSAGES WHATSAPP PRÉ-REMPLIS (le lecteur les lit avant
+    de les envoyer : c'est un texte public, pas une note interne).
+    Remplacée par « sans engagement », déjà validé sur la campagne.
+    NE PAS LA REMETTRE, même si SeancesData.tsx la porte encore.
     ⚠ 2 H, PAS 1 H. L'essai d'une heure à 15 € appartenait aux séances
     datées d'avant la rentrée : il est terminé, ne plus le citer.
 
@@ -73,7 +79,7 @@
 
   ▸ ⚠ CHAQUE DRAPEAU EST UN LIEN WHATSAPP QUI NOMME DÉJÀ LA LANGUE :
     le lecteur clique sur la sienne, et Shirin reçoit un message complet
-    (langue, durée, déduction, demande de créneau). Élisions prises dans
+    (langue, durée, prix, demande de créneau). Élisions prises dans
     la table de SeancesData — « d'arabe », « de chinois », « de FLE »
     avec ses capitales — jamais déduites. Après toute modification d'un
     message, le décoder et le relire.
@@ -86,8 +92,11 @@
     à la main), MAIS dans SeancesData.tsx la ligne qui commande tout est
     restée PERIODE = "rentree". Le corps de la page montre donc encore
     les textes de rentrée, sans les 30 € déduits.
-    → BASCULER PERIODE SUR "surRdv" ET PUBLIER avant d'envoyer cet
-    email, sinon le lecteur qui va sur le site n'y retrouve pas l'offre.
+    ⚠⚠ NE PAS BASCULER TEL QUEL : les textes « surRdv » de SeancesData
+    écrivent « 30 € déduits si vous vous inscrivez » (bandeau, cartes,
+    messages WhatsApp), et le titre SEO de la page aussi — tout cela
+    PUBLIE la déduction, contraire à la consigne du 21 septembre.
+    Réécrire ces textes d'abord, puis basculer et publier.
     C'est pour cela qu'AUCUN BOUTON NE POINTE VERS LA PAGE : tout va sur
     WhatsApp et sur le formulaire.
 
@@ -109,8 +118,8 @@
 -->
 
 <!-- Préheader : l'objet porte la promesse, le préheader porte la preuve
-     et le prix — c'est la déduction qui fait ouvrir. -->
-<div style="display:none;font-size:1px;color:#FFFFFF;line-height:1px;max-height:0;max-width:0;opacity:0;overflow:hidden;">Deux heures dans un vrai cours, avec son groupe et son formateur — 30 € déduits si vous vous inscrivez.</div>
+     et le prix. ⚠ Pas de déduction ici non plus (consigne du 21/09). -->
+<div style="display:none;font-size:1px;color:#FFFFFF;line-height:1px;max-height:0;max-width:0;opacity:0;overflow:hidden;">Deux heures dans un vrai cours, avec son groupe et son formateur — 30 € la séance, sans engagement.</div>
 
 
 <!-- ═══════════════════════════════════════════════════════════════════
@@ -150,13 +159,13 @@
         Pas une visite, pas une démonstration&nbsp;: vous vous asseyez dans <strong style="font-weight:700;color:#2B3A8F;">un cours de l'année</strong>, avec son groupe et son formateur. Vous voyez comment on enseigne — et vous décidez ensuite.
       </div>
 
-      <!-- ⚠ LE PRIX ET LA DÉDUCTION NE SE SÉPARENT JAMAIS. Seule, la
-           ligne « 30 € » est un coût ; avec la déduction, c'est une
-           avance. Jaune plein, texte sombre (charte § 7). -->
+      <!-- ⚠ PRIX + « SANS ENGAGEMENT », JAMAIS LA DÉDUCTION (consigne du
+           21 septembre : elle se dit en privé). Jaune plein, texte
+           sombre (charte § 7). -->
       <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;margin-top:20px;">
         <tr>
           <td bgcolor="#FFC217" style="background-color:#FFC217;border-radius:999px;box-shadow:4px 4px 0 rgba(255,194,23,.4);padding:12px 20px;font-size:15px;line-height:1.45;color:#1A1A1A;">
-            <strong style="font-weight:800;">2 h — 30 €</strong>, déduits si vous vous inscrivez.
+            <strong style="font-weight:800;">2 h — 30 €</strong> la séance, sans engagement.
           </td>
         </tr>
       </table>
@@ -165,12 +174,12 @@
         <tr>
           <td align="center">
             <!--[if mso]>
-            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter.%20Je%20souhaite%20une%20s%C3%A9ance%20d%C3%A9couverte%20%282%20h%2C%2030%20%E2%82%AC%20d%C3%A9duits%20en%20cas%20d%E2%80%99inscription%29.%20La%20langue%20qui%20m%E2%80%99int%C3%A9resse%20%3A%20" style="height:48px;v-text-anchor:middle;width:250px;" arcsize="50%" stroke="t" strokecolor="#2B3A8F" strokeweight="2px" fillcolor="#FFFFFF">
+            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter.%20Je%20souhaite%20une%20s%C3%A9ance%20d%C3%A9couverte%20%282%20h%2C%2030%20%E2%82%AC%29.%20La%20langue%20qui%20m%E2%80%99int%C3%A9resse%20%3A%20" style="height:48px;v-text-anchor:middle;width:250px;" arcsize="50%" stroke="t" strokecolor="#2B3A8F" strokeweight="2px" fillcolor="#FFFFFF">
               <w:anchorlock/><center style="color:#2B3A8F;font-family:Arial,sans-serif;font-size:15px;font-weight:bold;">Trouver un créneau</center>
             </v:roundrect>
             <![endif]-->
             <!--[if !mso]><!-->
-            <a href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter.%20Je%20souhaite%20une%20s%C3%A9ance%20d%C3%A9couverte%20%282%20h%2C%2030%20%E2%82%AC%20d%C3%A9duits%20en%20cas%20d%E2%80%99inscription%29.%20La%20langue%20qui%20m%E2%80%99int%C3%A9resse%20%3A%20" class="mlc-btn" style="display:inline-block;background-color:#FFFFFF;color:#2B3A8F;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;font-size:15px;font-weight:700;line-height:22px;text-decoration:none;padding:12px 24px;border:2px solid #2B3A8F;border-radius:999px;">Trouver un créneau&nbsp;&rarr;</a>
+            <a href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter.%20Je%20souhaite%20une%20s%C3%A9ance%20d%C3%A9couverte%20%282%20h%2C%2030%20%E2%82%AC%29.%20La%20langue%20qui%20m%E2%80%99int%C3%A9resse%20%3A%20" class="mlc-btn" style="display:inline-block;background-color:#FFFFFF;color:#2B3A8F;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;font-size:15px;font-weight:700;line-height:22px;text-decoration:none;padding:12px 24px;border:2px solid #2B3A8F;border-radius:999px;">Trouver un créneau&nbsp;&rarr;</a>
             <!--<![endif]-->
           </td>
         </tr>
@@ -231,7 +240,7 @@
             </table>
           </td>
           <td valign="top" style="padding:4px 0 0 0;font-size:14px;line-height:1.55;color:#48536B;">
-            <strong style="font-weight:700;color:#2B3A8F;">Vous suivez les deux heures, puis vous décidez.</strong><br>Si vous vous inscrivez, <strong style="font-weight:700;color:#1A1A1A;">les 30 € sont déduits</strong>. Sinon, vous aurez vu de l'intérieur comment on enseigne.
+            <strong style="font-weight:700;color:#2B3A8F;">Vous suivez les deux heures, puis vous décidez.</strong><br>Sans engagement&nbsp;: dans tous les cas, vous aurez vu de l'intérieur comment on enseigne.
           </td>
         </tr>
       </table>
@@ -244,7 +253,7 @@
 <!-- ═══════════════════════════════════════════════════════════════════
      3 · LES LANGUES — chaque drapeau écrit le message
      ⚠ LE DRAPEAU EST LE BOUTON. Le lecteur n'a pas à formuler sa
-     demande : le message part nommé, avec la durée et la déduction.
+     demande : le message part nommé, avec la durée et le prix.
      ⚠ À 320 px, cinq colonnes de 52 px pour un drapeau de 40 :
      ne pas élargir sans passer à quatre par rangée.
      ═══════════════════════════════════════════════════════════════════ -->
@@ -266,25 +275,25 @@
             <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:18px;">
         <tr>
           <td width="25%" align="center" valign="top" style="padding:0 3px 14px 3px;">
-            <a href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter.%20Je%20souhaite%20une%20s%C3%A9ance%20d%C3%A9couverte%20du%20cours%20d%E2%80%99arabe%20%282%20h%2C%2030%20%E2%82%AC%20d%C3%A9duits%20en%20cas%20d%E2%80%99inscription%29%2C%20pour%20moi%20ou%20pour%20mon%20enfant.%20Quels%20cr%C3%A9neaux%20sont%20possibles%20%3F%20" class="mlc-lien" style="display:block;text-decoration:none;">
+            <a href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter.%20Je%20souhaite%20une%20s%C3%A9ance%20d%C3%A9couverte%20du%20cours%20d%E2%80%99arabe%20%282%20h%2C%2030%20%E2%82%AC%29%2C%20pour%20moi%20ou%20pour%20mon%20enfant.%20Quels%20cr%C3%A9neaux%20sont%20possibles%20%3F%20" class="mlc-lien" style="display:block;text-decoration:none;">
               <img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/drapeau-arabe.png" alt="Arabe" width="40" height="40" border="0" style="display:block;width:40px;height:40px;border:0;outline:none;margin:0 auto;">
               <span style="display:block;padding-top:6px;font-size:12px;line-height:1.3;font-weight:700;color:#2B3A8F;">Arabe</span>
             </a>
           </td>
           <td width="25%" align="center" valign="top" style="padding:0 3px 14px 3px;">
-            <a href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter.%20Je%20souhaite%20une%20s%C3%A9ance%20d%C3%A9couverte%20du%20cours%20d%E2%80%99anglais%20%282%20h%2C%2030%20%E2%82%AC%20d%C3%A9duits%20en%20cas%20d%E2%80%99inscription%29%2C%20pour%20moi%20ou%20pour%20mon%20enfant.%20Quels%20cr%C3%A9neaux%20sont%20possibles%20%3F%20" class="mlc-lien" style="display:block;text-decoration:none;">
+            <a href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter.%20Je%20souhaite%20une%20s%C3%A9ance%20d%C3%A9couverte%20du%20cours%20d%E2%80%99anglais%20%282%20h%2C%2030%20%E2%82%AC%29%2C%20pour%20moi%20ou%20pour%20mon%20enfant.%20Quels%20cr%C3%A9neaux%20sont%20possibles%20%3F%20" class="mlc-lien" style="display:block;text-decoration:none;">
               <img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/drapeau-anglais.png" alt="Anglais" width="40" height="40" border="0" style="display:block;width:40px;height:40px;border:0;outline:none;margin:0 auto;">
               <span style="display:block;padding-top:6px;font-size:12px;line-height:1.3;font-weight:700;color:#2B3A8F;">Anglais</span>
             </a>
           </td>
           <td width="25%" align="center" valign="top" style="padding:0 3px 14px 3px;">
-            <a href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter.%20Je%20souhaite%20une%20s%C3%A9ance%20d%C3%A9couverte%20du%20cours%20de%20chinois%20%282%20h%2C%2030%20%E2%82%AC%20d%C3%A9duits%20en%20cas%20d%E2%80%99inscription%29%2C%20pour%20moi%20ou%20pour%20mon%20enfant.%20Quels%20cr%C3%A9neaux%20sont%20possibles%20%3F%20" class="mlc-lien" style="display:block;text-decoration:none;">
+            <a href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter.%20Je%20souhaite%20une%20s%C3%A9ance%20d%C3%A9couverte%20du%20cours%20de%20chinois%20%282%20h%2C%2030%20%E2%82%AC%29%2C%20pour%20moi%20ou%20pour%20mon%20enfant.%20Quels%20cr%C3%A9neaux%20sont%20possibles%20%3F%20" class="mlc-lien" style="display:block;text-decoration:none;">
               <img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/drapeau-chinois.png" alt="Chinois" width="40" height="40" border="0" style="display:block;width:40px;height:40px;border:0;outline:none;margin:0 auto;">
               <span style="display:block;padding-top:6px;font-size:12px;line-height:1.3;font-weight:700;color:#2B3A8F;">Chinois</span>
             </a>
           </td>
           <td width="25%" align="center" valign="top" style="padding:0 3px 14px 3px;">
-            <a href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter.%20Je%20souhaite%20une%20s%C3%A9ance%20d%C3%A9couverte%20du%20cours%20d%E2%80%99espagnol%20%282%20h%2C%2030%20%E2%82%AC%20d%C3%A9duits%20en%20cas%20d%E2%80%99inscription%29%2C%20pour%20moi%20ou%20pour%20mon%20enfant.%20Quels%20cr%C3%A9neaux%20sont%20possibles%20%3F%20" class="mlc-lien" style="display:block;text-decoration:none;">
+            <a href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter.%20Je%20souhaite%20une%20s%C3%A9ance%20d%C3%A9couverte%20du%20cours%20d%E2%80%99espagnol%20%282%20h%2C%2030%20%E2%82%AC%29%2C%20pour%20moi%20ou%20pour%20mon%20enfant.%20Quels%20cr%C3%A9neaux%20sont%20possibles%20%3F%20" class="mlc-lien" style="display:block;text-decoration:none;">
               <img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/drapeau-espagnol.png" alt="Espagnol" width="40" height="40" border="0" style="display:block;width:40px;height:40px;border:0;outline:none;margin:0 auto;">
               <span style="display:block;padding-top:6px;font-size:12px;line-height:1.3;font-weight:700;color:#2B3A8F;">Espagnol</span>
             </a>
@@ -292,25 +301,25 @@
         </tr>
         <tr>
           <td width="25%" align="center" valign="top" style="padding:0 3px 14px 3px;">
-            <a href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter.%20Je%20souhaite%20une%20s%C3%A9ance%20d%C3%A9couverte%20du%20cours%20d%E2%80%99italien%20%282%20h%2C%2030%20%E2%82%AC%20d%C3%A9duits%20en%20cas%20d%E2%80%99inscription%29%2C%20pour%20moi%20ou%20pour%20mon%20enfant.%20Quels%20cr%C3%A9neaux%20sont%20possibles%20%3F%20" class="mlc-lien" style="display:block;text-decoration:none;">
+            <a href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter.%20Je%20souhaite%20une%20s%C3%A9ance%20d%C3%A9couverte%20du%20cours%20d%E2%80%99italien%20%282%20h%2C%2030%20%E2%82%AC%29%2C%20pour%20moi%20ou%20pour%20mon%20enfant.%20Quels%20cr%C3%A9neaux%20sont%20possibles%20%3F%20" class="mlc-lien" style="display:block;text-decoration:none;">
               <img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/drapeau-italien.png" alt="Italien" width="40" height="40" border="0" style="display:block;width:40px;height:40px;border:0;outline:none;margin:0 auto;">
               <span style="display:block;padding-top:6px;font-size:12px;line-height:1.3;font-weight:700;color:#2B3A8F;">Italien</span>
             </a>
           </td>
           <td width="25%" align="center" valign="top" style="padding:0 3px 14px 3px;">
-            <a href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter.%20Je%20souhaite%20une%20s%C3%A9ance%20d%C3%A9couverte%20du%20cours%20de%20portugais%20%282%20h%2C%2030%20%E2%82%AC%20d%C3%A9duits%20en%20cas%20d%E2%80%99inscription%29%2C%20pour%20moi%20ou%20pour%20mon%20enfant.%20Quels%20cr%C3%A9neaux%20sont%20possibles%20%3F%20" class="mlc-lien" style="display:block;text-decoration:none;">
+            <a href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter.%20Je%20souhaite%20une%20s%C3%A9ance%20d%C3%A9couverte%20du%20cours%20de%20portugais%20%282%20h%2C%2030%20%E2%82%AC%29%2C%20pour%20moi%20ou%20pour%20mon%20enfant.%20Quels%20cr%C3%A9neaux%20sont%20possibles%20%3F%20" class="mlc-lien" style="display:block;text-decoration:none;">
               <img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/drapeau-portugais.png" alt="Portugais" width="40" height="40" border="0" style="display:block;width:40px;height:40px;border:0;outline:none;margin:0 auto;">
               <span style="display:block;padding-top:6px;font-size:12px;line-height:1.3;font-weight:700;color:#2B3A8F;">Portugais</span>
             </a>
           </td>
           <td width="25%" align="center" valign="top" style="padding:0 3px 14px 3px;">
-            <a href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter.%20Je%20souhaite%20une%20s%C3%A9ance%20d%C3%A9couverte%20du%20cours%20de%20japonais%20%282%20h%2C%2030%20%E2%82%AC%20d%C3%A9duits%20en%20cas%20d%E2%80%99inscription%29%2C%20pour%20moi%20ou%20pour%20mon%20enfant.%20Quels%20cr%C3%A9neaux%20sont%20possibles%20%3F%20" class="mlc-lien" style="display:block;text-decoration:none;">
+            <a href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter.%20Je%20souhaite%20une%20s%C3%A9ance%20d%C3%A9couverte%20du%20cours%20de%20japonais%20%282%20h%2C%2030%20%E2%82%AC%29%2C%20pour%20moi%20ou%20pour%20mon%20enfant.%20Quels%20cr%C3%A9neaux%20sont%20possibles%20%3F%20" class="mlc-lien" style="display:block;text-decoration:none;">
               <img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/drapeau-japonais.png" alt="Japonais" width="40" height="40" border="0" style="display:block;width:40px;height:40px;border:0;outline:none;margin:0 auto;">
               <span style="display:block;padding-top:6px;font-size:12px;line-height:1.3;font-weight:700;color:#2B3A8F;">Japonais</span>
             </a>
           </td>
           <td width="25%" align="center" valign="top" style="padding:0 3px 14px 3px;">
-            <a href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter.%20Je%20souhaite%20une%20s%C3%A9ance%20d%C3%A9couverte%20du%20cours%20d%E2%80%99allemand%20%282%20h%2C%2030%20%E2%82%AC%20d%C3%A9duits%20en%20cas%20d%E2%80%99inscription%29%2C%20pour%20moi%20ou%20pour%20mon%20enfant.%20Quels%20cr%C3%A9neaux%20sont%20possibles%20%3F%20" class="mlc-lien" style="display:block;text-decoration:none;">
+            <a href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter.%20Je%20souhaite%20une%20s%C3%A9ance%20d%C3%A9couverte%20du%20cours%20d%E2%80%99allemand%20%282%20h%2C%2030%20%E2%82%AC%29%2C%20pour%20moi%20ou%20pour%20mon%20enfant.%20Quels%20cr%C3%A9neaux%20sont%20possibles%20%3F%20" class="mlc-lien" style="display:block;text-decoration:none;">
               <img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/drapeau-allemand.png" alt="Allemand" width="40" height="40" border="0" style="display:block;width:40px;height:40px;border:0;outline:none;margin:0 auto;">
               <span style="display:block;padding-top:6px;font-size:12px;line-height:1.3;font-weight:700;color:#2B3A8F;">Allemand</span>
             </a>
@@ -319,13 +328,13 @@
         <tr>
           <td width="25%">&nbsp;</td>
           <td width="25%" align="center" valign="top" style="padding:0 3px 14px 3px;">
-            <a href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter.%20Je%20souhaite%20une%20s%C3%A9ance%20d%C3%A9couverte%20du%20cours%20de%20cor%C3%A9en%20%282%20h%2C%2030%20%E2%82%AC%20d%C3%A9duits%20en%20cas%20d%E2%80%99inscription%29%2C%20pour%20moi%20ou%20pour%20mon%20enfant.%20Quels%20cr%C3%A9neaux%20sont%20possibles%20%3F%20" class="mlc-lien" style="display:block;text-decoration:none;">
+            <a href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter.%20Je%20souhaite%20une%20s%C3%A9ance%20d%C3%A9couverte%20du%20cours%20de%20cor%C3%A9en%20%282%20h%2C%2030%20%E2%82%AC%29%2C%20pour%20moi%20ou%20pour%20mon%20enfant.%20Quels%20cr%C3%A9neaux%20sont%20possibles%20%3F%20" class="mlc-lien" style="display:block;text-decoration:none;">
               <img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/drapeau-coreen.png" alt="Coréen" width="40" height="40" border="0" style="display:block;width:40px;height:40px;border:0;outline:none;margin:0 auto;">
               <span style="display:block;padding-top:6px;font-size:12px;line-height:1.3;font-weight:700;color:#2B3A8F;">Coréen</span>
             </a>
           </td>
           <td width="25%" align="center" valign="top" style="padding:0 3px 14px 3px;">
-            <a href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter.%20Je%20souhaite%20une%20s%C3%A9ance%20d%C3%A9couverte%20du%20cours%20de%20FLE%20%282%20h%2C%2030%20%E2%82%AC%20d%C3%A9duits%20en%20cas%20d%E2%80%99inscription%29%2C%20pour%20moi%20ou%20pour%20mon%20enfant.%20Quels%20cr%C3%A9neaux%20sont%20possibles%20%3F%20" class="mlc-lien" style="display:block;text-decoration:none;">
+            <a href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter.%20Je%20souhaite%20une%20s%C3%A9ance%20d%C3%A9couverte%20du%20cours%20de%20FLE%20%282%20h%2C%2030%20%E2%82%AC%29%2C%20pour%20moi%20ou%20pour%20mon%20enfant.%20Quels%20cr%C3%A9neaux%20sont%20possibles%20%3F%20" class="mlc-lien" style="display:block;text-decoration:none;">
               <img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/drapeau-francais.png" alt="FLE" width="40" height="40" border="0" style="display:block;width:40px;height:40px;border:0;outline:none;margin:0 auto;">
               <span style="display:block;padding-top:6px;font-size:12px;line-height:1.3;font-weight:700;color:#2B3A8F;">FLE</span>
             </a>
@@ -335,7 +344,7 @@
             </table>
 
             <div style="padding-top:14px;font-size:13px;line-height:1.6;color:#48536B;">
-              Et aussi la <a href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter.%20Je%20souhaite%20une%20s%C3%A9ance%20d%C3%A9couverte%20du%20cours%20de%20calligraphie%20arabe%20%282%20h%2C%2030%20%E2%82%AC%20d%C3%A9duits%20en%20cas%20d%E2%80%99inscription%29%2C%20pour%20moi%20ou%20pour%20mon%20enfant.%20Quels%20cr%C3%A9neaux%20sont%20possibles%20%3F%20" class="mlc-lien" style="color:#2B3A8F;text-decoration:none;font-weight:700;">calligraphie arabe&nbsp;✒️&nbsp;&rarr;</a>
+              Et aussi la <a href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter.%20Je%20souhaite%20une%20s%C3%A9ance%20d%C3%A9couverte%20du%20cours%20de%20calligraphie%20arabe%20%282%20h%2C%2030%20%E2%82%AC%29%2C%20pour%20moi%20ou%20pour%20mon%20enfant.%20Quels%20cr%C3%A9neaux%20sont%20possibles%20%3F%20" class="mlc-lien" style="color:#2B3A8F;text-decoration:none;font-weight:700;">calligraphie arabe&nbsp;✒️&nbsp;&rarr;</a>
             </div>
 
           </td>
@@ -360,7 +369,7 @@
           <td bgcolor="#FFFFFF" align="center" style="background-color:#FFFFFF;border:2px solid #2B3A8F;border-radius:16px;box-shadow:5px 5px 0 #EAEDFB;padding:22px 20px 20px 20px;text-align:center;">
 
             <div style="font-size:19px;line-height:1.3;font-weight:700;color:#2B3A8F;letter-spacing:-.01em;">🔥 Il est toujours possible de vous inscrire</div>
-            <div style="padding-top:8px;font-size:14px;line-height:1.55;color:#48536B;">Les cours ont repris, et il reste des places dans plusieurs groupes. La séance découverte est faite pour ça&nbsp;: vous essayez d'abord, et <strong style="font-weight:700;color:#1A1A1A;">les 30 € viennent en déduction</strong> si vous vous inscrivez ensuite.</div>
+            <div style="padding-top:8px;font-size:14px;line-height:1.55;color:#48536B;">Les cours ont repris, et il reste des places dans plusieurs groupes. La séance découverte est faite pour ça&nbsp;: <strong style="font-weight:700;color:#1A1A1A;">vous essayez d'abord, vous décidez ensuite.</strong></div>
 
             <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="margin:18px auto 0 auto;border-collapse:separate;border-spacing:0;">
               <tr>
@@ -454,12 +463,12 @@
         <tr>
           <td align="center">
             <!--[if mso]>
-            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter.%20Je%20souhaite%20une%20s%C3%A9ance%20d%C3%A9couverte%20%282%20h%2C%2030%20%E2%82%AC%20d%C3%A9duits%20en%20cas%20d%E2%80%99inscription%29.%20La%20langue%20qui%20m%E2%80%99int%C3%A9resse%20%3A%20" style="height:50px;v-text-anchor:middle;width:260px;" arcsize="50%" stroke="f" fillcolor="#25D366">
+            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter.%20Je%20souhaite%20une%20s%C3%A9ance%20d%C3%A9couverte%20%282%20h%2C%2030%20%E2%82%AC%29.%20La%20langue%20qui%20m%E2%80%99int%C3%A9resse%20%3A%20" style="height:50px;v-text-anchor:middle;width:260px;" arcsize="50%" stroke="f" fillcolor="#25D366">
               <w:anchorlock/><center style="color:#ffffff;font-family:Arial,sans-serif;font-size:16px;font-weight:bold;">Écrire sur WhatsApp</center>
             </v:roundrect>
             <![endif]-->
             <!--[if !mso]><!-->
-            <a href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter.%20Je%20souhaite%20une%20s%C3%A9ance%20d%C3%A9couverte%20%282%20h%2C%2030%20%E2%82%AC%20d%C3%A9duits%20en%20cas%20d%E2%80%99inscription%29.%20La%20langue%20qui%20m%E2%80%99int%C3%A9resse%20%3A%20" class="mlc-btn" style="display:inline-block;background-color:#25D366;color:#FFFFFF;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;font-size:16px;font-weight:700;line-height:24px;text-decoration:none;padding:13px 28px;border-radius:999px;box-shadow:5px 5px 0 rgba(37,211,102,.4);"><img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/reseaux/whatsapp.png" alt="" width="22" height="22" border="0" style="width:22px;height:22px;border:0;outline:none;vertical-align:middle;margin-right:9px;">Écrire sur WhatsApp</a>
+            <a href="https://wa.me/33633055591?text=Bonjour%2C%20j%E2%80%99ai%20vu%20votre%20newsletter.%20Je%20souhaite%20une%20s%C3%A9ance%20d%C3%A9couverte%20%282%20h%2C%2030%20%E2%82%AC%29.%20La%20langue%20qui%20m%E2%80%99int%C3%A9resse%20%3A%20" class="mlc-btn" style="display:inline-block;background-color:#25D366;color:#FFFFFF;font-family:'Montserrat','Poppins',Arial,Helvetica,sans-serif;font-size:16px;font-weight:700;line-height:24px;text-decoration:none;padding:13px 28px;border-radius:999px;box-shadow:5px 5px 0 rgba(37,211,102,.4);"><img src="https://cdn.jsdelivr.net/gh/komo-digital-paris/malac-newsletters@main/commun/reseaux/whatsapp.png" alt="" width="22" height="22" border="0" style="width:22px;height:22px;border:0;outline:none;vertical-align:middle;margin-right:9px;">Écrire sur WhatsApp</a>
             <!--<![endif]-->
           </td>
         </tr>
